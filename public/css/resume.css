@@ -1,0 +1,494 @@
+@charset "UTF-8";
+/** @topic 简历模板   @data  20160902 */
+/*简历模板 开始*/
+.resume { min-height: 750px; width: 1000px; margin: 0 auto; font-size: 13px;}
+
+.resume .btns { margin-bottom: 20px; }
+
+.resume .btns .btn { margin-bottom: 20px; text-align: center; border: none; border-radius: 6px; height: 50px; line-height: 50px; cursor: pointer; width: 230px;font-size: 16px;}
+
+.resume .btns .btn-yellow { background: #fa7e65; color: #fff; }
+.resume .btns .btn-yellow:hover{background: #dc6f60;}
+.resume .btns .btn-grey { background: #eeeeee; }
+
+.resume .btns .btn-wfull { width: 100%; margin-bottom: 20px; display: block; }
+
+.resume .btns .btn-yellow-inner { width: 200px; }
+
+.resume .btns .btn-grey-inner { width: 110px; }
+
+.resumeTemplate { margin: 0px auto 0; }
+
+.resumeTemplate .search { width: 535px; height: 38px; border: 1px solid #eeeeee;  }
+
+.resumeTemplate .search .search-inner{width:439px;height: 38px;}
+
+.resumeTemplate .search input { width: 439px; height: 38px; border: 0px; text-indent: 10px; }
+
+.resumeTemplate .search :-ms-input-placeholder { color: #666; }
+
+.resumeTemplate .search .btn-sub { width: 96px; line-height: 38px; text-align: center; background: #f87e6a; color: #fff; font-size: 16px; }
+
+.resumeTemplate .resumeTab { margin-top: 20px; border: 1px solid #eeeeee; border-radius: 6px; font-size: 16px; }
+
+.resumeTemplate .resumeTab dl { background: url(../images/resume/line.png) repeat-x left bottom; }
+
+.resumeTemplate .resumeTab dl:first-child dt:before { background-position: 0px 0px; }
+
+.resumeTemplate .resumeTab dl:nth-child(2) dt:nth-child(1):before { background-position: -30px 0px; }
+
+.resumeTemplate .resumeTab dl.last { background: none; }
+
+.resumeTemplate .resumeTab dl.last dt:nth-child(1):before { background-position: -60px 0px; }
+
+.resumeTemplate .resumeTab dl dt { width: 128px; text-align: right; color: #333333; height: 49px; line-height: 49px; position: relative; }
+
+.resumeTemplate .resumeTab dl dt:before { content: ""; position: absolute; top: 17px; left: 20px; width: 20px; height: 20px; background: url(../images/resume/resume.png) no-repeat 0 0; }
+
+.resumeTemplate .resumeTab dl dd { color: #666666; padding-left: 14px; width: 860px; padding: 11px 0 10px; }
+
+.resumeTemplate .resumeTab dl dd a { height: 28px; line-height: 28px; padding: 0 12px; margin-right: 10px; color: #666; }
+
+.resumeTemplate .resumeTab dl dd a.active, .resumeTemplate .resumeTab dl dd a:hover { background: #f87e6a; color: #fff; }
+
+.resumeTemplate .resumeList { margin-top: 20px; }
+
+.resumeTemplate .resumeList .tit { margin-left: 1px; }
+
+.resumeTemplate .resumeList .tit a { border: 1px solid #f87e6a; height: 28px; line-height: 28px; width: 99px; margin-left: -1px; text-align: center; font-size: 16px;}
+.resumeTemplate .resumeList .tit a:hover{color: #f87e6a}
+.resumeTemplate .resumeList .tit a.active { color: #fff; background: #f87e6a; }
+
+.resumeTemplate .resumeList .cnt li { border-bottom: 1px solid #eeeeee; padding: 20px 50px; }
+
+.resumeTemplate .resumeList .cnt li dl:hover { background: #f8f8f8; }
+
+.resumeTemplate .resumeList .cnt li dl:hover h3 a { text-decoration: underline; }
+
+.resumeTemplate .resumeList .cnt li dl dt a { display: block; width: 190px; height: 226px; overflow: hidden; }
+
+.resumeTemplate .resumeList .cnt li dl dt a img { width: 190px; }
+
+.resumeTemplate .resumeList .cnt li dl dd { padding-left: 98px; }
+
+.resumeTemplate .resumeList .cnt li dl dd h3 { padding-top: 20px; margin-bottom: 15px; height: 56px; line-height: 56px; position: relative; }
+
+.resumeTemplate .resumeList .cnt li dl dd h3:after { content: ""; position: absolute; bottom: 0; left: 0; width: 99px; border-bottom: 1px solid #eeeeee; }
+
+.resumeTemplate .resumeList .cnt li dl dd h3 a { color: #f87e6a; font-size: 16px; }
+
+.resumeTemplate .resumeList .cnt li dl dd p { font-size: 14px; height: 24px; line-height: 24px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 560px; }
+
+.resumeTemplate .resumeList .cnt li dl dd p.tips { font-size: 16px; }
+
+.resumeTemplate .resumeList .cnt li dl dd p.numbs { margin-top: 20px; color: #999999; }
+
+.resumeTemplate .page { margin-left: 296px; }
+
+/*简历模板 结束*/
+/*我的简历 开始*/
+.resumeMine { padding-bottom: 60px; margin-top: -40px; }
+
+.resumeMine .main { width: 720px; margin-top: 13px; }
+
+.resumeMine .main .tp { text-align: center; height: 80px; line-height: 80px; font-size: 16px; color: #333333; }
+
+.resumeMine .main .tp a { padding-left: 28px; color: #f87e6a; position: relative; font-size: 12px; display: block; height: 18px; line-height: 18px; margin-top: 31px; }
+
+.resumeMine .main .tp a:before { content: ""; position: absolute; left: 0; top: 0; width: 18px; height: 18px; background: url(../images/resume/resume.png) no-repeat 0px -180px; }
+
+.resumeMine .main .datalist { margin-top: -18px; }
+
+.resumeMine .main .datalist .colomn { padding-left: 40px; position: relative; padding-top: 8px; }
+
+.resumeMine .main .datalist .colomn:before { content: ""; position: absolute; left: 0px; top: 20px; width: 20px; height: 20px; background: url(../images/resume/r-icon.png) no-repeat 0px -180px; }
+
+.resumeMine .main .datalist .colomn h3 { font-size: 14px; color: #666666; position: relative; margin: 10px 0; }
+
+.resumeMine .main .datalist .colomn h3:after { content: ""; position: absolute; left: 0; top: 11px; height: 0px; width: 100%; border-bottom: 1px dashed #d2d2d2; }
+
+.resumeMine .main .datalist .colomn h3 span { background: #fff; position: relative; z-index: 2; padding-right: 13px; }
+
+.resumeMine .main .datalist .colomn ul li { width: 50%; font-size: 13px; height: 40px; line-height: 40px; overflow: hidden; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.resumeMine .main .datalist .colomn .describing { padding-bottom: 10px; }
+
+.resumeMine .main .datalist .colomn-personal:before { background-position: 0 0; }
+
+.resumeMine .main .datalist .colomn-education:before { background-position: 0 -20px }
+
+.resumeMine .main .datalist .colomn-experice:before { background-position: 0 -40px; }
+
+.resumeMine .main .datalist .colomn-toward:before { background-position: 0 -60px; }
+
+.resumeMine .main .datalist .colomn-expert:before { background-position: 0 -80px; }
+
+.resumeMine .main .datalist .colomn-gold:before { background-position: 0 -100px; }
+
+.resumeMine .main .datalist .colomn-work:before { background-position: 0 -120px; }
+
+.resumeMine .main .datalist .colomn-hobby:before { background-position: 0 -140px; }
+
+.resumeMine .side { width: 230px; margin-top: 46px; padding-bottom: 3px; }
+
+.resumeMine .side .tp { border: 1px solid #eeeeee; border-radius: 10px; padding: 4px; }
+
+.resumeMine .side .tp p { color: #f87e69; }
+
+.resumeMine .side .tp p.step { line-height: 26px; }
+
+.resumeMine .side .tp p.steptip { font-size: 12px; }
+
+.resumeMine .side .tp .process { font-size: 13px; height: 29px; width: 180px; margin: 27px auto 0; }
+
+.resumeMine .side .tp .process span { width: 30px; height: 30px; background: url(../images/resume/resume.png) no-repeat 0 0; }
+
+.resumeMine .side .tp .process span:nth-child(1) { background-position: 3px -59px; }
+
+.resumeMine .side .tp .process span:nth-child(3) { background-position: 0px -88px; }
+
+.resumeMine .side .tp .process span:nth-child(5) { background-position: 1px -120px; }
+
+.resumeMine .side .tp .process span.line { width: 35px; margin: 0 5px; background-position: 8px -150px; }
+
+.resumeMine .side .tp .process span.active:nth-child(1) { background-position: -27px -59px; }
+
+.resumeMine .side .tp .process span.active:nth-child(3) { background-position: -30px -88px; }
+
+.resumeMine .side .tp .process span.active:nth-child(5) { background-position: -29px -120px; }
+
+.resumeMine .side .tp .process span.line.active { background-position: -52px -150px; }
+
+.resumeMine .side .tp .processtip { font-size: 13px; color: #999999; height: 44px; line-height: 44px; }
+
+.resumeMine .side .tp .processtip span { width: 32%; display: inline-block; text-align: center; }
+
+.resumeMine .side .tp .processtip span.active { color: #f87e69; }
+
+.resumeMine .side .sub-btn { width: 230px; text-align: center; height: 50px; line-height: 50px; background: #f87e69; color: #fff; display: block; margin: 20px auto 0; border-radius: 6px; font-size: 16px;}
+.resumeMine .side .sub-btn:hover{background: #dc6f60;}
+    /*我的简历 结束*/
+.resum-choice .main { margin-top: 46px; background: #eeeeee; border-radius: 10px; width: 680px; padding: 20px; }
+
+.resum-choice .your-Tm { background: #fff; height: 100%; width: 100%; min-height: 500px; }
+
+.resum-choice .your-Tm img { width: 100%; }
+
+.resum-choice .your-Tm .tm-one { color: #767676; font-family: STHeiti,'微软雅黑'; background: #e7fff1; overflow: hidden; padding-bottom: 40px; }
+
+.resum-choice .your-Tm .tm-one h2 { border-top: 1px solid #767676; border-bottom: 1px solid #767676; line-height: 33px; height: 33px; font-size: 20px; margin-bottom: 12px; }
+
+.resum-choice .your-Tm .tm-one h3 { font-size: 17px; height: 46px; line-height: 46px; }
+
+.resum-choice .your-Tm .tm-one .person-name { padding-top: 40px; height: 50px; line-height: 50px; font-size: 28px; }
+
+.resum-choice .your-Tm .tm-one .person-job { padding-bottom: 12px; height: 42px; line-height: 42px; font-size: 20px; }
+
+.resum-choice .your-Tm .tm-one .left { width: 196px; padding: 21px 18px 0 18px; height: 100%; padding-bottom: 2000px; margin-bottom: -2000px; }
+
+.resum-choice .your-Tm .tm-one .left .person-img { width: 110px; height: 124px; }
+
+.resum-choice .your-Tm .tm-one .left .person-img img { width: 100%; height: 100%; overflow: hidden; cursor: default; }
+
+.resum-choice .your-Tm .tm-one .right { width: 361px; padding: 0 50px 0 33px; background: #fff; padding-bottom: 2000px; margin-bottom: -2000px; }
+
+.resum-choice .your-Tm .tm-one .colomn { padding-top: 20px; }
+
+.resum-choice .your-Tm .tm-one .colomn p { line-height: 20px; }
+
+.resum-choice .your-Tm .tm-one .colomn p.tit { padding-bottom: 2px; }
+
+.resum-choice .your-Tm .tm-one .colomn .colomn_inner { padding-bottom: 10px; }
+
+.resum-choice .your-Tm .tm-one .colomn-conect p { line-height: 36px; word-break: break-all; }
+
+.resum-choice .your-Tm .tm-one .colomn-conect a { text-decoration: underline; color: #4b4efd; }
+
+.resum-choice .your-Tm .tm-one .colomn-edu p { line-height: 30px; }
+
+.resum-choice .your-Tm .tm-two { padding: 0 30px 38px 35px; font-size: 13px; color: #696969; }
+
+.resum-choice .your-Tm .tm-two h2 { margin-bottom: 16px; border-bottom: 3px solid #000000; font-size: 15px; line-height: 33px; font-weight: bold; color: #393939; }
+
+.resum-choice .your-Tm .tm-two h3 { font-weight: bold; color: #000; height: 30px; line-height: 30px; text-indent: 26px; font-size: 13px; }
+
+.resum-choice .your-Tm .tm-two p { position: relative; padding-left: 54px; padding-bottom: 10px; }
+
+.resum-choice .your-Tm .tm-two p:before { content: ""; position: absolute; left: 29px; top: 6px; width: 8px; height: 8px; background: #000; border-radius: 50%; }
+
+.resum-choice .your-Tm .tm-two .colomn-base { padding-top: 10px; }
+
+.resum-choice .your-Tm .tm-two .colomn-base h2 { height: 78px; line-height: 78px; border: none; text-indent: 210px; font-size: 30px; }
+
+.resum-choice .your-Tm .tm-two .colomn-base dl { margin-left: 110px; position: relative; }
+
+.resum-choice .your-Tm .tm-two .colomn-base dl dt { width: 197px; }
+
+.resum-choice .your-Tm .tm-two .colomn-base dl dt p { padding: 0; overflow: hidden; word-break: break-all; }
+
+.resum-choice .your-Tm .tm-two .colomn-base dl dt p:before { content: ""; width: 0; height: 0; }
+
+.resum-choice .your-Tm .tm-two .colomn-base dl dd { width: 110px; height: 124px; position: absolute; right: 0; top: -75px; }
+
+.resum-choice .your-Tm .tm-two .colomn-base dl dd img { width: 110px; height: 124px; }
+
+.resum-choice .your-Tm .tm-three { padding: 33px 30px 32px 30px; }
+
+.resum-choice .your-Tm .tm-three .colomn-base { border-bottom: 1px solid #183557; margin-bottom: 23px; color: #0b2b54; }
+
+.resum-choice .your-Tm .tm-three .colomn-base .name { font-size: 28px; margin-top: -23px; padding-bottom: 8px; height: 32px; line-height: 32px; overflow: hidden;white-space: nowrap;}
+
+.resum-choice .your-Tm .tm-three .colomn-base img { width: 110px; height: 124px; border: 1px solid #173454; margin-bottom: -14px; }
+
+.resum-choice .your-Tm .tm-three .colomn-base dl dt { width: 169px; padding-top: 23px; overflow: hidden; }
+
+.resum-choice .your-Tm .tm-three .colomn-base dl dt p { line-height: 17px; }
+
+.resum-choice .your-Tm .tm-three .colomn-base dl dt.dtfirst { width: 148px; }
+.resum-choice .your-Tm .tm-three .colomn-base dl dt.dtfirst p{ width: 138px;padding-right: 10px; }
+
+.resum-choice .your-Tm .tm-three .colomn-base dl dt.dtsecond { width: 168px; }
+
+.resum-choice .your-Tm .tm-three .colomn-base dl dt.dtsecond .city { margin-top: 20px; }
+
+.resum-choice .your-Tm .tm-three .colomn-base dl dt.dtlast { width: 188px; }
+
+.resum-choice .your-Tm .tm-three .colomn-base dl dt.dtlast p { word-break: break-all; }
+
+.resum-choice .your-Tm .tm-three .colomn { position: relative; color: #183557; }
+
+.resum-choice .your-Tm .tm-three .colomn h2 { font-size: 18px; color: #183557; }
+
+.resum-choice .your-Tm .tm-three .colomn h2 span { position: relative; z-index: 3; background: #fff; padding-right: 47px; }
+
+.resum-choice .your-Tm .tm-three .colomn h2:before { content: ""; position: absolute; left: 110px; top: 0px; width: 20px; height: 20px; border-radius: 3px; background: #183557; z-index: 4; }
+
+.resum-choice .your-Tm .tm-three .colomn h2:after { content: ""; position: absolute; left: 0px; top: 0px; width: 100%; height: 10px; border-bottom: 1px solid #183557; }
+
+.resum-choice .your-Tm .tm-three .colomn dl { margin-top: -10px; }
+
+.resum-choice .your-Tm .tm-three .colomn dl dt { width: 120px; font-size: 13px; line-height: 40px; }
+
+.resum-choice .your-Tm .tm-three .colomn dl dd { width: 432px; border-left: 1px solid #183557; padding: 8px 30px 18px 25px; position: relative; }
+
+.resum-choice .your-Tm .tm-three .colomn dl dd h3 { font-size: 16px; line-height: 30px; margin-bottom: 10px; position: relative; }
+
+.resum-choice .your-Tm .tm-three .colomn dl dd h3:before { content: ""; position: absolute; left: -32px; top: 6px; width: 13px; height: 13px; border-radius: 3px; background: #183557; transform: rotate(-45deg); }
+
+.resum-choice .your-Tm .tm-three .colomn dl dd p { color: #666; }
+
+.resum-choice .your-Tm .tm-four { padding: 33px 30px 32px 30px; }
+
+.resum-choice .your-Tm .tm-four .colomn-base { border-bottom: 4px solid #88beca; margin-bottom: 23px; color: #8f8f8f; overflow: hidden; }
+
+.resum-choice .your-Tm .tm-four .colomn-base .name { font-size: 28px; margin-top: 13px; padding-bottom: 16px; height: 32px; }
+
+.resum-choice .your-Tm .tm-four .colomn-base img { width: 110px; height: 124px; }
+
+.resum-choice .your-Tm .tm-four .colomn-base dl dt { width: 169px; padding-top: 23px; overflow: hidden; }
+
+.resum-choice .your-Tm .tm-four .colomn-base dl dt p { line-height: 17px; }
+
+.resum-choice .your-Tm .tm-four .colomn-base dl dt.dtfirst { padding-left: 40px; width: 150px; height: 100px; background: #fff url(../images/resumestyle/Bitmap.png) left top no-repeat; margin-bottom: -35px; background-size: 101% 106%; }
+
+.resum-choice .your-Tm .tm-four .colomn-base dl dt.dtfirst p { color: #fff; }
+
+.resum-choice .your-Tm .tm-four .colomn-base dl dt.dtsecond { margin-left: 26px; width: 290px; }
+
+.resum-choice .your-Tm .tm-four .colomn-base dl dt.dtsecond p { line-height: 32px; position: relative; padding-left: 47px; white-space: nowrap; }
+
+.resum-choice .your-Tm .tm-four .colomn-base dl dt.dtsecond p:nth-child(1):before { content: ""; position: absolute; left: 0px; top: 8px; width: 26px; height: 16px; background: url(../images/resumestyle/icon-phone.png) left top no-repeat; }
+
+.resum-choice .your-Tm .tm-four .colomn-base dl dt.dtsecond p:nth-child(2):before { content: ""; position: absolute; left: 0px; top: 8px; width: 26px; height: 16px; background: url(../images/resumestyle/icon-email.png) left top no-repeat; }
+
+.resum-choice .your-Tm .tm-four .colomn-base dl dt.dtsecond p:nth-child(2) a { text-decoration: underline; color: #4b4efd; }
+
+.resum-choice .your-Tm .tm-four .colomn-base dl dt.dtsecond p:nth-child(3):before { content: ""; position: absolute; left: 0px; top: 8px; width: 26px; height: 16px; background: url(../images/resumestyle/icon-birth.png) left top no-repeat; }
+
+.resum-choice .your-Tm .tm-four .colomn-base dl dt.dtsecond p.email { word-break: break-all; white-space: normal; }
+
+.resum-choice .your-Tm .tm-four .colomn-base dl dd { display: block; height: 124px; margin-top: -10px; }
+
+.resum-choice .your-Tm .tm-four .colomn-base dl dd img { height: 124px; width: 110px; }
+
+.resum-choice .your-Tm .tm-four .colomn { position: relative; color: #2982a0; margin-left: 18px; }
+
+.resum-choice .your-Tm .tm-four .colomn h2 { font-size: 18px; color: #2982a0; }
+
+.resum-choice .your-Tm .tm-four .colomn h2 span { position: relative; z-index: 3; background: #fff; padding-right: 64px; }
+
+.resum-choice .your-Tm .tm-four .colomn h2:before { content: ""; position: absolute; left: 94px; top: -4px; width: 32px; height: 32px; border-radius: 50%; z-index: 4; background: url(../images/resumestyle/icon-circle.png) left top no-repeat; }
+
+.resum-choice .your-Tm .tm-four .colomn h2:after { content: ""; position: absolute; left: 0px; top: 0px; width: 100%; height: 10px; border-bottom: 4px solid #88beca; }
+
+.resum-choice .your-Tm .tm-four .colomn dl { margin-top: -10px; }
+
+.resum-choice .your-Tm .tm-four .colomn dl dt { width: 110px; font-size: 13px; line-height: 40px; color: #999; }
+
+.resum-choice .your-Tm .tm-four .colomn dl dd { margin-left: 0; width: 444px; border-left: 1px dashed #88beca; padding: 8px 12px 18px 25px; position: relative; }
+
+.resum-choice .your-Tm .tm-four .colomn dl dd h3 { font-size: 13px; line-height: 30px; margin-bottom: 10px; position: relative; color: #8f8f8f; font-weight: bold; }
+
+.resum-choice .your-Tm .tm-four .colomn dl dd p { color: #999; position: relative; padding-left: 46px; }
+
+.resum-choice .your-Tm .tm-four .colomn dl dd p:before { content: ""; position: absolute; left: 19px; top: 6px; width: 12px; height: 12px; background: url(../images/resumestyle/icon-right.png) left top no-repeat; z-index: 4; }
+
+.resum-choice .tm-choice h3 { height: 25px; margin: 20px auto; text-align: center; font-size: 14px; }
+
+.resum-choice .tm-choice h3 span { padding-left: 45px; position: relative; }
+
+.resum-choice .tm-choice h3 span:before { content: ""; position: absolute; left: 0; top: 0; width: 30px; height: 25px; background: url(../images/resume/resume.png) -60px -275px no-repeat; }
+
+.resum-choice .tm-choice .btnwp a { margin: 0 12px 20px 0; border: 1px solid #eee; border-radius: 6px; height: 34px; line-height: 34px; width: 34px; text-align: center; font-size: 16px; }
+
+.resum-choice .tm-choice .btnwp a.last { margin-right: 0px; }
+
+.resum-choice .tm-choice .btnwp a.active, .resum-choice .tm-choice .btnwp a:hover { background: #f87e69; border: 1px solid #f87e69; color: #fff; }
+
+.resume-alert { position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 99; background: rgba(0, 0, 0, 0.5); }
+
+.resume-alert .inner { background: #fff; width: 440px; height: 280px; border-radius: 6px; font-size: 13px; position: absolute; left: 50%; top: 50%; margin-left: -220px; margin-top: -153px; }
+
+.resume-alert .inner h3 { margin: 30px 26px 0 27px; height: 24px; line-height: 24px; position: relative; }
+
+.resume-alert .inner h3:after { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 12px; border-bottom: 1px dashed #eee; }
+
+.resume-alert .inner h3 span { padding: 0 13px 0 33px; background: #fff; position: relative; z-index: 2; line-height: 24px; display: block; }
+
+.resume-alert .inner h3 span:before { content: ""; position: absolute; left: 0; top: 0; width: 20px; height: 24px; background: url(../images/resume/resume.png) no-repeat -95px -270px; }
+
+.resume-alert .inner .cnt { margin-left: 60px; margin-top: 14px; }
+
+.resume-alert .inner .cnt dl { height: 56px; overflow: hidden; }
+
+.resume-alert .inner .cnt dl dd { padding-left: 15px; }
+
+.resume-alert .inner .cnt dl dd input { width: 228px; height: 28px; border: 1px solid #fa7e65; border-radius: 6px; text-indent: 5px; }
+
+.resume-alert .inner .cnt dl dd p { color: #fa7e65; margin-bottom: 0; }
+
+.resume-alert .inner .cnt p { height: 22px; line-height: 22px; margin-bottom: 20px; }
+
+.resume-alert .inner .btns { width: 166px; font-size: 14px; margin: 0px auto 0px; }
+
+.resume-alert .inner .btns .btn { cursor: pointer; width: 66px; height: 30px; line-height: 30px; text-align: center; border: 1px solid #eee; border-radius: 6px; }
+
+.resume-alert .inner .btns .btn-yellow { border-color: #fa7e65; background: #fa7e65; color: #fff; }
+
+.resum-down .main, .resum-down .side { margin-top: 0px; }
+
+.resum-down{margin-top:-46px;}
+
+.resum-down h2 { font-size: 16px; width: 720px; line-height: 16px; line-height: 16px; text-align: center; margin-top: 46px; padding-bottom: 20px; }
+
+.resum-down h2 span { font-size: 13px; }
+
+.resum-down h2 span b { color: #fa7e65; }
+
+.resume-management { width: 1000px; margin: 0px auto 0; }
+
+.resume-management .head a { display: block; background: #f87e69; text-align: center; line-height: 50px; height: 50px; width: 230px; color: #fff; border-radius: 6px; font-size: 16px; }
+.resume-management .head a:hover{background: #dc6f60;}
+.resume-management .head p { margin-top: 11px; height: 54px; line-height: 54px; padding-left: 33px; font-size: 16px; position: relative; }
+
+.resume-management .head p:before { content: ""; position: absolute; left: 4px; top: 17px; width: 15px; height: 20px; background: url(../images/resume/resume.png) -216px -275px no-repeat; }
+
+.resume-management .bd li { border-top: 1px solid #d2d2d2; padding: 30px 0; }
+
+.resume-management .bd li.resume-new dl dt { width: 184px; height: 220px; border: 2px solid #f87e69; }
+
+.resume-management .bd li.resume-new dl dt a { text-align: center; display: block; width: 100%; height: 100%; position: relative; line-height: 314px; overflow: hidden; font-size: 20px; color: #f87e69; }
+
+.resume-management .bd li.resume-new dl dt a:before { content: ""; position: absolute; left: 63px; top: 55px; width: 58px; height: 58px; background: url(../images/resume/resume.png) -242px -211px no-repeat; }
+
+.resume-management .bd li.resume-new dd { margin-left: 100px; }
+
+.resume-management .bd li.resume-new dd p span { position: relative; padding-left: 38px; height: 25px; line-height: 25px; padding-right: 25px; font-size: 16px; }
+
+.resume-management .bd li.resume-new dd p span:before { content: ""; position: absolute; left: 0px; top: 0px; width: 25px; height: 25px; background: url(../images/resume/resume.png) -244px -273px no-repeat; }
+
+.resume-management .bd li.resume-new dd a { text-align: center; font-size: 16px; margin-top: 30px; width: 328px; height: 48px; line-height: 48px; color: #f87e69; border: 1px solid #f87e69; border-radius: 6px; display: block; }
+
+.resume-management .bd li.resume-new:hover dl { background: #fff; }
+
+.resume-management .bd li dl:hover { background: #f8f8f8; }
+
+.resume-management .bd li dl:hover dd h3 a { text-decoration: underline; }
+
+.resume-management .bd li dt { width: 190px; height: 226px; display: block; }
+
+.resume-management .bd li dt a { display: block; }
+
+.resume-management .bd li dt img { width: 188px; height: 226px; border: 1px solid #d2d2d2; display: block; }
+
+.resume-management .bd li dd { margin-left: 97px; }
+
+.resume-management .bd li dd h3 { margin-top: 23px; height: 48px; line-height: 48px; max-width: 400px; overflow: hidden; }
+
+.resume-management .bd li dd h3 a { font-size: 16px; color: #f87e69; }
+
+.resume-management .bd li dd .btn-modify { font-size: 12px; height: 18px; line-height: 18px; padding: 16px 0; }
+
+.resume-management .bd li dd .btn-modify .btn-del { position: relative; width: 34px; padding-left: 24px; color: #999999; }
+
+.resume-management .bd li dd .btn-modify .btn-del:before { content: ""; position: absolute; left: 0; top: 1px; width: 14px; height: 16px; background: url(../images/resume/resume.png) -128px -277px no-repeat; }
+
+.resume-management .bd li dd .btn-modify .btn-modtitle { position: relative; width: 60px; padding-left: 38px; color: #999999; border-left: 1px solid #d2d2d2; border-right: 1px solid #d2d2d2; }
+
+.resume-management .bd li dd .btn-modify .btn-modtitle:before { content: ""; position: absolute; left: 12px; top: 0; width: 18px; height: 18px; background: url(../images/resume/resume.png) -156px -277px no-repeat; }
+
+.resume-management .bd li dd .btn-modify .btn-down { position: relative; width: 51px; padding-left: 43px; color: #999999; }
+
+.resume-management .bd li dd .btn-modify .btn-down:before { content: ""; position: absolute; left: 16px; top: 2px; width: 15px; height: 15px; background: url(../images/resume/resume.png) -187px -277px no-repeat; }
+
+.resume-management .bd li dd p { margin-top: 40px; line-height: 24px; height: 24px; font-size: 12px; color: #999999; }
+
+.resume-management .page { margin-left: 296px; }
+
+.resume-management .resume-alert .inner { height: auto; width: 440px; overflow: hidden; }
+
+.resume-management .resume-alert .inner h3 { font-size: 16px; height: auto; word-break: break-all; }
+
+.resume-management .resume-alert .inner h3:after { height: 100%; }
+
+.resume-management .resume-alert .inner .tips { height: 56px; line-height: 56px; margin: 0; }
+
+.resume-management .resume-alert .inner dl { margin-top: 20px; height: 62px; }
+
+.resume-management .resume-alert .inner dl dd input { border-color: #eee; }
+
+.resume-management .resume-alert .inner dl dd input.active { border: 1px solid #fa7e65; }
+
+.tb-pic a { display: table-cell; text-align: center; vertical-align: middle; }
+
+.tb-pic a img { vertical-align: middle; }
+
+.tb-pic a { *display: block; *font-family: Arial; *line-height: 1; }
+
+.tb-thumb { margin: 10px 0 0; overflow: hidden; }
+
+.tb-thumb li { background: none repeat scroll 0 0 transparent; float: left; height: 42px; margin: 0 6px 0 0; overflow: hidden; padding: 1px; }
+
+.tb-s310, .tb-s310 a { height: 310px; width: 310px; }
+
+.tb-s310, .tb-s310 img { max-height: 310px; max-width: 310px; }
+
+.tb-s310 a { *font-size: 271px; }
+
+.tb-s40 a { *font-size: 35px; }
+
+.tb-s40, .tb-s40 a { height: 40px; width: 40px; }
+
+.tb-booth { border: 1px solid #CDCDCD; position: relative; z-index: 1; }
+
+.tb-thumb .tb-selected { background: none repeat scroll 0 0 #C30008; height: 40px; padding: 2px; }
+
+.tb-thumb .tb-selected div { background-color: #FFFFFF; border: medium none; }
+
+.tb-thumb li div { border: 1px solid #CDCDCD; }
+
+.zoomDiv { z-index: 999; position: absolute; top: 0px; left: 200px; width: 200px; height: 300px; background: #fff; border: 1px solid #CCCCCC; display: none; text-align: center; overflow: hidden; }
+
+.zoomMask { position: absolute; background: url("../images/resume/mask.png") repeat scroll 0 0 transparent; cursor: move; z-index: 4; }
+
+.des_contain{margin-top: 10px;}

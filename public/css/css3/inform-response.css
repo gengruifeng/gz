@@ -1,0 +1,41 @@
+/* 文章首页样式*/@charset "utf-8";*{padding: 0;margin: 0;font-family: STHeiti,'微软雅黑';}
+li{list-style: none;}
+a{text-decoration: none;outline: none;}
+img{cursor: pointer;max-width:100%;outline: none;}
+html{position: relative;}
+html, body{width: 100%;height: auto;min-height: 100%;background: none;}
+body{min-width:320px;margin:0 auto;overflow-x: hidden;padding-bottom: 60px;position: static;}
+form{position: relative;}
+/*头 开始*/
+#header{width: 100%;height: 60px;background: #222222;}
+#header > #head{width: 1000px;margin: 0 auto;padding-top: 12px !important;height: 48px !important;}
+#header > #head,#header > #head > .nav{width:100%;}
+#header > #head > .nav > .logo{clear: both;margin:0 auto;width:125px;float: none;}
+#header > #head > .nav > .logo{background-image: url(../../images/logos/logosecd.png)}
+/*文章开始*/
+#section{width: 100%;max-width: 750px;margin: 0 auto;padding-top: 0;min-height: 0px;}
+#section:after{content: '.';height: 0;clear: both;overflow: hidden;visibility: hidden;display: block;}
+#section > .article{padding-top: 46px;margin: 0 auto;min-height: 0px;}
+#section > .article:after{content: '.';height: 0;clear: both;overflow: hidden;visibility: hidden;display: block;}
+#section > .article > div:nth-child(1) > div:nth-child(1){margin-bottom: 16px;}
+#section > .article > div:nth-child(1) > div:nth-child(1) > a{display: inline-block;padding: 6px 12px 6px 11px;font-size: 12px;line-height: 12px;color: #707070;border: 1px solid #eaeaea;background: #f8f8f8;border-radius: 6px;}
+#section > .article > div:nth-child(1) > div:nth-child(2){margin-bottom: 29px;}
+#section > .article > div:nth-child(1) > div:nth-child(2) > h3{font-size: 22px;color: #333333;line-height: 30px;}
+#section > .article > div:nth-child(1) > div:nth-child(3){height: 18px;margin-bottom: 25px;}
+#section > .article > div:nth-child(1) > div:nth-child(3) > p{color: #999999;}
+#section > .article > div:nth-child(1) > div:nth-child(3) > p > a{padding-top: 6px;font-size: 12px;color: #999999;}
+#section > .article > div:nth-child(1) > div:nth-child(3) > p > a:nth-child(1){color: #f98f7e;}
+#section > .article > div:nth-child(1) > div:nth-child(3) > p > a:nth-child(4){float: right;padding-left: 28px;color: #999999;background: url("../../images/release/release_4.gif") no-repeat left bottom;}
+#section > .article > div:nth-child(1) > div:nth-child(4){border-top: 1px solid #d2d2d2;padding-top: 14px;padding-bottom: 35px;min-height: 150px;height: auto !important;height: 150px;}
+#section > .article > div:nth-child(1) > div:nth-child(4):after{content: '.';height: 0;clear: both;overflow: hidden;visibility: hidden;display: block;}
+#section > .article > div:nth-child(1) > div:nth-child(4) > p{font-size: 16px;line-height: 1.8;text-align: justify;}
+
+#section > .article,#section > .article > div{width:100%;}
+#section > .article > div:nth-child(1) > div:nth-child(5) > a:nth-child(2){margin-right:0;}
+#section > .article > div,#section > .article > div:nth-child(1) > div{width:95%;margin:0 auto;}
+#section > .article{padding-top:20px;}
+#section > .article > div:nth-child(1) > div:nth-child(2){margin-bottom: 10px;}
+/*footer*/
+#footer{height: 60px;width:100%;position: absolute;left:0;bottom:0;}
+#footer #foot{width:95%;height: 60px;line-height: 60px;overflow: hidden;padding-top: 0;}
+#footer #foot > .foot_top{width:98%;height: auto;}

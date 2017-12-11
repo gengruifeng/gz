@@ -1,0 +1,12 @@
+//设置邮箱
+$(function(){
+	$('#commit_1').click(function(){
+		$('.intEmail').addClass('display');
+		$('.goEmailCheck').removeClass('display');
+		$('.setEmailFinish').addClass('dispaly');
+	});
+	$('#commit_2').click(function(){
+		$('.setPhone').addClass('display');
+		$('.setPhoneFinish').removeClass('display');
+	});
+});

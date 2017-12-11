@@ -1,0 +1,24 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: STHeiti,'微软雅黑';
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.dispaly {
+  display: none;
+}
+#section > #login > .reBackPwd > div:nth-child(2) > input {
+  background: url(../images/login/login_pwd.png) no-repeat 17px 9px;
+}
+/*# sourceMappingURL=reBackPwdByEmail.css.map */

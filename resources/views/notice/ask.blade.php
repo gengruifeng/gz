@@ -1,0 +1,34 @@
+@extends('layouts.layout')
+
+@section('head')
+    <title>问答消息-工作网</title>
+@endsection
+
+@section('stylesheets')
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/inform.css') }}"/>
+@endsection
+@section('content')
+    <form class="ask" action="">
+        <div>
+            <a href="javascript:void(0)">问答消息</a>
+        </div>
+        <div id="askmsg">
+            <ul></ul>
+        </div>
+    </form>
+    <a href="javascript:;" id="btn-back-top"></a>
+@endsection
+
+@section('javascripts')
+    <script src="{{ asset('js/personalCenter.js') }}" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ asset('js/public.js') }}" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ asset('js/view/paged_list.js') }}"></script>
+    <script src="{{ asset('js/shared/util.js') }}"></script>
+    <script>
+        $('#askmsg').pagedList({
+            serverCall: '/notifications/answers/page',
+            kwargs: QueryString,
+            hiddenClass: 'hidden'
+        });
+    </script>
+@endsection

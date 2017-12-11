@@ -1,0 +1,33 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: STHeiti,'微软雅黑';
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#section > #login > .login > .login_left {
+  width: 709px;
+  height: 349px;
+  padding-top: 51px;
+  border-right: 1px solid #aeaeae;
+  float: left;
+}
+#section > #login > .login > .login_left > h3 {
+  width: 100%;
+  height: 19px;
+  font-size: 19px;
+  color: #fb7e65;
+  margin-bottom: 21px;
+  text-indent: 140px;
+}
+/*# sourceMappingURL=relogin.css.map */

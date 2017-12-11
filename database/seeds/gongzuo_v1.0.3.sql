@@ -1,0 +1,1 @@
+ALTER TABLE  `user_analysis` CHANGE  `last_logout`  `activity` INT( 10 ) UNSIGNED NOT NULL DEFAULT  '0' COMMENT  '最后活跃时间';

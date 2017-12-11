@@ -1,0 +1,199 @@
+/*会换成点*/
+.addmore{font-size: 12px;line-height: 30px;text-align: center;}
+
+/*简历模板*/
+.resume-wrap li{border-bottom: 1px dashed #E5E5E5;padding:0 0 1rem;margin:0 20px;}
+.resume-wrap li h3{font-size: 16px;line-height: 32px;height: 32px;overflow: hidden;text-overflow: ellipsis;color: #F87E69;}
+.resume-wrap li p{font-size: 12px;color: #666666;line-height: 16px;max-height: 32px;overflow: hidden;}
+.resume-wrap .resume-search{padding:12px 22px;border-bottom: 1px solid #EEEEEE;  }
+.resume-wrap .resume-search .inp{border:1px solid #E5E5E5;border-right: none;height: 33px;width: 80.7%;padding: 0 1%;color: #999999;-webkit-appearance: none}
+.resume-wrap .resume-search .inpbtn{background:#F87E69;color: #fff;height: 35px;line-height: 35px;width: 16%;text-align: center;}
+/*简历模板搜索 结果*/
+.resume-wrap .resume-search-result .btn-bac{width: 25px;height: 35px;background: url("../../imageswap/btn-bac.png") left center no-repeat;background-size: 12px 20px;}
+.resume-wrap .resume-search-result .inp{width:74.4%;height: 35px;-webkit-appearance: none;}
+.resume-wrap .resume-search-result .inpbtn{border:none;}
+
+/*简历模板搜索*/
+.resume-wrap-search .resume-search{margin: 12px 20px 0;position: relative;border:1px solid #D5D5D5;}
+.resume-wrap-search .resume-search .inp{height: 30px;line-height: 30px;width:90%;padding: 0 5px;box-sizing:border-box;border: none;}
+.resume-wrap-search .resume-search .inpbtn{border:none;position: absolute;right: 5px;top: 5px;width: 20px;height: 20px;text-indent: -999px;background: url("../../imageswap/btn-search.png") center center no-repeat;background-size: 75%;overflow: hidden;}
+/*简历模板搜索 层*/
+.search-help{position: fixed;left: 0;top: 30%;background: #fff;width: 100%;height: 100%;}
+/*简历模板详情 下载*/
+.resume-wrap-download{padding-bottom: 1px;}
+.resume-wrap-download .resume-title{border-bottom: 1px solid #EEEEEE;padding:0 20px;color: #666666;}
+.resume-wrap-download .resume-title h3{text-align: center;font-size: 14px;white-space: nowrap;overflow: hidden;line-height: 34px;height: 34px;}
+.resume-wrap-download .resume-title p{text-align: right;font-size:12px;}
+.resume-wrap-download .resume-title p .numbers{color: #F87E6A;}
+
+/*邮件*/
+.resume-wrap-email{margin:12px 20px auto;}
+.resume-wrap-email input{width: 98%;padding:0 1%;height: 30px;line-height: 30px;border:1px solid #D2D2D2;-webkit-appearance: none;}
+
+/*简历模板 4个不同样式*/
+.your-Tm-wrap{margin:10px;padding: 5px;border:1px solid #ccc}
+.your-Tm { background: #fff;  }
+
+.your-Tm img { width: 100%; }
+
+.your-Tm .tm-one { color: #767676; font-family: STHeiti,'微软雅黑'; background: #e7fff1; overflow: hidden; padding-bottom: 40px; }
+
+.your-Tm .tm-one h2 { border-top: 1px solid #767676; border-bottom: 1px solid #767676; line-height: 33px; height: 33px; font-size: 20px; margin-bottom: 12px; }
+
+.your-Tm .tm-one h3 { font-size: 17px; height: 46px; line-height: 46px; }
+
+.your-Tm .tm-one .person-name { padding-top: 40px; height: 50px; line-height: 50px; font-size: 28px; }
+
+.your-Tm .tm-one .person-job { padding-bottom: 12px; height: 42px; line-height: 42px; font-size: 20px; }
+
+.your-Tm .tm-one .left { width: 196px; padding: 21px 18px 0 18px; height: 100%; padding-bottom: 2000px; margin-bottom: -2000px; }
+
+.your-Tm .tm-one .left .person-img { width: 110px; height: 124px; }
+
+.your-Tm .tm-one .left .person-img img { width: 100%; height: 100%; overflow: hidden; cursor: default; }
+
+.your-Tm .tm-one .right { width: 361px; padding: 0 50px 0 33px; background: #fff; padding-bottom: 2000px; margin-bottom: -2000px; }
+
+.your-Tm .tm-one .colomn { padding-top: 20px; }
+
+.your-Tm .tm-one .colomn p { line-height: 20px; }
+
+.your-Tm .tm-one .colomn p.tit { padding-bottom: 2px; }
+
+.your-Tm .tm-one .colomn .colomn_inner { padding-bottom: 10px; }
+
+.your-Tm .tm-one .colomn-conect p { line-height: 36px; word-break: break-all; }
+
+.your-Tm .tm-one .colomn-conect a { text-decoration: underline; color: #4b4efd; }
+
+.your-Tm .tm-one .colomn-edu p { line-height: 30px; }
+
+.your-Tm .tm-two { padding: 0 30px 38px 35px; font-size: 13px; color: #696969; }
+
+.your-Tm .tm-two h2 { margin-bottom: 16px; border-bottom: 3px solid #000000; font-size: 15px; line-height: 33px; font-weight: bold; color: #393939; }
+
+.your-Tm .tm-two h3 { font-weight: bold; color: #000; height: 30px; line-height: 30px; text-indent: 26px; font-size: 13px; }
+
+.your-Tm .tm-two p { position: relative; padding-left: 54px; padding-bottom: 10px; }
+
+.your-Tm .tm-two p:before { content: ""; position: absolute; left: 29px; top: 6px; width: 8px; height: 8px; background: #000; border-radius: 50%; }
+
+.your-Tm .tm-two .colomn-base { padding-top: 10px; }
+
+.your-Tm .tm-two .colomn-base h2 { height: 78px; line-height: 78px; border: none; text-indent: 210px; font-size: 30px; }
+
+.your-Tm .tm-two .colomn-base dl { margin-left: 110px; position: relative; }
+
+.your-Tm .tm-two .colomn-base dl dt { width: 197px; }
+
+.your-Tm .tm-two .colomn-base dl dt p { padding: 0; overflow: hidden; word-break: break-all; }
+
+.your-Tm .tm-two .colomn-base dl dt p:before { content: ""; width: 0; height: 0; }
+
+.your-Tm .tm-two .colomn-base dl dd { width: 110px; height: 124px; position: absolute; right: 0; top: -75px; }
+
+.your-Tm .tm-two .colomn-base dl dd img { width: 110px; height: 124px; }
+
+.your-Tm .tm-three { padding: 33px 30px 32px 30px; }
+
+.your-Tm .tm-three .colomn-base { border-bottom: 1px solid #183557; margin-bottom: 23px; color: #0b2b54; }
+
+.your-Tm .tm-three .colomn-base .name { font-size: 28px; margin-top: -23px; padding-bottom: 8px; height: 32px; line-height: 32px; overflow: hidden;white-space: nowrap;}
+
+.your-Tm .tm-three .colomn-base img { width: 110px; height: 124px; border: 1px solid #173454; margin-bottom: -14px; }
+
+.your-Tm .tm-three .colomn-base dl dt { width: 169px; padding-top: 23px; overflow: hidden; }
+
+.your-Tm .tm-three .colomn-base dl dt p { line-height: 17px; }
+
+.your-Tm .tm-three .colomn-base dl dt.dtfirst { width: 148px; }
+.your-Tm .tm-three .colomn-base dl dt.dtfirst p{ width: 138px;padding-right: 10px; }
+
+.your-Tm .tm-three .colomn-base dl dt.dtsecond { width: 168px; }
+
+.your-Tm .tm-three .colomn-base dl dt.dtsecond .city { margin-top: 20px; }
+
+.your-Tm .tm-three .colomn-base dl dt.dtlast { width: 188px; }
+
+.your-Tm .tm-three .colomn-base dl dt.dtlast p { word-break: break-all; }
+
+.your-Tm .tm-three .colomn { position: relative; color: #183557; }
+
+.your-Tm .tm-three .colomn h2 { font-size: 18px; color: #183557; }
+
+.your-Tm .tm-three .colomn h2 span { position: relative; z-index: 3; background: #fff; padding-right: 47px; }
+
+.your-Tm .tm-three .colomn h2:before { content: ""; position: absolute; left: 110px; top: 0px; width: 20px; height: 20px; border-radius: 3px; background: #183557; z-index: 4; }
+
+.your-Tm .tm-three .colomn h2:after { content: ""; position: absolute; left: 0px; top: 0px; width: 100%; height: 10px; border-bottom: 1px solid #183557; }
+
+.your-Tm .tm-three .colomn dl { margin-top: -10px; }
+
+.your-Tm .tm-three .colomn dl dt { width: 120px; font-size: 13px; line-height: 40px; }
+
+.your-Tm .tm-three .colomn dl dd { width: 432px; border-left: 1px solid #183557; padding: 8px 30px 18px 25px; position: relative; }
+
+.your-Tm .tm-three .colomn dl dd h3 { font-size: 16px; line-height: 30px; margin-bottom: 10px; position: relative; }
+
+.your-Tm .tm-three .colomn dl dd h3:before { content: ""; position: absolute; left: -32px; top: 6px; width: 13px; height: 13px; border-radius: 3px; background: #183557; transform: rotate(-45deg); }
+
+.your-Tm .tm-three .colomn dl dd p { color: #666; }
+
+.your-Tm .tm-four { padding: 33px 30px 32px 30px; }
+
+.your-Tm .tm-four .colomn-base { border-bottom: 4px solid #88beca; margin-bottom: 23px; color: #8f8f8f; overflow: hidden; }
+
+.your-Tm .tm-four .colomn-base .name { font-size: 28px; margin-top: 13px; padding-bottom: 16px; height: 32px; }
+
+.your-Tm .tm-four .colomn-base img { width: 110px; height: 124px; }
+
+.your-Tm .tm-four .colomn-base dl dt { width: 169px; padding-top: 23px; overflow: hidden; }
+
+.your-Tm .tm-four .colomn-base dl dt p { line-height: 17px; }
+
+.your-Tm .tm-four .colomn-base dl dt.dtfirst { padding-left: 40px; width: 150px; height: 100px; background: #fff url(../../images/resumestyle/Bitmap.png) left top no-repeat; margin-bottom: -35px; background-size: 101% 106%; }
+
+.your-Tm .tm-four .colomn-base dl dt.dtfirst p { color: #fff; }
+
+.your-Tm .tm-four .colomn-base dl dt.dtsecond { margin-left: 26px; width: 290px; }
+
+.your-Tm .tm-four .colomn-base dl dt.dtsecond p { line-height: 32px; position: relative; padding-left: 47px; white-space: nowrap; }
+
+.your-Tm .tm-four .colomn-base dl dt.dtsecond p:nth-child(1):before { content: ""; position: absolute; left: 0px; top: 8px; width: 26px; height: 16px; background: url(../../images/resumestyle/icon-phone.png) left top no-repeat; }
+
+.your-Tm .tm-four .colomn-base dl dt.dtsecond p:nth-child(2):before { content: ""; position: absolute; left: 0px; top: 8px; width: 26px; height: 16px; background: url(../../images/resumestyle/icon-email.png) left top no-repeat; }
+
+.your-Tm .tm-four .colomn-base dl dt.dtsecond p:nth-child(2) a { text-decoration: underline; color: #4b4efd; }
+
+.your-Tm .tm-four .colomn-base dl dt.dtsecond p:nth-child(3):before { content: ""; position: absolute; left: 0px; top: 8px; width: 26px; height: 16px; background: url(../../images/resumestyle/icon-birth.png) left top no-repeat; }
+
+.your-Tm .tm-four .colomn-base dl dt.dtsecond p.email { word-break: break-all; white-space: normal; }
+
+.your-Tm .tm-four .colomn-base dl dd { display: block; height: 124px; margin-top: -10px; }
+
+.your-Tm .tm-four .colomn-base dl dd img { height: 124px; width: 110px; }
+
+.your-Tm .tm-four .colomn { position: relative; color: #2982a0; margin-left: 18px; }
+
+.your-Tm .tm-four .colomn h2 { font-size: 18px; color: #2982a0; }
+
+.your-Tm .tm-four .colomn h2 span { position: relative; z-index: 3; background: #fff; padding-right: 64px; }
+
+.your-Tm .tm-four .colomn h2:before { content: ""; position: absolute; left: 94px; top: -4px; width: 32px; height: 32px; border-radius: 50%; z-index: 4; background: url(../../images/resumestyle/icon-circle.png) left top no-repeat; }
+
+.your-Tm .tm-four .colomn h2:after { content: ""; position: absolute; left: 0px; top: 0px; width: 100%; height: 10px; border-bottom: 4px solid #88beca; }
+
+.your-Tm .tm-four .colomn dl { margin-top: -10px; }
+
+.your-Tm .tm-four .colomn dl dt { width: 110px; font-size: 13px; line-height: 40px; color: #999; }
+
+.your-Tm .tm-four .colomn dl dd { margin-left: 0; width: 444px; border-left: 1px dashed #88beca; padding: 8px 12px 18px 25px; position: relative; }
+
+.your-Tm .tm-four .colomn dl dd h3 { font-size: 13px; line-height: 30px; margin-bottom: 10px; position: relative; color: #8f8f8f; font-weight: bold; }
+
+.your-Tm .tm-four .colomn dl dd p { color: #999; position: relative; padding-left: 46px; }
+
+.your-Tm .tm-four .colomn dl dd p:before { content: ""; position: absolute; left: 19px; top: 6px; width: 12px; height: 12px; background: url(../../images/resumestyle/icon-right.png) left top no-repeat; z-index: 4; }
+
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人信息</title>
+		<link rel="stylesheet" type="text/css" href="../css/vlogin.css"/>
+	</head>
+	<body class="bcimg3">
+		<!-- 主体开始  -->
+		<div class="vlogin loginMsg">
+			<div class="inner">
+				<h1></h1>
+				<h2>个人信息</h2>
+				<form action="" id="personal-form" autocomplete="off">
+					<div class="tp">
+						<dl class="clearfix">
+							<dt class="fl">名号：</dt>
+							<dd class="fl"><input class="" type="text" id="display_name" name="display_name" placeholder="您的名号"></dd>
+						</dl>
+						<dl class="clearfix radiowap">
+							<dt class="fl">状态：</dt>
+							<dd class="fl">
+								<!-- <span class="fl"><input type="radio" id="school" class="state" name="state"> <label for="school">在校学生</label></span>
+								<span class="fl"><input type="radio" id="work" class="state" name="state"> <label for="work">职场人士</label></span> -->
+								<input type="radio" id="school" name="dateformat"> <label for="school">在校学生</label>
+								<input type="radio" id="work" name="dateformat"> <label for="work">职场人士</label>
+							</dd>
+						</dl>
+						<dl class="clearfix radiowap">
+							<dt class="fl">性别：</dt>
+							<dd class="fl">
+								<input type="radio" id="boy" name="gender"> <label for="boy">男</label>
+								<input type="radio" id="girl" name="gender"> <label for="girl">女</label>
+								<input type="radio" id="scret" name="gender"> <label for="scret">保密</label>
+							</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt class="fl">公司：</dt>
+							<dd class="fl"><input type="text" placeholder="您的公司"  name="stepone" id="stepone"></dd>
+						</dl>
+						<dl class="clearfix">
+							<dt class="fl">职位：</dt>
+							<dd class="fl"><input type="text" placeholder="您的职位" name="steptwo" id="steptwo"></dd>
+						</dl>
+						<input type="submit" value="下一步">
+				</form>
+			</div>
+		</div>
+		<!-- 主体结束 -->
+	</body>
+	<script src="../js/jquery-2.1.0.js"></script>
+	<script src="../js/jquery.validate.js"></script>
+	<script src="../js/vlogin.js"></script>
+</html>

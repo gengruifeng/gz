@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/*
+*登陆注册页面相关样式
+*@user gaoyan
+*@date 20160826
+*/
+/*cssreset 开始*/
+html, body, div, p, header, ul, ol, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; font-size: 14px; font-family: STHeiti,'微软雅黑'; }
+
+html, body, p, header, h2, h3, h4, h5, h6 { line-height: 1.5em; }
+
+form { margin: 0; padding: 0; }
+
+body { min-width: 320px; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+li { list-style: none; }
+
+a { text-decoration: none; color: #4a4a4a; }
+
+img { border: none; }
+
+dl, dt, dd { margin: 0; padding: 0; }
+
+button { outline: none; border: none; }
+
+input { outline: none; margin: 0; padding: 0; font-family: STHeiti,'微软雅黑'; }
+
+textarea, select { outline: none; }
+
+textarea { resize: none; }
+input[type="text"]{-webkit-appearance:none;}
+
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+
+.clearfix, .clearfix:after { clear: both; }
+
+.fr { float: right; }
+
+.fl { float: left; }
+
+.hide { display: none; }
+
+.show { display: block; }
+
+/*分页pagination 开始 */
+/*.page{width: 600px;margin: 100px auto;}*/
+.pagination a { border: 1px solid #e5e5e5; border-radius: 2px; color: #000000; padding: 0 13px; margin-right: 10px; height: 34px; line-height: 34px; font-size: 16px; }
+
+.pagination a:hover, .pagination a.active { background: #f87e6a; border-color: #f87e6a; color: #fff; }
+
+.pagination span { width: 56px; text-align: center; color: #a3a3a3; margin-left: -10px; font-size: 16px; }
+
+.pagination .prev, .pagination .next { font-family: STHeiti,'宋体'; font-weight: bold; color: #96959d; }
+
+.red-text { font-family: STHeiti,'宋体'; font-weight: bold; color: #F87E69; }
+
+/*分页pagination 结束 */
+/* 查看哪个人信息弹出层 开始 */
+.alertPersonMsg { border: 1px solid #e6e6e6; width: 291px; padding: 0 15px; border-radius: 5px; position: relative; background: #fff; z-index: 99; }
+
+.alertPersonMsg:before { content: ""; position: absolute; left: 7px; top: -6px; background: url(../images/alerttp.png) left top no-repeat; height: 7px; width: 14px; }
+
+.alertPersonMsg dl { padding: 14px 0; }
+
+.alertPersonMsg dl dt { padding-right: 20px; }
+
+.alertPersonMsg dl dt img { width: 60px; height: 60px; border-radius: 50%; }
+
+.alertPersonMsg dl dd { width: 210px; }
+
+.alertPersonMsg dl h3 { height: 30px; padding-bottom: 5px; }
+
+.alertPersonMsg dl h3 a { height: 30px; line-height: 30px; font-size: 16px; color: #f25c43; overflow: hidden; text-overflow: ellipsis; width: 210px; white-space: nowrap; display: block; }
+
+.alertPersonMsg dl p { height: 20px; line-height: 20px; font-size: 12px; color: #666666; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.alertPersonMsg ul { padding: 15px 0 16px; height: 30px; line-height: 30px; border-top: 1px solid #e6e6e6; font-size: 13px; overflow: hidden; }
+
+.alertPersonMsg ul li a { font-size: 13px; }
+
+.alertPersonMsg ul li:nth-child(1) a { color: #f4725c; margin-right: 39px; padding-left: 19px; position: relative; height: 30px;
+    line-height:30px;display: block;}
+
+.alertPersonMsg ul li:nth-child(1) a:before { content: ""; position: absolute; left: 0; top: 8px; width: 15px; height: 11px; background: url(../images/email.png) left top no-repeat; }
+
+.alertPersonMsg ul li:nth-child(2) a { color: #666666; }
+
+.alertPersonMsg ul li:nth-child(3) a { color: #f87e6a; display: block; border: 1px solid #f87e6a; border-radius: 5px; width: 78px; height: 28px; line-height: 28px; text-align: center; }
+
+.alertPersonMsg ul li:nth-child(3) a:hover, .alertPersonMsg ul li:nth-child(3) a.active { background: #f87e6a; color: #fff; }
+
+/*.alertPersonMsgHideBtm{bottom:-96px;}*/
+.alertPersonMsgHideBtm ul { display: none; }
+
+/*查看哪个人信息弹出层 结束*/
+/*提示信息 开始*/
+.dialogcom { position: fixed; left: 0; top: 0; z-index: 100000; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); }
+
+.dialogcom form { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transition: all 0.1s; z-index: 9999; border-radius: 6px; }
+
+.dialogcom form span { position: relative; background: #fff; display: inline-block; height: 50px; line-height: 50px; font-size: 18px; color: #666666; border-radius: 6px; padding: 0 37px 0 88px; }
+
+.dialogcom form span:before { content: ""; background: url(../images/vlogin/sprite.png) no-repeat left top; position: absolute; left: 38px; top: 10px; width: 31px; height: 30px; }
+
+.dialogcom_yes form span { border: 2px solid #e7f6e0; background-color: #f3faf0; }
+
+.dialogcom_yes form span:before { background-position: 0px -212px; }
+
+.dialogcom_warn form span { border: 2px solid #ffeecc; background-color: #fff7e6; }
+
+.dialogcom_warn form span:before { background-position: -35px -212px; }
+
+.dialogcom_wrong form span { border: 2px solid #ffddcc; background-color: #ffeee6; }
+
+.dialogcom_wrong form span:before { background-position: -70px -212px; }
+
+/*提示信息 结束*/
+/*类分页位置的说明文字 开始 */
+.btmTips { padding-left: 60px; margin: 60px 0 100px 0; font-size: 16px; color: #666666; text-align: center; text-align: center; }
+
+.loginTips { padding-left: 60px; margin: 60px 0 100px 0; font-size: 16px; color: #666666; text-align: center; text-align: center; }
+
+.loginTips a { color: #f87e6a; }
+
+/*自动完成 样式*/
+.autocomplete-suggestions { color: #666; box-sizing: border-box; border: 1px solid #eee; background: #FFF; cursor: default; overflow: auto; }
+
+.autocomplete-suggestion { padding: 2px 1%; height: 30px; line-height: 30px; font-family: STHeiti,'宋体'; font-size: 12px; text-overflow: ellipsis; width: 98%; white-space: nowrap; overflow: hidden; }
+
+.autocomplete-no-suggestion { padding: 2px 5px; }
+
+.autocomplete-selected { background: #f87e6a; color: #fff; }
+
+.autocomplete-suggestions strong { font-weight: normal; font-family: STHeiti,'宋体'; }
+
+.autocomplete-group { padding: 2px 5px; }
+
+.autocomplete-group strong { font-weight: normal; font-family: STHeiti,'宋体'; font-size: 16px; color: #000; display: block; border-bottom: 1px solid #000; }
+
+#academy { height: auto; }
+
+.slidmsg { height: 179px; left: 95px; }
+
+.slidmsg .academy-city { height: 160px; overflow-x: hidden; overflow-y: auto; padding-left: 10px; }
+
+.slidmsg .academy-city a { line-height: 32px; padding: 5px; margin: 0 5px; font-size: 14px; color: #333333; }
+
+.slidmsg .academy-name h2 { height: 36px; line-height: 36px; border-bottom: 1px solid #eeeeee; padding-left: 38px; position: relative; overflow: hidden; cursor: pointer; }
+
+.slidmsg .academy-name h2:before { content: ""; position: absolute; left: 15px; top: 10px; width: 14px; height: 14px; background: url(../images/resume/resume.png) -150px -165px no-repeat; }
+
+.slidmsg .academy-name .btm { padding-left: 10px; overflow-x: hidden; overflow-y: auto; height: 140px; }
+
+.slidmsg .academy-name .btm a { margin: 0 4px; padding: 0 5px; line-height: 30px; }

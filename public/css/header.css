@@ -1,0 +1,97 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: STHeiti,'微软雅黑';
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#header {
+  width: 100%;
+  height: 60px;
+}
+#header > #head {
+  width: 1000px;
+  height: 35px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+#header > #head > .nav {
+  width: 1000px;
+  height: 35px;
+}
+#header > #head > .nav > .logo {
+  width: 375px;
+  height: 35px;
+  float: left;
+}
+#header > #head > .nav > .logo > span {
+  display: block;
+  float: left;
+  width: 35px;
+  height: 35px;
+  background: url(../img/picprint.png) no-repeat -35px -55px;
+}
+#header > #head > .nav > .logo > p {
+  width: 340px;
+  height: 35px;
+  float: left;
+  font-family: STHeiti,'微软雅黑';
+  font-weight: 900;
+  line-height: 35px;
+  text-indent: 10px;
+  font-size: 27px;
+  color: #F87E6A;
+}
+#header > #head > .nav > .nav_list {
+  width: 510px;
+  height: 32px;
+  padding-top: 3px;
+  float: left;
+}
+#header > #head > .nav > .nav_list > a {
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 8px 26px;
+  float: left;
+}
+#header > #head > .nav > .nav_list > a:hover {
+  background-color: rgba(250, 250, 250, 0.2);
+}
+#header > #head > .nav > .login {
+  width: 150px;
+  height: 32px;
+  padding-top: 3px;
+  float: right;
+}
+#header > #head > .nav > .login > a {
+  display: block;
+  float: left;
+  width: 68px;
+  height: 28px;
+  border: 1px solid white;
+  text-align: center;
+  line-height: 28px;
+  color: white;
+}
+#header > #head > .nav > .login > a.mouseHover {
+  background: #F87E6A;
+  border: 1px solid #F87E6A;
+}
+#header > #head > .nav > .login > a:nth-child(1) {
+  margin-right: 10px;
+}
+#header > #head > .nav > .login > a:hover {
+  background-color: #F87E6A;
+  border-color: #F87E6A;
+}
+/*# sourceMappingURL=header.css.map */

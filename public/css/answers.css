@@ -1,0 +1,483 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: STHeiti,'微软雅黑';
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+form {
+  position: relative;
+}
+form > #_token {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+}
+form > ._token {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+}
+.dispaly {
+  display: none;
+}
+#header {background: #222;}
+#section {
+  width: 100%;
+  padding-top: 0;
+  min-height: 720px;
+  padding-bottom: 60px;
+  height: auto !important;
+  height: 720px;
+}
+#section:after {
+  content: '.';
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+}
+#section > div {
+  /*width: 1000px;*/
+  margin: 0 auto;
+}
+.margincenter{margin: 0 auto;width: 1000px;}
+
+/*搜索开始*/
+#section .search-section {
+  width: 100%;
+  height: 114px;
+  background: #f8f8f8;
+  padding-top: 46px;
+}
+#section .search-section form {
+  width: 540px;
+  height: 44px;
+  margin: 0 auto;
+  /*border-radius: 6px;*/
+  border: 1px solid #dedede;
+  font-size: 14px;
+  color: #999999;
+  /*overflow: hidden;*/
+}
+#section .search-section form .search-inner{
+  display: block;
+  width: 462px;
+  height: 44px;
+  float: left;
+  border: none;
+  outline: none;
+
+}
+#section .search-section form .search-inner input{display: block;width: 462px;height: 100%;border:none;text-indent: 15px;}
+#section .search-section form > button {
+  outline: none;
+  border: none;
+  display: block;
+  float: right;
+  width: 78px;
+  height: 44px;
+  background:#fff url("../images/btn-search.png?v=2") no-repeat  center center;
+}
+#section .search-section p {
+  width: 1000px;
+  text-align: center;
+  height: 14px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #9f9f9f;
+  margin: 20px auto;
+}
+#section .search-section .search-tips span {
+  color: #f25c43;
+}
+#section .search-section .search-tips span:nth-child(2) {
+  padding-left: 20px;
+}
+/*搜索结束*/
+
+
+#section > div:nth-child(2) > div:nth-child(1) {
+  /*width: 860px;*/
+  min-height: 540px;
+  float: left;
+  height: auto !important;
+  height: 540px;
+  margin-right: 50px;
+}
+#section > div:nth-child(2) > div:nth-child(1):after {
+  content: '.';
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div {
+  width: 720px;overflow: hidden;
+}
+
+/* 热门问题开始 */
+#section .question-hot {
+  height: 303px;
+  padding-top: 16px;
+}
+#section .question-hot .question-hot-title {
+  height: 48px;
+  text-align: left;
+  font-size: 18px;color:#333333;line-height: 48px;
+}
+#section .question-hot ul {
+}
+#section .question-hot li {
+  padding-left: 13px;
+  height: 63px;
+  padding-top: 15px;
+  overflow: hidden;
+}
+#section .question-hot li:hover {
+  background: #f8f8f8;
+}
+#section .question-hot li:hover .question-hot-numb{
+  background: #f87e6a;
+}
+#section .question-hot li:hover .question-hot-numb span{
+  color: #fff;
+  display: block;
+
+}
+#section .question-hot ul  li > div {
+  height: 48px;
+  float: left;
+}
+#section ul li div.question-hot-numb {
+  width: 48px;
+  margin-right: 20px;
+  /*border-radius: 2px;*/
+  background: #fff3f1;
+  padding: 6px 0;height: 36px;
+}
+#section .question-hot-numb span {
+  display: block;
+  float: left;
+  width: 48px;
+  text-align: center;
+  color: #f87e6a;
+  height: 18px;line-height: 18px;
+  font-size:12px;
+}
+#section .question-hot-msg {
+  width: 630px;
+}
+#section .question-hot-msg p:nth-child(1) {
+  margin-bottom: 7px;
+}
+#section .question-hot-msg p:nth-child(1) > a {
+  font-size: 16px;
+  color: #333333;
+  line-height: 20px;height: 20px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 100%;display: block;
+}
+#section .question-hot-msg p:nth-child(2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  color: #999999;
+}
+/* 热门问题结束 */
+
+
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+  min-height: 300px;
+  height: auto !important;
+  height: 300px;
+}
+/* 问题列表 tab 开始 */
+#section .question-list-tab {
+  height: 33px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f87e6a;
+}
+#section .question-list-tab a {
+  display: block;
+  float: left;
+  height: 33px;line-height:33px;
+  font-size: 16px;
+  color: #333333;
+ width:100px;text-align: center;background:#fff;
+  position: relative;
+
+}
+
+#section .question-list-tab a:hover {
+  color: #f87e6a;
+
+}
+#section .question-list-tab  a.onClick,#section .question-list-tab a.active {
+  background: #f87e6a;
+  color: white;
+}
+/* 问题列表 tab 结束 */
+
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+  min-height: 300px;
+  height: auto !important;
+  height: 300px;
+  position: relative;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2).nonedata {
+  background: url(../images/nonedata.png) no-repeat center;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2):after {
+  content: '.';
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul {
+  /*width: 860px;*/
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul.display {
+  display: none;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li {
+  /*width: 860px;*/
+  display: block;
+  /*float: left;*/
+  padding-top: 20px;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div {
+  float: left;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(1) {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(1) > a{display: block;}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(1) > a > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) {
+  /*width: 780px;*/width: 640px;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 20px;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div {
+  /*width: 780px;*/
+  padding-bottom: 5px;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div:nth-of-type(1) > a {
+  color: #f4725c;
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div:nth-of-type(2) {
+  height: 23px;
+  margin-bottom: 7px;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div:nth-of-type(2).display {
+  display: none;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div:nth-of-type(2) > a,
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div:nth-of-type(2) > span {
+  font-size: 13px;
+  line-height: 23px;
+  color: #999999;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div:nth-of-type(2) > a {
+  color: #f25c43;
+  padding-right: 5px;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div:nth-of-type(3) {
+  font-size: 13px;
+  color: #333333;
+  line-height: 26px;
+  max-height: 52px;
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div:nth-of-type(4) {
+  height: 24px;
+  margin-bottom: 15px;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div:nth-of-type(4) > a {
+  height: 22px;
+  font-size: 13px;
+  line-height: 22px;
+  border: 1px solid #eaeaea;
+  background: #f8f8f8;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  color: #666;
+  border-radius: 11px;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div:nth-of-type(4) > a:hover{border-color: #999;}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div:nth-of-type(4) > a:focus{background: #eee;}
+
+
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div:nth-of-type(5) {
+  height: 13px;
+  font-size: 13px;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div:nth-of-type(5) > a {
+  color: #999999;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div:nth-of-type(5) > span {
+  color: #999999;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div:nth-of-type(5) > span:nth-of-type(1) {
+  padding-right: 14px;
+}
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div:nth-of-type(5) > span:nth-of-type(2),
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div:nth-of-type(5) > span:nth-of-type(3),
+#section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li > div:nth-child(2) > div:nth-of-type(5) > span:nth-of-type(4) {
+  padding-right: 14px;
+}
+/*我要提问开始*/
+#section > div:nth-child(2) > div:nth-child(2) {
+  width: 230px;
+  min-height: 540px;
+  float: left;
+  height: auto !important;
+  height: 491px;
+  padding-top: 64px;
+  overflow: hidden;
+} /*我要提问结束*/
+#section > div:nth-child(2) > div:nth-child(2):after {
+  content: '.';
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+}
+#section > div:nth-child(2) > div:nth-child(2) > div {
+  /*width: 280px;*/
+}
+#section > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  height: 50px;
+  margin-bottom: 30px;
+}
+#section > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > a {
+  display: block;
+  width: 230px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 6px;
+  background: #f87e6a;
+  font-size: 16px;
+  color: white;
+  border: none;
+}
+#section > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > a:hover{background: #dc6f60}
+#section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  height: 200px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+#section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > img {
+  width: 230px;
+  height: 200px;
+  display: block;
+}
+#section > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) {
+  height: 170px;
+}
+#section > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div {
+  /*width: 280px;*/
+}
+#section > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) {
+  height: 16px;
+  margin-bottom: 20px;
+}
+#section > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > h3 {
+  font-size: 16px;
+  line-height: 16px;
+  text-indent: 25px;
+  background: url(../images/answers/question.png) no-repeat -26px -25px;
+}
+#section > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
+  /*width: 230px;*/
+}
+#section > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > a {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 22px;
+  border: 1px solid #eaeaea;
+  float: left;
+  background: #f8f8f8;
+  text-align: center;
+  line-height: 22px;
+  font-size: 12px;
+  color: #797979;
+  border-radius: 11px;
+  margin-bottom: 11px;
+  margin-right: 11px;
+}
+#section > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > a:hover {
+  border: 1px solid #999;
+}
+#section > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > a:focus{background: #eeeeee;}
+  /*# sourceMappingURL=answers.css.map */
+/*标签*/
+#section div.position{height:0px;overflow:hidden;padding:0;display: none;}
+#section #labels{height: auto;padding:0;}
+#section #labels{
+    border-bottom: 1px solid #eeeeee;margin-bottom: 20px;margin-top: 46px;padding-bottom: 19px;
+}
+.labels h3{height: 18px;line-height: 18px;padding-left: 25px;font-size: 16px;color: #333333;margin-bottom: 17px;position: relative;}
+#section #labels h3:before{
+    content: "";position: absolute;left: 0;top: 0;width: 15px;height: 17px;background: url(../images/homepage/cline.jpg) left top no-repeat;
+}
+.labels p{height: 24px;line-height: 24px;}
+.labels p a{font-size: 13px;height: 22px;line-height: 22px;border:1px solid #eee;background:#eaeaea;border-radius: 10px;background: #f8f8f8;padding: 0 10px;margin-right: 10px;}
+/*右侧修改*/
+#section #right-wrap{overflow: visible;padding-top: 46px;}
+#section #right-btn{width: 230px;height: 160px;position: relative;overflow: visible;}
+#section #right-btn:after{
+  content: "";position: absolute;left: -9px;top: -12px;width: 250px;height: 165px;background: url(../images/homepage/rbg.png) left top no-repeat;
+}
+#section #right-btn p{position: absolute;width: 100%;text-align: center;z-index: 2;height: 80px;line-height: 80px;color: #666666;}
+#section #right-btn a{position: absolute;width: 170px;height:40px;line-height: 40px;font-size: 14px;left: 30px;top: 66px;z-index: 2;}
+/*搜索*/
+#section #searchdiv{padding:0;margin:46px 0 31px;height: 48px; width: 538px;background: #fff; border:1px solid #eee; }
+#section #searchdiv .search-inner{ width: 460px; height: 100%; border: none; font-size: 16px; }
+#section #searchdiv .search-inner span, #section #searchdiv .search-inner input{width: 100%;height: 100%;border: none;}
+#section #searchdiv .search-inner input{text-indent: 10px;width: 98%;font-size: 14px;}
+#section #searchdiv input[type="submit"] { width: 78px; height: 100%; background:#fff url(../images/btn-search.png?v=2) center center no-repeat; border: none; cursor: pointer; }
+
+/*搜索页面补充*/
+#search-none{width: 272px; height: 320px; background: url(../images/search-none.png) left top no-repeat;margin: 41px 0 0 210px;}
+#search-inp{width: 272px; height: 320px; background: url(../images/search-inp.png) left top no-repeat;margin: 41px 0 0 210px;}
+/*待回答问题*/
+#no-unanserq{width:408px;height:352px;background: url(../images/nonedata.png) left top no-repeat;margin:60px auto 0;}

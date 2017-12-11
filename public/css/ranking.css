@@ -1,0 +1,585 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: STHeiti,'微软雅黑';
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+form {
+  position: relative;
+}
+form > #_token {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+}
+form > ._token {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+}
+.dispaly {
+  display: none;
+}
+#header {
+  width: 100%;
+  height: 60px;
+  background: #222222;
+}
+#header > #head {
+  width: 1000px;
+  height: 35px;
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-top: 12px !important;
+  height: 48px !important;
+}
+#header > #head > .nav {
+  width: 1000px;
+  height: 35px;
+  position: relative;
+}
+#header > #head > .nav > .logo {
+  width: 375px;
+  height: 40px;
+  float: left;
+  background: url(../images/paper_search.png) no-repeat -50px -10px;
+}
+#header > #head > .nav > .nav_list {
+  width: 610px;
+  height: 32px;
+  padding-top: 3px;
+  float: left;
+  position: relative;
+}
+#header > #head > .nav > .nav_list > ul {
+  position: absolute;
+  width: 128px;
+  height: 72px;
+  top: 49px;
+  left: 430px;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 999;
+}
+#header > #head > .nav > .nav_list > ul.display {
+  display: none;
+}
+#header > #head > .nav > .nav_list > ul > li {
+  display: block;
+  width: 128px;
+  height: 36px;
+  background: #333333;
+  float: left;
+  line-height: 36px;
+  text-indent: 56px;
+  color: #f5f5f5;
+  font-size: 15px;
+}
+#header > #head > .nav > .nav_list > ul > li > a {
+  color: white;
+}
+#header > #head > .nav > .nav_list > ul > li:nth-of-type(1) {
+  background: #333333 url("../images/login/release.png") no-repeat 1px -85px;
+}
+#header > #head > .nav > .nav_list > ul > li:nth-of-type(1):hover {
+  background: #f67f6e url("../images/login/release.png") no-repeat 1px -85px;
+}
+#header > #head > .nav > .nav_list > ul > li:nth-of-type(2) {
+  background: #333333 url("../images/login/release.png") no-repeat -1px -135px;
+}
+#header > #head > .nav > .nav_list > ul > li:nth-of-type(2):hover {
+  background: #f67f6e url("../images/login/release.png") no-repeat -1px -135px;
+}
+#header > #head > .nav > .nav_list > a {
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 8px 26px;
+  float: left;
+  display: inline-block;
+  border-radius: 6px;
+}
+#header > #head > .nav > .nav_list > a:nth-child(6) {
+  padding: 8px 0;
+}
+#header > #head > .nav > .nav_list > a:nth-child(6) > span {
+  display: inline-block;
+  float: left;
+  font-size: 14px;
+  height: 19px;
+}
+#header > #head > .nav > .nav_list > a:nth-child(6) > span:nth-of-type(1) {
+  padding-right: 5px;
+  width: 14px;
+  background: url("../images/login/release.png") no-repeat -14px -20px;
+}
+#header > #head > .nav > .nav_list > a:nth-child(6) > span:nth-of-type(2) {
+  padding-left: 3px;
+}
+#header > #head > .nav > .nav_list > a:nth-child(6) > span:nth-of-type(3) {
+  width: 14px;
+  padding-right: 5px;
+  background: url("../images/login/release.png") no-repeat -14px -55px;
+}
+#header > #head > .nav > .nav_list > a:hover {
+  background-color: rgba(250, 250, 250, 0.2);
+}
+#header > #head > .nav > .login {
+  width: 150px;
+  height: 32px;
+  padding-top: 3px;
+  float: right;
+}
+#header > #head > .nav > .login.display {
+  display: none;
+}
+#header > #head > .nav > .login > a {
+  display: block;
+  float: left;
+  width: 68px;
+  height: 28px;
+  border: 1px solid white;
+  text-align: center;
+  line-height: 28px;
+  color: white;
+}
+#header > #head > .nav > .login > a.mouseHover {
+  background: #F87E6A;
+  border: 1px solid #F87E6A;
+}
+#header > #head > .nav > .login > a:nth-child(1) {
+  margin-right: 10px;
+}
+#header > #head > .nav > .login > a:hover {
+  background-color: #F87E6A;
+  border-color: #F87E6A;
+}
+#header > #head > .nav > .loginStatus {
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  padding-top: 6px;
+  right: 0;
+}
+#header > #head > .nav > .loginStatus.display {
+  display: none;
+}
+#header > #head > .nav > .loginStatus > ul {
+  top: 49px;
+  left: -10px;
+  position: absolute;
+  width: 150px;
+  background: #333333;
+  z-index: 999;
+  border-radius: 6px;
+  overflow: hidden;
+}
+#header > #head > .nav > .loginStatus > ul.display {
+  display: block;
+}
+#header > #head > .nav > .loginStatus > ul > li {
+  width: 150px;
+  height: 36px;
+  position: relative;
+}
+#header > #head > .nav > .loginStatus > ul > li > span {
+  position: absolute;
+  right: 10px;
+  display: block;
+  top: 8px;
+  width: 32px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  color: white;
+  border-radius: 6px;
+  background: #ff9f00;
+  font-size: 12px;
+}
+#header > #head > .nav > .loginStatus > ul > li > a {
+  display: block;
+  float: right;
+  height: 36px;
+  width: 150px;
+  line-height: 36px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(1) > li:nth-child(1) {
+  background: url("../images/myCenter/personalCenter.png") no-repeat -22px -100px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(1) > li:nth-child(1):hover {
+  background: #f67f6e url("../images/myCenter/personalCenter.png") no-repeat -22px -100px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(1) > li:nth-child(2) {
+  background: url("../images/myCenter/personalCenter.png") no-repeat -21px -373px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(1) > li:nth-child(2):hover {
+  background: #f67f6e url("../images/myCenter/personalCenter.png") no-repeat -21px -373px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(1) > li:nth-child(3) {
+  background: url("../images/myCenter/personalCenter.png") no-repeat -21px -262px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(1) > li:nth-child(3):hover {
+  background: #f67f6e url("../images/myCenter/personalCenter.png") no-repeat -21px -262px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(1) > li:nth-child(4) {
+  background: url("../images/myCenter/personalCenter.png") no-repeat -22px -436px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(1) > li:nth-child(4):hover {
+  background: #f67f6e url("../images/myCenter/personalCenter.png") no-repeat -22px -436px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(2) {
+  left: 100px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(2) > li > a {
+  text-indent: 30px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(2) > li:nth-child(1) {
+  background: url("../images/myCenter/personalCenter.png") no-repeat -18px -199px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(2) > li:nth-child(1):hover {
+  background: #f67f6e url("../images/myCenter/personalCenter.png") no-repeat -18px -199px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(2) > li:nth-child(2) {
+  background: url("../images/myCenter/personalCenter.png") no-repeat -21px -45px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(2) > li:nth-child(2):hover {
+  background: #f67f6e url("../images/myCenter/personalCenter.png") no-repeat -21px -45px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(2) > li:nth-child(3) {
+  background: url("../images/paper_search.png") no-repeat 6px -67px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(2) > li:nth-child(3):hover {
+  background: #f67f6e url("../images/paper_search.png") no-repeat 6px -67px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(2) > li:nth-child(4) {
+  background: url("../images/myCenter/personalCenter.png") no-repeat -20px -321px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(2) > li:nth-child(4):hover {
+  background: #f67f6e url("../images/myCenter/personalCenter.png") no-repeat -20px -321px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(2) > li:nth-child(5) {
+  background: url("../images/myCenter/personalCenter.png") no-repeat -21px -719px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(2) > li:nth-child(5):hover {
+  background: #f67f6e url("../images/myCenter/personalCenter.png") no-repeat -21px -719px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(2) > li:nth-child(6) {
+  background: url("../images/myCenter/personalCenter.png") no-repeat -23px -650px;
+}
+#header > #head > .nav > .loginStatus > ul:nth-of-type(2) > li:nth-child(6):hover {
+  background: #f67f6e url("../images/myCenter/personalCenter.png") no-repeat -23px -650px;
+}
+#header > #head > .nav > .loginStatus > a:nth-child(1) {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  font-size: 14px;
+  position: relative;
+  background: url("../images/login/release.png") no-repeat 14px -50px;
+}
+#header > #head > .nav > .loginStatus > a:nth-child(1) > span {
+  position: absolute;
+  left: 30px;
+  display: block;
+  top: 6px;
+  width: 32px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  color: white;
+  border-radius: 6px;
+  background: #ff9f00;
+  font-size: 12px;
+}
+#header > #head > .nav > .loginStatus > a:nth-child(2) {
+  display: block;
+  float: left;
+  width: 57px;
+  padding-left: 43px;
+  height: 30px;
+  line-height: 30px;
+  background: url("../images/login/release.png") no-repeat 64px -50px;
+}
+#header > #head > .nav > .loginStatus > a:nth-child(2) > img {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+#section {
+  width: 100%;
+  padding-top: 0;
+  min-height: 720px;
+  height: auto !important;
+  height: 720px;
+}
+#section:after {
+  content: '.';
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+}
+#ranking {
+  width: 1000px;
+  margin: 0 auto;
+  min-height: 674px;
+  height: auto !important;
+  padding-top: 46px;
+  height: 674px;
+}
+#ranking:after {
+  content: '.';
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+}
+#ranking > div {
+  width: 564px;
+  float: left;
+  height: 706px;
+}
+/*积分榜*/
+#rankIntegrel,
+#rankLike {
+  margin-right: 72px;
+  margin-bottom: 28px;
+}
+#rankFans,
+#rankAnswer {
+  margin-bottom: 28px;
+}
+.rankTop {
+  width: 564px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+.rankTop h3 {
+  width: 564px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 18px;
+  text-indent: 46px;
+  color: #333333;
+  background: url(../images/message/Billboard.png) no-repeat -7px -130px;
+}
+#rankAnswer .rankTop h3 {
+  width: 145px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 18px;
+  text-indent: 46px;
+  color: #333333;
+  background: url(../images/message/Billboard.png) no-repeat -7px -189px;
+}
+#rankLike .rankTop h3 {
+  width: 145px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 18px;
+  text-indent: 46px;
+  color: #333333;
+  background: url(../images/message/Billboard.png) no-repeat -7px -13px;
+}
+#rankFans .rankTop h3 {
+  width: 145px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 18px;
+  text-indent: 46px;
+  color: #333333;
+  background: url(../images/message/Billboard.png) no-repeat -7px -70px;
+}
+.rankBtm {
+  width: 562px;
+  height: 659px;
+  background: white;
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+.rankBtm ul {
+  width: 562px;
+  display: block;
+}
+.rankBtm_ul_1 li {
+  float: left;
+  display: block;
+  width: 25%;
+  line-height: 55px;
+  text-align: center;
+  font-size: 16px;
+  color: #999999;
+  position: relative;
+}
+.rankBtm_ul_1 li:hover {
+  color: #F87E6A;
+}
+.rankBtm_ul_1 li > span {
+  position: absolute;
+  display: none;
+  width: 25px;
+  height: 12px;
+  background: url(../images/rank/rankspan.gif) no-repeat center;
+  left: 50%;
+  transform: translate(-12px, 0);
+}
+.rankBtm_ul_1 li.onClick {
+  color: #F87E6A;
+}
+.rankBtm_ul_1 li.onClick > span {
+  display: block;
+}
+.rankBtm_ul_1 {
+  height: 55px;
+  border-bottom: 1px solid #eeeeee;
+}
+.rankBtm_p {
+  font-size: 18px;
+  color: #333333;
+  width: 510px;
+  padding-left: 52px;
+  height: 60px;
+  line-height: 60px;
+}
+.rankBtm_p span {
+  display: inline-block;
+  margin-right: 175px;
+}
+.rankBtm_p .rankBtm_p_span3 {
+  margin-right: 0;
+}
+.rankBtm_ul_2 li {
+  height: 36px;
+  width: 508px;
+  padding-left: 54px;
+  margin-bottom: 12px;
+}
+.rankBtm_ul_2 li div {
+  float: left;
+  height: 36px;
+  line-height: 36px;
+}
+.rankCode {
+  width: 30px;
+  margin-right: 103px;
+}
+.rankCode span {
+  display: block;
+  width: 30px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+.rankUser {
+  width: 290px;
+  padding-top: 3px;
+  height: 33px;
+}
+.rankUser a {
+  display: block;
+  float: left;
+}
+.rankUser_header {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-right: 22px;
+}
+.rankUser_header img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+.rankUser_name {
+  height: 30px;
+  font-size: 13px;
+  color: #7a7a7a;
+  line-height: 30px;
+}
+.rankUser_name:hover {
+  color: #F87E6A;
+  text-decoration: underline;
+}
+.ranLike {
+  font-size: 13px;
+  line-height: 36px;
+  color: #666666;
+}
+.ranLike_1 {
+  color: #e4b500;
+}
+.ranLike_2 {
+  color: #7394c1;
+}
+.ranLike_3 {
+  color: #72b5b5;
+}
+.rankBtm_ul_2 li:nth-child(1) .rankCode span {
+  background: url(../images/message/Billboard.png) no-repeat -149px -15px;
+  font-size: 12px;
+  line-height: 28px;
+  color: #e9bf1f;
+}
+.rankBtm_ul_2 li:nth-child(2) .rankCode span {
+  background: url(../images/message/Billboard.png) no-repeat -149px -95px;
+  font-size: 12px;
+  line-height: 28px;
+  color: #83a3ce;
+}
+.rankBtm_ul_2 li:nth-child(3) .rankCode span {
+  background: url(../images/message/Billboard.png) no-repeat -149px -164px;
+  font-size: 12px;
+  line-height: 28px;
+  color: #78c2c2;
+}
+.rankBtm_load {
+  width: 100%;
+  height: 56px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.rankBtm_load a {
+  font-size: 16px;
+  color: #666666;
+  display: block;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  background: #f8f8f8;
+}
+/*# sourceMappingURL=ranking.css.map */

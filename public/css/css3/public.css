@@ -1,0 +1,238 @@
+/**
+ * 公用样式
+ * @copyright &nbsp;
+ * @website gongzuowang.com
+ * @date: 2016-09-29
+ */
+/*css reset*/
+
+html,body,div,p,header,ul,ol,h1,h2,h3,h4,h5,h6,form{margin: 0;padding: 0;font-size: 12px;}
+html,body,p,header,h2,h3,h4,h5,h6{line-height: 1.5em;}
+html{font-size: 10px;position: relative;height: 100%;}
+section{min-width: 320px;max-width: 750px;margin: 0 auto;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+li{list-style: none;}
+img{width: 100%;max-width: 100%;}
+a{text-decoration: none;color: #4a4a4a;font-size: 12px;}
+img{border: none;}
+dl,dt,dd{margin: 0;padding: 0}
+button{outline: none;border: none;}
+input{outline: none;margin: 0;padding: 0;background: #fff;border-radius: 0;}
+textarea,select{outline: none;}
+textarea{resize:none;}
+select{width: 100%;height: 100%;border: none;color: #adadad;margin-left: -5px;}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    -webkit-appearance: none;
+    outline: none;
+}
+
+/*公用样式*/
+.clearfix:before,.clearfix:after{display: table;content: ''}
+.clearfix,.clearfix:after{clear: both;}
+.fr{float: right;}
+.fl{float: left;}
+.hide{display: none;}
+.show{display: block;}
+.oh{overflow: hidden;}
+.mt1e{margin-top: 1rem;}
+.tr{display: table-row;}
+.td{display: table-cell;}
+
+/*头部*/
+.common-head{height: 50px;padding-top: 1px;background: #222222;width: 100%; overflow: hidden ;position: relative}
+.common-head .logo{font-size: 20px;text-align: center;color: #F87E6A;line-height: 50px;}
+.common-head .logo .logoimg{width: 29.867%;max-width: 112px;margin:11px auto 0;display: block;}
+.common-head .btn-right{position: absolute;right: 20px;top:14px;}
+.common-head .btn-close-bac{position: absolute;left: 20px;top:14px;width: 22px;height: 22px;background-position: center center;background-repeat: no-repeat;background-size: cover}
+.common-head .btn-close{background-image: url("../../imageswap/btn-close.png");}
+.common-head .btn-bac{background-image: url("../../imageswap/btn-bac.png");background-size:12px 20px;}
+.common-head .btn-search{width: 20px;height: 20px;background: url("../../imageswap/btn-search.png") center center no-repeat;background-size: 100%;position: absolute;
+    top:14px;right: 20px;}
+.common-head .btn-finish{;width: 20px;height: 20px;background: url("../../imageswap/btn-finish.png") center center no-repeat;background-size: 100% 100%;}
+
+/*按钮*/
+.btn{display: block;border-radius: 6px;background: #F87E6A;color: #fff;height: 35px;line-height: 35px;font-size: 12px;text-align: center;}
+.btn-long{width: 94%;margin:20px auto 20px;}
+
+.alertTips{
+    width: 100%;height: 100%;position: fixed;
+    left:0;top: 0;z-index: 9999;
+    background: rgba(0,0,0,.6);
+}
+.alertTips span{display: block;background: #fff;padding:0 10px;
+position: absolute;left: 50%;top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    height: 30px;line-height: 30px;border-radius: 6px;
+}
+/* Display Behavior */
+.hidden {
+    display: none
+}
+/* Loading */
+.loading-dots {
+    margin: 20px auto 10px;
+    text-align: center;
+    width: 100%
+}
+
+.loading-dots .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px
+}
+
+.loading-dots .dot {
+    background-color: #f87e6a;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1s infinite ease-in-out both;
+    animation: sk-bouncedelay 1s infinite ease-in-out both
+}
+
+.loading-dots .first {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s
+}
+
+.loading-dots .second {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s
+}
+
+/* Display Behavior */
+.hidden {
+    display: none
+}
+
+
+/* Keyframes */
+@-webkit-keyframes sk-bouncedelay {
+    0% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -10px, 0)
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -10px, 0)
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0)
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0)
+    }
+}
+
+@-webkit-keyframes fadeInDownMini {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3px, 0);
+        transform: translate3d(0, -3px, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@-moz-keyframes fadeInDownMini {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3px, 0);
+        transform: translate3d(0, -3px, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes fadeInDownMini {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3px, 0);
+        transform: translate3d(0, -3px, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@-webkit-keyframes fadeOutUpMini {
+    0% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3px, 0);
+        transform: translate3d(0, -3px, 0)
+    }
+}
+
+@-moz-keyframes fadeOutUpMini {
+    0% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3px, 0);
+        transform: translate3d(0, -3px, 0)
+    }
+}
+
+@keyframes fadeOutUpMini {
+    0% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3px, 0);
+        transform: translate3d(0, -3px, 0)
+    }
+}
+/*回到顶部*/
+a#btn-back-top{
+    width: 30px;height: 30px;background: url("../../images/bac.png") left top no-repeat;border-radius: 15px 15px;background-size: 100%;
+    position: fixed;right: 10px;bottom: 50px;z-index: 99999;display: none;
+}

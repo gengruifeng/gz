@@ -1,0 +1,207 @@
+/*@import url(fonts.css);*/
+/*
+*登陆注册页面相关样式
+*@user gaoyan
+*@date 20160826
+*/
+/*cssreset 开始*/
+
+html,body,div,p,header,ul,ol,h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;font-size: 14px;font-family: STHeiti,"Microsoft YaHei";}
+html,body,p,header,h2,h3,h4,h5,h6{line-height: 1.5em;}
+form{margin:0;padding: 0;}
+body{min-width: 320px;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+li{list-style: none;}
+a{text-decoration: none;color: #4a4a4a;}
+img{border: none;}
+dl,dt,dd{margin: 0;padding: 0}
+button{outline: none;border: none;}
+input{outline: none;margin: 0;padding: 0;font-family: STHeiti,"Microsoft YaHei"; font-size: 14px;}
+textarea,select{outline: none;}
+textarea{resize:none;}
+.clearfix:before,.clearfix:after{display: table;content: ''}
+.clearfix,.clearfix:after{clear: both;}
+.fr{float: right;}
+.fl{float: left;}
+.hide{display: none;}
+.show{display: block;}
+b.importantip{padding-right: 1px;color: #f87e69;font-weight: normal;}
+html,body{height:100%;overflow: hidden;}
+.bcimg1{background: url(../images/vlogin/vbg_01.jpg) no-repeat center top;background-size: 100% 100%;}
+.bcimg2{background: url(../images/vlogin/vbg_02.jpg) no-repeat center top;background-size: 100% 100%;}
+.bcimg3{background: url(../images/vlogin/vbg_03.jpg) no-repeat center top;background-size: 100% 100%;}
+.bcimg4{background: url(../images/vlogin/vbg_04.jpg) no-repeat center top;background-size: 100% 100%;}
+.bcimg5{background: url(../images/vlogin/vbg_05.jpg) no-repeat center top;background-size: 100% 100%;}
+.bcimg6{background: url(../images/vlogin/vbg_06.jpg) no-repeat center top;background-size: 100% 100%;}
+.bcimg7{background: url(../images/vlogin/vbg_07.jpg) no-repeat center top;background-size: 100% 100%;}
+.bcimg8{background: url(../images/vlogin/vbg_08.jpg) no-repeat center top;background-size: 100% 100%;}
+.bcimg9{background: url(../images/vlogin/vbg_09.jpg) no-repeat center top;background-size: 100% 100%;}
+.bcimg10{background: url(../images/vlogin/vbg_10.jpg) no-repeat center top;background-size: 100% 100%;}
+.bcimg11{background: url(../images/vlogin/vbg_11.jpg) no-repeat center top;background-size: 100% 100%;}
+.bcimg13{background: url(../images/vlogin/vbg_13.jpg) no-repeat center top;background-size: 100% 100%;}
+.bcimg14{background: url(../images/vlogin/vbg_14.jpg) no-repeat center top;background-size: 100% 100%;}
+.bcimg15{background: url(../images/vlogin/vbg_15.jpg) no-repeat center top;background-size: 100% 100%;}
+/*解决Chrome下表单自动填充后背景色为黄色-会影响input的背景较长*/
+/*input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}*/
+/*cssreset 结束*/
+
+/*公用 开始*/
+.vlogin{font-family: STHeiti,"Microsoft YaHei";width: 430px;border-radius: 5px;padding: 30px 30px 0;height: 473px;overflow: hidden;;background:#fff;
+  -webkit-box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.1), -3px 0 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.1), -3px 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.1), -3px 0 5px rgba(0, 0, 0, 0.1);
+  margin: auto;position: absolute;  top: 50%; left: 50%;    margin-left: -245px;margin-top: -251px;
+} 
+.vlogin h1{width: 122px;height: 35px;background: url(../images/logos/logosecd.png) 0 0 no-repeat;display: block;margin: 0 auto 30px;}
+.vlogin h2{line-height: 60px;height: 60px;overflow: hidden;;font-size: 20px;color:#333333;margin-top: -20px;text-align: center;font-weight: bold;}
+.vlogin h3{color: #84b457;line-height: 32px;height: 32px;overflow: hidden;;font-size: 14px;margin-top: -10px;}
+.vlogin .third_tit{margin-top: -20px;text-align: center;height: 56px;line-height: 56px;font-size: 16px;}
+.vlogin .third_tit a{color: #f87e69}
+  /*input不同类型*/
+.vlogin .inpUser{background-position:-101px -42px}
+.vlogin .inpMobile{background-position:16px -39px}
+.vlogin .inpEmail{background-position:-224px -36px}
+.vlogin .inpPassword{background-position:-159px -42px}
+  /*验证样式*/
+.vlogin .inp{overflow: hidden;width: 370px;padding-left: 60px;height: 44px;border: 1px solid #eeeeee;border-radius: 5px;background-image:url(../images/vlogin/sprite.png);background-repeat: no-repeat;}
+.vlogin .err{border:1px solid #f87e69;}
+.vlogin .correct{position: relative;}
+.vlogin .correct:after{content: "";position: absolute;right: 15px;top: 13px;background:url(../images/vlogin/sprite.png) 0px -150px no-repeat;width: 20px;height: 20px;}
+.vlogin .inp input{height: 44px;width: 368px;border: none;background: #fff;font-size: 14px;font-family: STHeiti,"Microsoft YaHei";}
+.vlogin .inptext{height: 20px;line-height: 20px;text-indent: 60px;color: #f87e69;font-size: 13px;}
+  /*记住我*/
+.vlogin .passwordRm .checkbox{margin-left: 16px;}
+.vlogin .passwordRm .checkbox p{width: 40px;height: 20px;position: relative;margin-right: 20px;}
+.vlogin .passwordRm .checkbox p label{cursor: pointer;}
+.vlogin .passwordRm .checkbox p input{width: 40px;height: 20px;opacity: 0;position: absolute;left: 0;top: 0;z-index: 2;}
+.vlogin .passwordRm .checkbox p input~span{padding:1px;width: 38px;height: 18px;background:#ACACAC;border-radius: 25px;position: absolute;left: 0px;top:0px;}
+.vlogin .passwordRm .checkbox p input~span b{position: absolute;left: 1px;top: 1px; width:18px;height: 18px;background: #fff;border-radius: 9px;}
+.vlogin .passwordRm .checkbox p input:checked~span{background:#84b457; }
+.vlogin .passwordRm .checkbox p input:checked~span b{left: auto;right: 1px;}
+.vlogin .passwordRm a.fr{color:#f87e69;font-size: 14px;line-height: 20px;font-size: 14px;}
+.vlogin input[type='submit']{cursor: pointer;width: 100%;margin-top: 20px;height: 46px;line-height: 46px;color:#fff;background: #f87e69;border: none;border-radius: 5px;font-size: 15px;font-family: STHeiti,"Microsoft YaHei";}
+.vlogin .tips{text-align: right;height: 56px;line-height: 56px;font-size: 14px;}
+.vlogin .tips a{color: #f87e69;}
+.vlogin .tips a span{font-family: STHeiti,'宋体';font-size:16px;}
+  /*第三方账号登录*/
+.vlogin .btm{text-align: center;width: 406px;margin: 0 auto;}
+.vlogin .btm p{height: 56px;line-height: 56px;position: relative;color:#999999;font-size: 14px;}
+.vlogin .btm p:after{content: "";position: absolute;left: 0;top:0; height:28px;width: 100%;border-bottom: 1px solid #eeeeee;}
+.vlogin .btm p span{padding: 0 14px;position: relative;z-index: 2;background: #fff;}
+.vlogin .btm ul{width: 345px;margin: 0 auto;} 
+.vlogin .btm ul li{width: 45px;padding: 0 35px;}
+.vlogin .btm li a{display: block;width: 45px;height: 45px;}
+.vlogin .btm li:nth-child(1) a{background:url(../images/vlogin/sprite.png) 0px -96px no-repeat;}
+.vlogin .btm li:nth-child(2) a{background:url(../images/vlogin/sprite.png) -55px -96px no-repeat;}
+.vlogin .btm li:nth-child(3) a{background:url(../images/vlogin/sprite.png) -110px -96px no-repeat;}
+/*公用 结束*/
+
+/*第三方登录账号注册 loginOther 开始*/
+.vlogin .verify {position: relative;padding-bottom: 20px;margin-bottom: -40px}
+.vlogin .verify dt{border: 1px solid #eeeeee;height: 44px;line-height: 44px;border-radius: 5px;padding:0 15px;font-size: 14px;}
+.vlogin .verify dt.err{border:1px solid #f87e69;}
+.vlogin .verify dt:nth-of-type(1){width: 208px;}
+.vlogin .verify dt:nth-of-type(2){width: 148px;}
+.vlogin .verify dt.codedt{
+  background-image: linear-gradient(90deg, #f2f2f2, #fff);
+  background-image: -webkit-linear-gradient(90deg, #f2f2f2, #fff);
+}
+.vlogin .verify dt:nth-of-type(2) button{display: block;width: 100%;height: 44px;color: #333;text-align: center;background: white;font-size: 14px;
+  background-image: linear-gradient(90deg, #f2f2f2, #fff);
+  background-image: -webkit-linear-gradient(90deg, #f2f2f2, #fff);
+}
+.vlogin .verify dt input{border: none;display: block;width: 100%;height: 100%;}
+/*第三方登录账号注册 loginOther 结束*/
+
+/*个人信息-loginMsg 开始*/
+.loginMsg dt{width: 50px;line-height: 34px;}
+.loginMsg dl {padding-bottom: 20px;position: relative;}
+.loginMsg .radiowap dd{height: 36px;line-height: 36px;border:none;}
+.loginMsg .radiowap dd span{margin-right: 26px;}
+.loginMsg .radiowap dd input{margin-right: 8px;}
+.loginMsg .radiowap dd label{margin-right: 26px;}
+.loginMsg .radiowap dd input,.loginMsg .radiowap dd label{vertical-align: middle;height: 12px;line-height: 12px;}
+.loginMsg dd input[type="radio"]{margin-right: 8px;}
+.loginMsg dd{height: 32px;width: 378px;border:1px solid #eeeeee;border-radius: 5px;overflow: hidden;}
+.loginMsg dd input[type="text"]{width: 100%;height: 100%;border:none;text-indent: 20px;font-size: 14px;font-family: STHeiti,"Microsoft YaHei";}
+.loginMsg .correct:after{top: 7px;}
+/*个人信息-loginMsg 结束*/
+
+/*密码设置成功重新登录 -loginReset 开始*/
+.loginReset h3{color: #84b457;line-height: 32px;height: 32px;overflow: hidden;;font-size: 14px;}
+.loginReset .btm{margin-top: -22px;}
+/*密码设置成功重新登录 -loginReset 结束*/
+
+/*擅长领域 -loginExpert 开始*/
+.loginExpert{color: #666666; }
+.loginExpert .tabs ul{width: 100%;margin: 0 auto;padding: 0;}
+.loginExpert .tabs a{height: 34px;line-height: 34px;margin-right: 18px;padding: 0 7px;font-size: 14px;display: block;border-bottom: 2px solid #fff;}
+.loginExpert .tabs li:last-child a{margin-right: 0px;}
+.loginExpert .tabs a.active,.loginExpert .tabs a:hover{border-bottom: 2px solid #f67f6e;color: #f67f6e}
+.tabs a.current {border-bottom: 2px solid #f67f6e;color: #f67f6e}
+.loginExpert .panes{height: 200px;overflow: hidden;}
+.loginExpert .pane{width: 430px;height: 240px;margin: 0 auto;overflow: hidden;overflow-y: auto;display: none;}
+/*.loginExpert .pane a{font-size: 13px;border:1px solid #eaeaea;background: #f8f8f8;color: #000000;height: 24px;line-height: 24px;padding: 0 10px;margin: 18px 0 0 18px;border-radius: 5px;}*/
+.loginExpert .pane a{margin: 18px 0 0 18px;position: relative;}
+.loginExpert .pane span{display: block;font-size: 13px;border:1px solid #eaeaea;background: #f8f8f8;color: #000000;height: 24px;line-height: 24px;padding: 0 10px;border-radius: 5px;}
+.loginExpert .pane a input{position: absolute;left: 0;top: 0;width: 100%;height: 100%;z-index: 2;opacity: 0;}
+.loginExpert .pane a input:checked~span{border:1px solid #f87e69;background: #f87e69;color: #fff;}
+/*.loginExpert .pane input{font-size: 13px;border:1px solid #eaeaea;background: #f8f8f8;color: #000000;height: 24px;line-height: 24px;padding: 0 10px;margin: 18px 0 0 18px;border-radius: 5px;}*/
+.loginExpert{position: relative;}
+.loginExpert .inner input[type='submit']{position: absolute;left: 32px;bottom:20px;width:430px;height: 46px;}
+/*擅长领域 -loginExpert 结束*/
+
+/*手机号注册 2 -loginReMobile2 开始*/
+.loginReMobile2 .regestypeChange a{color: #f87e69}
+.loginReMobile2  .btm{margin-top: 60px;}
+/*手机号注册 2 -loginReMobile2 结束*/
+
+/*手机找回密码 retrieveMobile 开始*/
+.retrieveMobile .regestypeChange{height: 54px;line-height: 54px;margin-top:-20px;}
+.retrieveMobile .regestypeChange a{color: #f87e69;font-size: 16px;}
+.retrieveMobile .identifying{position: relative;padding-bottom: 20px;margin-bottom: -20px;}
+.retrieveMobile .identifying .red-text{text-indent: 145px;}
+.retrieveMobile .identifying dt{border:1px solid #d2d2d2;border-radius: 5px;overflow: hidden;height: 44px;width: 148px;overflow: hidden;}
+.retrieveMobile .identifying dt img{height: 44px;width: 148px;}
+.retrieveMobile .identifyingdd{border:1px solid #d2d2d2;border-radius: 5px;overflow: hidden;}
+.retrieveMobile .identifying dd input{height: 44px;width: 238px;border:none;text-indent: 14px;font-size: 14px;}
+.retrieveMobile .mobile{background-position:16px -39px}
+/*手机找回密码 retrieveMobile 结束*/
+
+/*邮箱认证 Emailmodify 开始*/
+.Emailmodify{ text-align: center; }
+.Emailmodify .sub{display: block;width: 100%;margin-top: 20px;height: 46px;line-height: 46px;color:#fff;background: #f87e69;border: none;border-radius: 5px;font-size: 15px;font-family: STHeiti,"Microsoft YaHei";}
+.Emailmodify .tp{color: #333333;margin-top: -7px;}
+.Emailmodify .tp p{font-size: 16px;line-height: 30px;}
+.Emailmodify .tp .emialdress{color: #f87e69;font-size: 18px;}
+.Emailmodify .list{color: #999;margin-top: 6px;}
+.Emailmodify .list .tit{line-height: 48px;font-size: 16px;position: relative;width: 334px;margin: 0 auto;}
+.Emailmodify .list .tit:after{content: "";position: absolute;left: 0;top: 0;height: 25px;width: 100%;background: url(../images/vlogin/line.png) left bottom repeat-x;}
+.Emailmodify .list .tit span{padding: 0 14px;background: #fff;position: relative;z-index: 2;}
+.Emailmodify .list li{line-height: 32px;}
+.Emailmodify .list li a{color: #f87e69;}
+.Emailmodify .list li span{margin-right: 15px;background:#666666;color: #fff;font-size: 12px;border-radius: 50%;display: inline-block;height: 16px;line-height: 16px;width: 16px;text-align: center;}
+/*邮箱认证 Emailmodify 结束*/
+
+/*邮箱认证 2 retrieveEmail 开始*/
+.retrieveEmail2 .inpEmail{background-position:-226px -86px;}
+/*邮箱认证 2 retrieveEmail 结束*/
+
+/*分页pagination 开始 */
+.page{width: 600px;margin: 100px auto;}
+.pagination a{border:1px solid #e5e5e5;border-radius: 2px;color: #000000;padding: 0 13px;margin-right: 10px;height: 34px;line-height: 34px;font-size: 16px;}
+.pagination a:hover,.pagination a.active{background:#f87e6a;border-color: #f87e6a;color: #fff;}
+.pagination span{width: 56px;text-align: center;color: #a3a3a3;margin-left: -10px;font-size: 16px;}
+.pagination .prev,.pagination .next{font-family: STHeiti,'宋体';font-weight: bold;color: #96959d;}
+.red-text{font-family: STHeiti,'宋体';font-weight: normal;color: #F87E69;}
+/*分页pagination 结束 */
+
+/* 验证相关 开始  */
+.vlogin .err{border:1px solid #f87e69;}
+.vlogin .testwap{position: relative;padding-bottom: 20px;}
+.vlogin .red-text{margin:0 auto;width:auto;display:inline;position: absolute;left: 60px;bottom: 0px;font-family: STHeiti,"Microsoft YaHei";font-size:13px;font-weight:normal;height: 20px;line-height: 20px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.vlogin .red-text a.newlink{color:#ff9f00;font-weight: bold; }
+.vlogin .inpYaoq{background: url("../images/login/yaoqin.png") no-repeat 13px 14px;}
+.loginOther{height: 539px;}

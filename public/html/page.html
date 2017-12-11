@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>分页</title>
+
+		<link rel="stylesheet" type="text/css" href="../css/vcommon.css"/>
+
+
+	</head>
+	<body style="width:800px;margin:0 auto;">
+		<!-- 分页开始 -->
+		<div class="page">
+			<div class="pagination clearfix">
+				<a class="fl prev" href="javascript:;" ><</a>
+				<a href="javascript:;" class="fl">1</a>
+				<a href="javascript:;" class="fl active">2</a>
+				<a href="javascript:;" class="fl">3</a>
+				<a href="javascript:;" class="fl">4</a>
+				<span class="fl">...</span>
+				<a href="javascript:;" class="fl">50</a>
+				<a class="fl next" href="javascript:;" >></a>
+			</div>
+		</div>
+		<!-- 分页结束 -->
+		<br><br><br><br>
+		<!-- 查看哪个人信息弹出层 开始-->
+			<div class="alertPersonMsg hide">
+				<div class="inner">
+					<dl class="clearfix">
+						<dt class="fl"><img src="../images/images1.png" alt=""></dt>
+						<dd class="fl">
+							<h3><a href="">张涛张涛张涛张涛张涛张涛张涛张涛</a></h3>
+							<p>我赢职场  产品运营产品运营产品运营产品运营产品运营产品运营</p>
+							<p>我赢职场  产品运营产品运营产品运营产品运营产品运营产品运营</p>
+						</dd>
+					</dl>
+					<ul class="clearfix" >
+						<li class="fl"><a href="">私信</a></li>
+						<li class="fl"><a href="">向Ta提问</a></li>
+						<li class="fr"><a href="">加关注</a></li>
+					</ul>
+				</div>
+			</div>
+		<!-- 查看哪个人信息弹出层 结束-->
+		<br><br><br><br>
+		<!-- 提示信息 开始-->
+		<div class="dialogcom dialogcom_yes hide">
+				<form action="">
+					<span>提问成功</span>
+					<input class="_token" type="hidden" name=""  value="">
+				</form>
+		</div>
+		<div class="dialogcom dialogcom_warn hide ">
+				<form action="">
+					<span>操作过于频繁，请明天再来</span>
+					<input class="_token" type="hidden" name=""  value="">
+				</form>
+		</div>
+		<div class="dialogcom dialogcom_wrong hide">
+				<form action="">
+					<span>操作过于频繁，请明天再来</span>
+					<input class="_token" type="hidden" name=""  value="">
+				</form>
+		</div>
+		<!-- 提示信息 结束-->
+
+		<!-- 类分页位置的说明文字 开始 -->
+		<div class="btmTips">不能回答自己发布的问题，你可以修改问题内容</div>
+		<div class="btmTips">一个问题只能回答一次，便你可以编辑自己回答的内容</div>
+		<div class="btmTips">您是该问题的发布者，不能回答此问题</div>
+		
+		<div class="loginTips"><a href="javascript:;">登录</a>&nbsp;&nbsp;之后才能回答问题</div>
+
+		<div class="loginTips">要回答问题请先&nbsp;&nbsp;<a href="javascript:;">登录</a>&nbsp;或&nbsp;<a href="javascript:;">注册</a></div>
+		<!-- 类分页位置的说明文字 结束 -->
+
+	</body>
+	<script src="../js/jquery-2.1.0.js"></script>
+	<!-- <script src="../js/vlogin.js"></script> -->
+</html>
+
+

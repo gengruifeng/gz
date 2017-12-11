@@ -1,0 +1,154 @@
+@charset "UTF-8";
+html, body { width: 100%; height: auto; min-height: 100%; overflow: auto; background: #d9d9d9 url(../images/resume-bg.png) no-repeat center top; }
+
+.resume-step { padding-top: 30px; padding-bottom: 30px; }
+
+/*.resume-step .inner { width: 576px; background: #fff; border-radius: 6px; padding-top: 52px; padding-bottom: 30px; position: absolute; top: 50%; left: 50%; margin-left: -288px; }*/
+
+.resume-step .inner {
+    width: 576px; background: #fff; border-radius: 6px; padding-top: 52px; padding-bottom: 30px;
+    margin: 0 auto;
+}
+.resume-step .inner .head { width: 120px; height: 120px; border: 1px solid #eee; border-radius: 50%; margin: 0 auto; padding: 14px; position: relative; }
+
+.resume-step .inner .head img, .resume-step .inner .head input { width: 120px; height: 120px; border-radius: 50%; position: absolute; left: 14px; top: 14px; }
+
+.resume-step .inner .head input { position: absolute; left: 14px; top: 14px; opacity: 0; cursor: pointer; }
+
+.resume-step .inner .head .imgshadow { display: none; }
+
+.resume-step .inner h3 { margin: 20px; height: 18px; line-height: 18px; font-size: 18px; text-align: center; }
+
+.resume-step .inner h3 span { position: relative; padding-left: 42px; }
+
+.resume-step .inner h3 span:before { content: ""; position: absolute; left: 0; top: 4px; width: 32px; height: 24px; background: url(../images/resume/resume.png) no-repeat -1px -217px; }
+
+.resume-step .inner .stepmsg { margin: 0 auto; font-size: 13px; }
+
+.resume-step .inner .stepmsg .secnew { border-top: 1px solid #eee; padding-top: 20px; }
+
+.resume-step .inner .stepmsg dl { padding-bottom: 20px; height: 30px; line-height: 30px; position: relative; width: 340px; margin: 0 auto; }
+
+.resume-step .inner .stepmsg dl.sexspan span { margin-right: 26px; }
+
+.resume-step .inner .stepmsg dl.sexspan span label { margin-left: 9px; }
+
+.resume-step .inner .stepmsg dl.city select { width: 123px; color: #333; }
+
+.resume-step .inner .stepmsg dl.duringSchool dd { width: 90px; }
+
+.resume-step .inner .stepmsg dl.duringSchool dd select { background: none; }
+
+.resume-step .inner .stepmsg dl.school select { width: 100%; }
+
+.resume-step .inner .stepmsg dl dt { width: 80px; }
+
+.resume-step .inner .stepmsg dl dd { width: 260px; }
+
+.resume-step .inner .stepmsg dl dd select { margin-right: 9px; width: 78px; height: 28px; border: 1px solid #eeeeee; border-radius: 6px; -moz-appearance: none; -webkit-appearance: none; appearance: none; background: url("../images/resume/select-bg.jpg") no-repeat right center; outline: none; background-size: 27px 28px; text-indent: 8px; color: #999999; }
+
+.resume-step .inner .stepmsg dl dd select:last-child { margin-right: 0; }
+
+.resume-step .inner .stepmsg dl dd input[type="text"] { width: 100%; height: 28px; border: 1px solid #eee; border-radius: 6px; text-indent: 5px; }
+
+.resume-step .inner .stepmsg dl dd .like-inptext { width: 100%; height: 28px; line-height: 28px; border: 1px solid #eee; border-radius: 6px; text-indent: 5px; cursor: pointer; overflow: hidden; }
+
+.resume-step .inner .addmore { width: 340px; margin: 0 auto; margin-bottom: 26px; color: #f87e69; position: relative; height: 20px; line-height: 20px; }
+
+.resume-step .inner .addmore .btn-more { padding-left: 34px; position: relative; display: block; color: #f87e69; }
+
+.resume-step .inner .addmore .btn-more:before { content: ""; position: absolute; left: 0; top: 0; width: 20px; height: 20px; background: url(../images/resume/resume.png) no-repeat -5px -275px; }
+
+.resume-step .inner .addmore .btn-close { width: 20px; height: 20px; background: url(../images/resume/resume.png) no-repeat -38px -275px; }
+
+.resume-step .inner .btns { width: 340px; margin: 0 auto; }
+
+.resume-step .inner .btns .btn { margin-bottom: 20px; text-align: center; border: none; border-radius: 6px; height: 46px; line-height: 46px; cursor: pointer; }
+
+.resume-step .inner .btns .btn-yellow { background: #fa7e65; color: #fff; }
+
+.resume-step .inner .btns .btn-grey { background: #eeeeee; }
+
+.resume-step .inner .btns .btn-wfull { width: 100%; margin-bottom: 20px; display: block; }
+
+.resume-step .inner .btns .btn-yellow-inner { width: 200px; }
+
+.resume-step .inner .btns .btn-grey-inner { width: 110px; }
+
+.red-text { position: absolute; left: 83px; bottom: 0; }
+
+/*.resume-one .inner { margin-top: -361px; }*/
+
+.resume-one .inner .stepmsg dl.birthday dd input { width: 40%; padding-right: 1%; }
+
+/*内容区*/
+.autoheight{height: 100%;}
+.autoheight body{min-height: 100%;}
+/*.autoheight,.autoheight body{height: auto;}*/
+/*.resume-two .inner { margin-top: -301px; }*/
+.resume-two{padding-top: 30px;padding-bottom: 30px;}
+.resume-two .inner{position: relative;margin: 0 auto;left: auto;top: auto;right: auto;bottom: auto;}
+
+.resume-two .inner h3 span:before { background-position: -60px -215px; }
+
+.resume-two .inner .stepmsg .timecheck { width: 340px; margin: 0 auto; }
+
+.resume-two .inner .stepmsg .timecheck dl { width: 50%; }
+
+.resume-two .inner .stepmsg dl dd { position: relative; }
+
+.resume-two .inner .stepmsg dl dd select { width: 100%; color: #333; font-family: STHeiti,'微软雅黑'; }
+
+.resume-two .inner .stepmsg dl dd input[type="button"] { border: 1px solid #eeeeee; border-radius: 6px; height: 28px; width: 260px; text-indent: 5px; background: #fff; text-align: left; text-indent: 5px; }
+
+.resume-two .inner .stepmsg dl dd input.active { border-color: #fa7e65; }
+
+.resume-two .inner .stepmsg .slidmsg { height: 179px; margin-top: -22px; position: relative; z-index: 2; }
+
+.resume-two .inner .stepmsg .slidmsg .academy-city { height: 160px; overflow-x: hidden; overflow-y: auto; padding-left: 10px; padding-top: 10px; }
+
+.resume-two .inner .stepmsg .slidmsg .academy-city a { line-height: 32px; padding: 5px; margin: 0 5px; font-size: 14px; color: #333333; }
+
+.resume-two .inner .stepmsg .slidmsg .academy-name{position: relative;}
+.resume-two .inner .stepmsg .slidmsg .academy-name h2 { height: 36px; line-height: 36px; border-bottom: 1px solid #eeeeee; padding-left: 44px; position: relative; overflow: hidden; cursor: pointer; }
+
+.resume-two .inner .stepmsg .slidmsg .academy-name h2:before { content: ""; position: absolute; left: 15px; top: 10px; width: 14px; height: 14px; background: url(../images/resume/resume.png) -150px -165px no-repeat; }
+.resume-two .inner .stepmsg .slidmsg .academy-name .data-city{position: absolute;right: 15px; top: 5px;height: 24px;width: 150px;border-radius: 6px;border:1px solid #eee;padding: 0 5px;}
+
+.resume-two .inner .stepmsg .slidmsg .academy-name .btm { padding-left: 10px; overflow-x: hidden; overflow-y: auto; height: 140px; }
+
+.resume-two .inner .stepmsg .slidmsg .academy-name .btm a { margin: 0 4px; padding: 0 5px; line-height: 30px; }
+
+.resume-two .inner.morelist { margin-bottom: 50px; }
+
+/*.resume-three .inner { margin-top: -276px; }*/
+
+.resume-three .inner h3 span:before { background-position: -90px -213px; }
+
+.resume-three .inner .stepmsg .timecheck { width: 340px; margin: 0 auto; }
+
+.resume-three .inner .stepmsg .timecheck dl { width: 50%; }
+
+.resume-three .inner.morelist { margin-bottom: 50px; }
+
+.slidmsg { background: #fff; border: 1px solid #f87e69; border-radius: 6px; width: 468px; height: 336px; overflow: hidden; margin: 0 auto; margin-bottom: 20px; }
+
+.slidmsg .tabs { height: 36px; line-height: 36px; border-bottom: 1px solid #eee; }
+
+.slidmsg .tabs li { text-align: center; }
+
+.slidmsg .tabs li a { display: block; padding: 0 16px; height: 36px; line-height: 36px; color: #666666; white-space: nowrap; }
+
+.slidmsg .tabs li a.current { border-bottom: none; color: #f87e69; }
+
+.slidmsg .panes { overflow-y: auto; background: #fff; height: 300px; }
+
+.slidmsg .panes .pane dl { width: 100%; padding-bottom: 5px; height: auto; }
+
+.slidmsg .panes .pane dl dt { width: 80px; text-align: center; text-decoration: underline; }
+
+.slidmsg .panes .pane dl dd { padding-left: 10px; width: 355px; }
+
+.slidmsg .panes .pane dl dd a { height: 30px; line-height: 30px; font-size: 13px; color: #666; }
+
+.slidmsg .panes .pane dl dd a span { padding: 0 10px; }

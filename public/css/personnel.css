@@ -1,0 +1,2584 @@
+@charset "utf-8";
+* {
+  font-family: STHeiti,'微软雅黑';
+  padding: 0;
+  margin: 0
+
+}
+
+li {
+  list-style: none
+}
+
+a {
+  text-decoration: none
+}
+
+html,
+body {
+  background: none;
+  height: 100%;
+  width: 100%
+}
+
+form {
+  position: relative;
+}
+
+form > #_token {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0
+}
+
+form > ._token {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0
+}
+
+.dispaly {
+  display: none
+}
+
+#header {
+  background: #222222;
+  height: 60px;
+  width: 100%
+}
+
+#header > #head {
+  height: 48px !important;
+  margin: 0 auto;
+  padding-top: 12px !important;
+  width: 1000px;
+}
+#section {
+  background: white;
+  height: 900px;
+  width: 100%;
+}
+
+
+/*个人设置*/
+#message {
+  height: 854px;
+  margin: 0 auto;
+  /*padding-top: 46px;*/
+  width: 1000px
+}
+
+.message {
+  border-radius: 6px;
+  height: 754px;
+  width: 1000px;
+  -webkit-box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.2), -3px 0 7px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.2), -3px 0 7px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.2), -3px 0 7px rgba(0, 0, 0, 0.2);
+}
+
+
+/*左侧导航栏*/
+.message_left {
+  background: #f7f7f7;
+  float: left;
+  height: 752px;
+  width: 190px;
+}
+ .message_left > a {
+   display: block;
+   float: left;
+   height: 90px;
+   padding-top: 22px;
+   text-align: center;
+   width: 190px;
+ }
+ .message_left > a > span:nth-child(1) {
+   clear: right;
+   display: inline-block;
+   height: 40px;
+   width: 40px;
+}
+ .message_left > a > span:nth-child(2) {
+   color: #acacac;
+   display: block;
+   font-size: 16px;
+   margin-top:12px;
+}
+
+.message_left > a.onClick {
+  background: white url("../images/message/line_03.png") no-repeat left center;
+}
+
+.message_left > a.onClick > span:nth-child(2) {
+  color: #f87e69;
+}
+
+.message_left > a:hover {
+  background: white url("../images/message/line_03.png") no-repeat left center;
+}
+
+.message_left > a:hover > span:nth-child(2) {
+  color: #f87e69;
+}
+
+ .message_left > a:nth-child(1) > span:nth-child(1) {
+   background: #f7f7f7 url("../images/message/my-message2.png") no-repeat;
+   background-position: 50%,50%;
+}
+
+.message_left > a:nth-child(1).onClick > span:nth-child(1) {
+  background: white url("../images/message/my-message.png") no-repeat;
+  background-position: 50%,50%;
+}
+
+.message_left > a:nth-child(1):hover > span:nth-child(1) {
+  background: white url("../images/message/my-message.png") no-repeat;
+  background-position: 50%,50%;
+}
+
+.message_left > a:nth-child(2) > span:nth-child(1) {
+  background: #f7f7f7 url("../images/message/my-head.png") no-repeat;
+  background-position: 50%,50%;
+}
+
+.message_left > a:nth-child(2).onClick > span:nth-child(1) {
+  background: white url("../images/message/my-head2.png") no-repeat;
+  background-position: 50%,50%;
+}
+
+.message_left > a:nth-child(2):hover > span:nth-child(1) {
+  background: white url("../images/message/my-head2.png") no-repeat;
+  background-position: 50%,50%;
+}
+
+.message_left > a:nth-child(3) > span:nth-child(1) {
+  background: #f7f7f7 url("../images/message/binding-set.png") no-repeat;
+  background-position: 50%,50%;
+}
+
+.message_left > a:nth-child(3).onClick > span:nth-child(1) {
+  background: white url("../images/message/binding-set2.png") no-repeat;
+  background-position: 50%,50%;
+}
+
+.message_left > a:nth-child(3):hover > span:nth-child(1) {
+  background: white url("../images/message/binding-set2.png") no-repeat;
+  background-position: 50%,50%;
+}
+
+.message_left > a:nth-child(4) > span:nth-child(1) {
+  background: #f7f7f7 url("../images/message/account-safe.png") no-repeat;
+  background-position: 50%,50%;
+}
+
+.message_left > a:nth-child(4).onClick > span:nth-child(1) {
+  background: white url("../images/message/account-safe2.png") no-repeat;
+  background-position: 50%,50%;
+}
+
+.message_left > a:nth-child(4):hover > span:nth-child(1) {
+  background: white url("../images/message/account-safe2.png") no-repeat;
+  background-position: 50%,50%;
+}
+
+.message_left > a:nth-child(5) > span:nth-child(1) {
+  background: #f7f7f7 url("../images/message/training.png") no-repeat;
+  background-position: 50%,50%;
+}
+
+.message_left > a:nth-child(5).onClick > span:nth-child(1) {
+  background: white url("../images/message/training2.png") no-repeat;
+  background-position: 50%,50%;
+}
+
+.message_left > a:nth-child(5):hover > span:nth-child(1) {
+  background: white url("../images/message/training2.png") no-repeat;
+  background-position: 50%,50%;
+}
+/*右侧主样式*/
+.message_right {
+  float: left;
+  height: 754px;
+  position: relative;
+  margin-left: 66px;
+  width: 744px;
+}
+.message_right .inner{padding-top: 67px;} 
+.message_right .inner h3{height: 42px;line-height: 42px;font-size: 16px;border-bottom: 1px solid #eee;font-weight: bold;}
+.message_right .inner .tips{text-indent: 25px;margin-top: 19px;height: 56px;line-height: 56px;color: #f87e69;font-size: 16px;}
+.message_right .inner form{padding: 0;margin-left: 25px;}
+.message_right .vlogin{padding: 0;width: 432px;}
+.message_right .vlogin input[type='submit']{width: 68px;height: 32px;line-height: 32px;margin: 0;}
+/*基本资料*/
+.information {
+  background: white;
+  float: left;
+  height: 674px;
+  left: 0;
+  padding-top: 80px;
+  position: absolute;
+  top: 0;
+  width: 540px
+}
+
+.information h3 {
+  color: #333333;
+  float: left;
+  font-size: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-indent: 27px;
+}
+
+.information input,
+.information span{
+  color: #333333;
+  display: inline-block;
+  float: left;
+  font-size: 13px;
+  height: 48px;
+}.information input[type="text"]{height: 30px;margin-top: 8px;border:1px solid #eee;border-radius:3px;text-indent: 10px;margin-left: 10px;
+ }
+.information input[type="text"]:focus{-webkit-tap-highlight-color: rgb(255, 255, 255);
+  border:#f38f7e 1px solid;
+}
+.information.display {
+  display: none;
+}
+
+.information > form > div {
+  border-bottom: 1px dotted #fbf7f7;
+  height: 48px;
+  width: 100%;
+}
+
+ .information > form > div:nth-child(1) {
+   border-bottom: 1px solid #D2D2D2;
+   height: 28px;margin-bottom: 40px;
+ }
+
+.info-first span ,
+.info-third span{
+  line-height: 48px;
+  text-indent: 31px;
+  width: 74px;
+}
+.info-first input,
+.info-third input{
+  background: none;
+  border: none;
+  outline: none;
+  text-indent: 20px;
+  width:445px;padding-right: 5px;
+}
+
+.info-describe span,
+.sex span{
+  color: #333333;
+  line-height: 48px;
+  width: 74px;
+}
+
+.info-describe span:nth-of-type(1),
+.sex span:nth-of-type(1){
+  text-indent: 31px;text-align: right;
+}
+
+.info-describe input,
+.sex input{
+  background: none;
+  border: none;
+  outline: none;
+}
+.info-describe label{height: 48px;line-height: 48px;float: left;font-size: 13px;color: #333333;}
+.info-describe #student{margin-left: 20px;}
+.info-describe input{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.sex input {
+  margin-right: 13px;
+}
+.sex label{
+  float: left;height: 48px;line-height: 48px;margin-right: 40px;font-size: 13px;color: #333;}
+
+.sex input:nth-of-type(1) {
+  margin-left: 10px;
+}
+
+.info-second span ,
+.info-fourth span{
+  line-height: 48px;
+  text-indent: 3px;
+  width: 74px;white-space: nowrap;text-align: right;
+
+}
+
+.info-second input,
+.info-fourth input{
+  background: none;
+  border: none;
+  outline: none;
+  text-indent: 20px;
+  width: 445px;padding-right: 5px;
+}
+
+.info-third span {
+  text-indent: 34px;white-space: nowrap;
+}
+
+.info-fourth span {
+  text-indent: 34px;
+}
+
+.info-city span {
+  line-height: 48px;
+  text-indent: 31px;
+  width: 74px;
+  text-align: right;
+}
+
+.info-city select {
+  appearance: none;
+  background: url("../images/message/arrow_90.png") no-repeat 145px center;
+  border: 1px solid #eee;;
+  border-radius: 3px;
+  color: #333333;
+  display: inline-block;
+  float: left;
+  font-size: 13px;
+  height: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 12px;
+  outline: none;
+  text-indent: 10px;
+  width: 172px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+ .information > form > div:nth-child(11) {
+  border-bottom: none;
+}
+
+.info-birthday span {
+  line-height: 48px;
+  text-indent: 4px;
+  width: 74px;text-align: right;
+}
+
+.info-birthday input {
+  appearance: none;
+  border: 1px solid #D2D2D2;
+  border-radius: 6px;
+  height: 24px;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 12px;
+  outline: none;
+  text-indent: 10px;
+  width: 100px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.info-birthday select:nth-of-type(1) {
+  margin-left: 20px;
+}
+
+ .information > form > div:nth-child(12) {
+   border-bottom: none;
+   line-height: 48px;
+ }
+
+.info-submit button {
+  cursor: pointer;
+  width: 68px;
+  height: 34px;
+  text-align: center;
+  line-height: 14px;
+  font-size: 14px;
+  color: white;
+  border: none;
+  background: #f87e69;
+  border-radius: 6px;
+  padding: 9px 17px;
+  margin-left: 27px;
+  outline: none;
+}
+
+
+/*我的头像*/
+.headPortrait {
+  background: white;
+  height: 674px;
+  left: 0;
+  padding-top: 80px;
+  position: absolute;
+  top: 0;
+  width: 645px;
+}
+
+.headPortrait.display {
+  display: none;
+}
+
+/*.headPortrait div {*/
+  /*width: 100%;*/
+/*}*/
+
+.headPortrait > div:nth-child(1) {
+  border-bottom: 1px solid #D2D2D2;
+  height: 28px;
+}
+
+.headPortrait  h3 {
+  color: #333333;
+  float: left;
+  font-size: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-indent: 27px;
+}
+
+.headPortrait > div:nth-child(2) {
+  /*height: 300px;*/
+  /*margin: 0 auto;*/
+  padding-top: 40px;
+  /*width: 360px;*/
+}
+/*头像*/
+#destination {
+  border: 2px solid #d2d2d2;
+  border-radius: 75px;
+  height: 150px;
+  margin: 0 auto;
+  width: 150px;
+  position: relative;
+}
+
+#destination img {
+  background: #f1f1f1;
+  border-radius: 63px;
+  display: block;
+  height: 126px;
+  margin: 12px auto;
+  width: 126px;
+}
+#destination .h-hover{position: absolute;left: 12px;top:12px;margin: 0;background: rgba(0,0,0,.5);display: none;}
+
+.select-avatar {
+  height: 36px;
+  margin-top: 22px;
+}
+
+.select-avatar a {
+  border-radius: 6px;
+  color: #acacac;
+  display: block;
+  float: left;
+  font-size: 15px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+}
+
+.select-avatar a:nth-child(1) {
+  border: 1px solid #acacac;
+  margin-right: 1px;
+  position: relative;
+  width: 170px;
+
+}
+
+.select-avatar a:nth-child(1) > input {
+  display: inline-block;
+  height: 34px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 170px;
+  z-index: 1;
+}
+
+.select-avatar a:nth-child(2) {
+  background: #f87e69;
+  color: white;
+  float: right;
+  height: 36px;
+  width: 116px;
+}
+
+.headPortrait p {
+  color: #666666;
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+  margin-top: 32px;
+  text-align: center;
+  width: 100%;
+}
+
+
+/*绑定设置*/
+.settings {
+  width: 535px;
+  height: 674px;
+  padding-top: 80px;
+  position: absolute;
+  background: white;
+  left: 0;
+  top: 0;
+}
+.settings.display {
+  display: none;
+}
+.settings > div {
+  width: 620px;
+  padding-left: 25px;
+}
+.bind-setting {
+  height: 29px;
+  border-bottom: 1px solid #d2d2d2;
+}
+.bind-setting h3 {
+  float: left;
+  font-size: 16px;
+  margin-right: 25px;
+  color: #333333;
+}
+.bind-setting p {
+  float: left;
+  color: #999;
+  font-size: 13px;
+  padding-top: 4px;
+}
+.settings > div:nth-child(2) {
+  width: 620px;
+  height: 612px;
+  padding-top: 20px;
+}
+.settings > div:nth-child(2) > div {
+  float: left;
+}
+.third-binding {
+  width: 370px;
+  height: 612px;
+  margin-right: 67px;
+}
+.third-binding div {
+  width: 370px;
+  height: 100px;
+  padding-top: 20px;
+  border-bottom: 1px dashed #d2d2d2;
+}
+.third-binding > .third-qq{
+  border-bottom: none;
+}
+.third-binding div div {
+  float: left;
+}
+ .third-binding div  div:nth-child(1) {
+   width: 74px;
+   height: 74px;
+   margin-right: 14px;
+   border-bottom:none;
+   padding-top: 0;
+ }
+.third-binding div  div:nth-child(2) {
+  height: 74px;
+  width: 280px;
+  padding-top: 0;
+  border-bottom: none;
+}
+.third-button p {
+  font-size: 14px;
+  color: #333;
+  padding-top: 6px;
+  margin-bottom: 9px;
+}
+.third-button p span {
+  padding-left: 19px;
+}
+.third-button p .tips{
+  position: relative;padding-left: 40px;line-height: 20px;color: #999;
+}
+.third-button p .tips:before{
+  content: "";position: absolute;left: 0;top: -4px;background: red;width: 20px;height: 20px;margin-left: 15px;
+  background: url(../images/unactive.png) no-repeat left top ;
+}
+.third-button a {
+  display: block;
+  width: 100px;
+  height: 32px;
+  line-height: 32px;
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+  font-size:14px;
+}
+
+.third-button a {
+  width: 100px;
+  height: 32px;
+  line-height: 32px;
+  background: none;
+  border: 1px solid #999;
+  /*line-height: 28px;*/
+  color: #999999;
+}
+.third-sina a:hover,.third-sina a.unactive{
+  background: #ec6564;border:1px solid #ec6564;color: #fff;
+}
+.third-weixin a:hover,.third-weixin a.unactive{
+  background: #73a654;border:1px solid #73a654;color: #fff;
+}
+.third-qq a:hover,.third-qq a.unactive{
+  background: #55a2e1;border:1px solid #55a2e1;color: #fff;
+}
+
+.third-sina > .third-img {
+  background: url("../images/message/weibo.png") no-repeat;
+}
+.third-weixin > .third-img {
+  background: url("../images/message/weixin.png") no-repeat;
+}
+.third-qq > .third-img {
+  background: url("../images/message/qq.png") no-repeat;
+}
+.qrcode {
+  width: 183px;
+  height: 578px;
+  padding-top: 34px;
+}
+.qrcode div {
+  width: 178px;
+  height: 280px;
+  border: 1px solid #ebebeb;
+  padding-top: 11px;
+  border-radius: 6px;
+  border-top: none;
+  -webkit-box-shadow: 3px 2px 3px #ebebeb;
+  -moz-box-shadow: 3px 2px 3px #ebebeb;
+  box-shadow: 0 2px 2px 2px #ebebeb;
+}
+.qrcode div div {
+  width: 137px;
+  height: 137px;
+  margin: 9px auto 0;
+  background:  url("../images/message/erweima_17.png") no-repeat center center;
+}
+.qrcode p {
+  text-align: left;
+  color: #333;
+  width: 137px;
+  padding-left: 22px;
+  font-size: 14px;
+}
+.qrcode p:nth-of-type(1) {
+  height: 14px;
+  margin-top: 17px;
+  margin-bottom: 12px;
+}
+.qrcode p:nth-of-type(2) {
+  margin-bottom: 6px;
+}
+
+
+/*账户安全*/
+.security {
+  width: 645px;
+  height: 674px;
+  padding-top: 80px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+}
+.security.display {
+  display: none;
+}
+.security-first {
+  height: 28px;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 27px;
+}
+.security-first h3 {
+  height: 16px;
+  float: left;
+  font-size: 16px;
+  line-height: 16px;
+  color: #333333;
+  text-indent: 27px;
+}
+.security-second,
+.security-third,
+.security-fourth {
+  width: 626px;
+  padding-left: 19px;
+  height: 52px;
+  border-bottom: 1px dashed #d2d2d2;
+  padding-top: 17px;
+}
+.security-second div,
+.security-third div,
+.security-fourth  div {
+  float: left;
+}
+.security-img {
+  width: 34px;
+  height: 42px;
+  margin-right: 25px;
+}
+.security-second-first,
+.security-third-first,
+.security-fourth-first {
+  width: 295px;
+  height: 42px;
+  font-size: 14px;
+}
+
+.security-second-first > p:nth-child(1),
+.security-third-first > p:nth-child(1),
+.security-fourth-first > p:nth-child(1){
+  color: #333333;
+  margin-bottom: 3px;
+  position: relative;
+}
+.security-third-first span,
+.security-fourth-first span{
+  position: relative;
+  left:20px;
+}
+.security-second-first > p:nth-child(2),
+.security-third-first > p:nth-child(2),
+.security-fourth-first > p:nth-child(2) {
+  color: #999999;
+}
+.security-second-second {
+  width: 192px;
+  height: 42px;
+  line-height: 42px;
+  padding-top: 8px;
+}
+.security-second-second form {
+  float: left;
+  width: 87px;
+  height: 26px;
+}
+.security-second-second >#mobileForm {
+  margin-right: 18px;
+}
+.security-second-second >#mobileForm a,
+.security-second-second >#mailForm a{
+  font-size: 12px;
+  color: #333333;
+  display: block;
+  width: 85px;
+  height: 24px;
+  border: 1px solid #acacac;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.security-second > .security-img {
+  background: url("../images/message/password.png") no-repeat;
+  background-position: center;
+}
+.security-third > .security-img {
+  background: url("../images/message/message.png") no-repeat;
+  background-position: center;
+}
+
+.security-fourth > .security-img {
+  background: url("../images/message/mobile.png") no-repeat;
+  background-position: center;
+}
+.security-third-first p:nth-child(1) a {
+  color: #f87e69;
+  padding-left: 6px;
+}
+.security-fourth {
+  border-bottom: none;
+}
+
+.security-fourth-first p:nth-child(1) {
+  padding-top: 1px;
+}
+.security-fourth-first p:nth-child(1) a {
+  color: #f87e69;
+  padding-left: 6px;
+}
+.security-third-first p:nth-child(1) span,
+.security-fourth-first p:nth-child(1) span {
+  padding: 5px 25px 5px 5px;
+  background: url("../images/message/security_right.png") no-repeat;
+  background-position: center;
+}
+.security-fourth-first p:nth-child(1) span.display {
+  display: none;
+}
+.security-fourth-second {
+  width: 192px;
+  height: 34px;
+  line-height: 42px;
+  padding-top: 8px;
+}
+.security-fourth-second form {
+  width: 87px;
+  height: 26px;
+  float: right;
+}
+.security-fourth-second form a {
+  font-size: 12px;
+  color: #333333;
+  display: block;
+  width: 85px;
+  height: 24px;
+  border: 1px solid #acacac;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 24px;
+}
+
+
+/*擅长领域*/
+#section > #message > .message > .message_right > .beGood {
+  width: 645px;
+  height: 674px;
+  padding-top: 80px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+}
+#section > #message > .message > .message_right > .beGood.display {
+  display: none;
+}
+#section > #message > .message > .message_right > .beGood.op {
+  opacity: 0;
+}
+#section > #message > .message > .message_right > .beGood > form > div {
+  width: 645px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(1) {
+  height: 28px;
+  border-bottom: 1px solid #d2d2d2;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(1) > h3 {
+  height: 15px;
+  float: left;
+  font-size: 15px;
+  line-height: 15px;
+  color: #333333;
+  text-indent: 27px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) {
+  width: 540px;
+  margin: 0 auto;
+  height: 400px;
+  padding-top: 40px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a {
+  display: block;
+  float: left;white-space: nowrap;
+  width: 100px;
+  /*height: 22px;*/
+  /*padding-top: 70px;*/
+  margin-right: 28px;
+  margin-bottom: 28px;
+  font-size: 15px;
+  color: #333;text-align: center;
+  position: relative;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a .toggleimg{
+  width: 58px;height: 58px;position: relative;;
+  display: block;
+  margin: 0 auto;padding-bottom: 10px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a .toggleimg img{
+display: block;width: 58px;height: 58px;position: absolute;left: 0;top: 0;
+}
+
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a .toggleimg img.hide{
+  width: 58px;height: 58px;position: absolute;left: 0;top: 0;display: none;
+}
+/*#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a .posbtm{
+  position: relative;
+}*/
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a > input {
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 100px;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a > span {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border-radius: 9px;
+  margin-right: 5px;
+  position: relative;
+  top: 3px;
+  border: 1px solid #666;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a > span.onClick {
+  width: 19px;
+  height: 19px;
+  border: none;
+  background: url("../images/message/beGood.png") no-repeat -578px -503px;
+}
+/*#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(1) {
+  background: url("../images/message/beGood.png") no-repeat -20px -578px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(1):hover {
+  background: url("../images/message/beGood.png") no-repeat -20px -480px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(1).onClick {
+  background: url("../images/message/beGood.png") no-repeat -20px -480px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(2) {
+  background: url("../images/message/beGood.png") no-repeat -20px -130px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(2):hover {
+  background: url("../images/message/beGood.png") no-repeat -20px -21px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(2).onClick {
+  background: url("../images/message/beGood.png") no-repeat -20px -21px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(3) {
+  background: url("../images/message/beGood.png") no-repeat -558px -4px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(3):hover {
+  background: url("../images/message/beGood.png") no-repeat -558px -124px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(3).onClick {
+  background: url("../images/message/beGood.png") no-repeat -558px -124px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(4) {
+  margin-right: 0;
+  background: url("../images/message/beGood.png") no-repeat -20px -226px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(4):hover {
+  background: url("../images/message/beGood.png") no-repeat -20px -363px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(4).onClick {
+  background: url("../images/message/beGood.png") no-repeat -20px -363px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(5) {
+  margin-bottom: 46px;
+  background: url("../images/message/beGood.png") no-repeat -555px -226px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(5):hover {
+  background: url("../images/message/beGood.png") no-repeat -555px -362px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(5).onClick {
+  background: url("../images/message/beGood.png") no-repeat -555px -362px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(6) {
+   margin-bottom: 46px;
+   background: url("../images/message/jinrong.png") no-repeat;
+ }
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(6):hover {
+  background: url("../images/message/jinrongxz.png") no-repeat;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(6).onClick {
+  background: url("../images/message/jinrongxz.png") no-repeat;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(7) {
+  margin-bottom: 46px;
+  background: url("../images/message/qzjy.png") no-repeat 21px 0px;white-space: nowrap;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(7):hover {
+  background: url("../images/message/qzjyxz.png") no-repeat 21px 0px;
+}
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > a:nth-of-type(7).onClick {
+  background: url("../images/message/qzjyxz.png") no-repeat 21px 0px;
+}*/
+#section > #message > .message > .message_right > .beGood > form > div:nth-child(2) > button {
+  cursor: pointer;
+  width: 430px;
+  height: 46px;
+  display: block;
+  line-height: 46px;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+  color: white;
+  outline: none;
+  background: #f67f6e;
+  border-radius: 6px;
+}
+
+
+/*擅长领域*/
+.newBeGood {
+  width: 645px;
+  height: 674px;
+  padding-top: 80px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+}
+.newBeGood.display {
+  display: none;
+}
+.newBeGood.chDisplay {
+  display: none;
+}
+.newBeGood > div {
+  width: 645px;
+}
+.newBeGood > div:nth-child(1) {
+  height: 28px;
+  border-bottom: 1px solid #d2d2d2;
+}
+.newBeGood > div:nth-child(1) > h3 {
+  height: 16px;
+  float: left;
+  font-size: 16px;
+  line-height: 16px;
+  color: #333333;
+  text-indent: 27px;
+}
+.newBeGood > div:nth-child(2) {
+  float: left;
+  margin-left: 27px;
+  padding-top: 20px;
+}
+
+.newBeGood > div:nth-child(2) > ul > li {
+  height: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 6px;
+  display: block;
+  float: left;
+  line-height: 34px;
+  background: #f67f6e;
+  font-size: 14px;
+  color: white;
+  margin-right: 20px;
+  margin-top: 20px;
+  /*margin-bottom: 28px;*/
+}
+
+.newBeGood > div:nth-child(3){
+  float:right;
+  margin-top: 30px;
+}
+
+.newBeGood > div:nth-child(3) button {
+  cursor: pointer;
+  width: 430px;
+  height: 46px;
+  display: block;
+  line-height: 46px;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+  color: white;
+  outline: none;
+  background: #f67f6e;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+
+
+#section > #message > .message > .message_right > .beGoodCard {
+  width: 645px;
+  height: 674px;
+  padding-top: 80px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+}
+#section > #message > .message > .message_right > .beGoodCard.display {
+  display: none;
+}
+#section > #message > .message > .message_right > .beGoodCard.chDisplay {
+  display: none;
+}
+#section > #message > .message > .message_right > .beGoodCard > form > div {
+  width: 645px;
+}
+#section > #message > .message > .message_right > .beGoodCard > form > div:nth-child(1) {
+  height: 28px;
+  border-bottom: 1px solid #d2d2d2;
+}
+#section > #message > .message > .message_right > .beGoodCard > form > div:nth-child(1) > h3 {
+  height: 15px;
+  float: left;
+  font-size: 15px;
+  line-height: 15px;
+  color: #333333;
+  text-indent: 27px;
+}
+#section > #message > .message > .message_right > .beGoodCard > form > div:nth-child(2) {
+  width: 645px;
+  margin: 0 auto;
+  height: 420px;
+  padding-top: 20px;
+}
+#section > #message > .message > .message_right > .beGoodCard > form > div:nth-child(2) > ul {
+  width: 645px;
+  /*margin-bottom: 45px;*/
+  /*min-height:120px;*/
+  height:auto!important;
+  /*height:120px;*/
+}
+#section > #message > .message > .message_right > .beGoodCard > form > div:nth-child(2) > ul > li {
+  height: 33px;
+  float: left;
+  /*margin-bottom: 15px;*/
+  margin-top:20px;
+}
+#section > #message > .message > .message_right > .beGoodCard > form > div:nth-child(2) > ul > li > a {
+  height: 29px;
+  padding-left: 27px;
+  padding-right: 27px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  display: block;
+  float: left;
+  line-height: 31px;
+  font-size: 15px;
+  color: #666666;
+  margin-right: 15px;
+  position: relative;
+}
+#section > #message > .message > .message_right > .beGoodCard > form > div:nth-child(2) > ul > li > a.onClick {
+  height: 31px;
+  border: none;
+  padding-left: 28px;
+  padding-right: 28px;
+  color: white;
+  background: #f67f6e;
+}
+#section > #message > .message > .message_right > .beGoodCard > form > div:nth-child(2) > ul > li > a > input {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+  width: 110px;
+  height: 29px;
+  opacity: 0;
+}
+#section > #message > .message > .message_right > .beGoodCard > form > div:nth-child(2) > button {
+  cursor: pointer;
+  width: 430px;
+  height: 46px;
+  display: block;
+  line-height: 46px;
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+  color: white;
+  outline: none;
+  background: #f67f6e;
+  border-radius: 6px;
+  clear: both;
+  margin-top:30px;
+}
+#section > #message > .message > .message_right > .emailCheck {
+  width: 645px;
+  height: 400px;
+  padding-top: 80px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+}
+#section > #message > .message > .message_right > .emailCheck.display {
+  display: none;
+}
+#section > #message > .message > .message_right > .emailCheck > div {
+  width: 645px;
+}
+#section > #message > .message > .message_right > .emailCheck > div:nth-child(1) {
+  height: 28px;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 40px;
+}
+#section > #message > .message > .message_right > .emailCheck > div:nth-child(1) > h3 {
+  height: 15px;
+  float: left;
+  font-size: 15px;
+  line-height: 15px;
+  color: #333333;
+  text-indent: 27px;
+}
+#section > #message > .message > .message_right > .emailCheck > div:nth-child(2) {
+  height: 46px;
+  margin-top: 35px;
+  margin-bottom: 23px;
+}
+#section > #message > .message > .message_right > .emailCheck > div:nth-child(2) > p {
+  width: 100%;
+  height: 15px;
+  font-size: 15px;
+  color: #666666;
+  text-indent: 27px;
+}
+#section > #message > .message > .message_right > .emailCheck > div:nth-child(2) > p:nth-child(1) {
+  margin-bottom: 15px;
+}
+#section > #message > .message > .message_right > .emailCheck > div:nth-child(3) {
+  height: 36px;
+  width: 618px;
+  padding-left: 17px;
+  margin-bottom: 24px;
+}
+#section > #message > .message > .message_right > .emailCheck > div:nth-child(3) > a {
+  width: 178px;
+  height: 36px;
+  display: block;
+  float: left;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 36px;
+  color: white;
+  font-size: 16px;
+  background: #f87e69;
+}
+#section > #message > .message > .message_right > .emailCheck > div:nth-child(4) {
+  height: 90px;
+  width: 100%;
+}
+#section > #message > .message > .message_right > .emailCheck > div:nth-child(4) > p {
+  text-indent: 17px;
+  font-size: 14px;
+  height: 14px;
+  color: #999999;
+  margin-bottom: 11px;
+}
+#section > #message > .message > .message_right > .emailCheck > div:nth-child(4) > p:nth-of-type(1) {
+  font-size: 16px;
+  height: 16px;
+  color: #666666;
+}
+#section > #message > .message > .message_right > .phoneCheck {
+  width: 645px;
+  height: 400px;
+  padding-top: 80px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+}
+#section > #message > .message > .message_right > .phoneCheck.display {
+  display: none;
+}
+#section > #message > .message > .message_right > .phoneCheck > div {
+  width: 645px;
+}
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(1) {
+  height: 28px;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 40px;
+}
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(1) > h3 {
+  height: 15px;
+  float: left;
+  font-size: 15px;
+  line-height: 15px;
+  color: #333333;
+  text-indent: 27px;
+}
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(2) {
+  width: 618px;
+  padding-left: 27px;
+  height: 400px;
+}
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(2) > form > div {
+  width: 100%;
+}
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(2) > form > div:nth-child(1) {
+  height: 16px;
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(2) > form > div:nth-child(2) > input {
+  background: url("../images/login/login_pwd.png") no-repeat 19px -45px;
+}
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(2) > form > div:nth-child(3) > input {
+  background: url("../images/login/login_pwd.png") no-repeat 19px -45px;
+}
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(2) > form > div:nth-child(4) {
+  margin-bottom: 43px;
+}
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(2) > form > div:nth-child(4) > input {
+  background: url(../images/login/login_pwd.png) no-repeat 17px 9px;
+}
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(2) > form > div:nth-child(2),
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(2) > form > div:nth-child(3),
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(2) > form > div:nth-child(4) {
+  width: 500px;
+  height: 56px;
+  border-bottom: 1px solid #d2d2d2;
+  position: relative;
+}
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(2) > form > div:nth-child(2) > input,
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(2) > form > div:nth-child(3) > input,
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(2) > form > div:nth-child(4) > input {
+  width: 168px;
+  height: 56px;
+  border: none;
+  outline: none;
+  display: block;
+  padding-left: 72px;
+  padding-right: 260px;
+  font-size: 19px;
+  color: #acacac;
+}
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(2) > form > div:nth-child(2) > p,
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(2) > form > div:nth-child(3) > p,
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(2) > form > div:nth-child(4) > p {
+  position: absolute;
+  left: 242px;
+  bottom: 10px;
+  width: 218px;
+  height: 31px;
+  border: 1px solid #ffefca;
+  background: #fff8e6 url("../images/login/login_check.png") no-repeat -5px -11px;
+  text-align: center;
+  line-height: 31px;
+  font-size: 13px;
+  border-radius: 4px;
+  color: #666666;
+}
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(2) > form > div:nth-child(5) {
+  height: 65px;
+  width: 500px;
+}
+#section > #message > .message > .message_right > .phoneCheck > div:nth-child(2) > form > div:nth-child(5) > a {
+  display: block;
+  height: 65px;
+  width: 500px;
+  text-align: center;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  background: #f87e69;
+  border-radius: 6px;
+}
+#section > #message > .message > .message_right > .changePhone {
+  width: 645px;
+  padding-top: 80px;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+}
+#section > #message > .message > .message_right > .changePhone.display {
+  display: none;
+}
+#section > #message > .message > .message_right > .changePhone > div {
+  width: 645px;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(1) {
+  height: 28px;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 35px;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(1) > h3 {
+  height: 15px;
+  float: left;
+  font-size: 16px;
+  line-height: 15px;
+  color: #333333;
+  text-indent: 27px;font-weight: bold;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(2) {
+  width: 618px;
+  padding-left: 27px;
+  height: 40px;
+  background: white;
+  margin-bottom: 11px;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(2) > a {
+  display: block;
+  float: left;
+  font-size: 18px;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(2) > a:nth-child(1) {
+  color: #f87e69;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(2) > a:nth-child(1) > span:nth-child(1) {
+  background: url(../images/message/right.png) no-repeat center;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(2) > a:nth-child(2) > span:nth-child(2) {
+  width: 108px;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(2) > a:nth-child(3) > span:nth-child(2) {
+  margin-right: 0;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(2) > a > span {
+  display: block;
+  float: left;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(2) > a > span:nth-child(1) {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 20px;
+  background: red;
+  margin-right: 9px;
+  background: #D2D2D2;
+  color: #999999;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(2) > a > span:nth-child(2) {
+  width: 72px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 9px;
+  text-align: center;
+  font-size: 16px;
+  color: #999999;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(2) > a > span:nth-child(3) {
+  width: 89px;
+  height: 19px;
+  margin-right: 9px;
+  border-bottom: 1px solid #d2d2d2;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(2) > a:active > span:nth-child(3) {
+  border-bottom: 1px solid #f87e69;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(2) > a:nth-child(1):active{
+  color: #f87e69;
+}
+
+
+#section > #message > .message > .message_right > .changePhone > div:nth-child(3) {
+  width: 618px;
+  height: 120px;
+  padding-left: 27px;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(3) > form > div {
+  width: 618px;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(3) > form > div:nth-child(1) {
+  height: 47px;
+  position: relative;
+  margin-bottom: 16px;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(3) > form > div:nth-child(1) > p {
+  position: absolute;
+  width: 218px;
+  height: 31px;
+  line-height: 31px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #ffeecc;
+  background: #fff7e6 url(../images/message/messageIcon.png) no-repeat -385px -340px;
+  right: 136px;
+  color: #666666;
+  font-size: 13px;
+  top: 8px;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(3) > form > div:nth-child(1) > button {
+  cursor: pointer;
+  width: 128px;
+  height: 46px;
+  border: 1px solid #acacac;
+  border-radius: 6px;
+  line-height: 45px;
+  text-align: center;
+  float: right;
+  outline: none;
+  background: none;
+  color: #666666;
+  font-size: 13px;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(3) > form > div:nth-child(1) > input {
+  float: left;
+  outline: none;
+  width: 100px;
+  height: 47px;
+  border: none;
+  border-bottom: 1px solid #d2d2d2;
+  text-indent: 65px;
+  padding-left: 65px;
+  padding-right: 315px;
+  font-size: 15px;
+  background: url(../images/message/messageIcon.png) no-repeat -390px -665px;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(3) > form > div:nth-child(2) {
+  height: 36px;
+}
+#section > #message > .message > .message_right > .changePhone > div:nth-child(3) > form > div:nth-child(2) > a {
+  display: block;
+  width: 104px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  background: #F87E69;
+  border-radius: 6px;
+  font-size: 15px;
+  color: white;
+}
+#section > #message > .message > .message_right > .trimPhone {
+  width: 645px;
+  padding-top: 80px;
+  height: 540px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+}
+#section > #message > .message > .message_right > .trimPhone.display {
+  display: none;
+}
+#section > #message > .message > .message_right > .trimPhone > div {
+  width: 645px;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(1) {
+  height: 28px;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 35px;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(1) > h3 {
+  height: 15px;
+  float: left;
+  font-size: 16px;
+  line-height: 15px;
+  color: #333333;
+  text-indent: 27px;font-weight: bold;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(2) {
+  width: 618px;
+  padding-left: 27px;
+  height: 40px;
+  background: white;
+  margin-bottom: 11px;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(2) > a {
+  display: block;
+  float: left;
+  font-size: 16px;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(2) > a:nth-child(2) > span:nth-child(2) {
+  width: 108px;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(2) > a:nth-child(3) > span:nth-child(2) {
+  margin-right: 0;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(2) > a > span {
+  display: block;
+  float: left;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(2) > a > span:nth-child(1) {
+  width:30px;
+  height:30px;
+  line-height:30px;
+  text-align: center;
+  border-radius: 20px;
+  background: red;
+  margin-right: 9px;
+  background: #D2D2D2;
+  color: #999999;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(2) > a > span:nth-child(2) {
+  width: 72px;
+  height:30px;
+  line-height:30px;
+  margin-right: 9px;
+  text-align: center;
+  font-size: 16px;
+  color: #999999;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(3) > form > div:nth-child(1) #resendcode{font-size: 16px;}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(2) > a:nth-child(1) > span:nth-child(2) {
+  color: #f87e69;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(2) > a > span:nth-child(3) {
+  width: 89px;
+  height: 16px;
+  margin-right: 9px;
+  border-bottom: 1px solid #d2d2d2;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(2) > a:nth-child(1) > span:nth-child(1){
+background: url(../images/message/right.png) no-repeat center;
+  color: #fff;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(2) > a:nth-child(1) > span:nth-child(3){
+  border-bottom: 1px solid #f87e69
+}
+
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(2) > a:nth-child(2) > span {
+  color: #f87e69;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(2) > a:nth-child(2) > span:nth-child(1) {
+  background: url(../images/message/right.png) no-repeat center;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(2) > a:nth-child(2) > span:nth-child(3) {
+  border-bottom: 1px solid #f87e69;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(3) {
+  width: 618px;
+  height: 260px;
+  padding-left: 27px;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(3) > form > div {
+  width: 618px;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(3) > form > div:nth-child(1),
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(3) > form > div:nth-child(2) {
+  height: 47px;
+  position: relative;
+  margin-bottom: 16px;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(3) > form > div:nth-child(1) > p,
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(3) > form > div:nth-child(2) > p {
+  position: absolute;
+  /*width: 218px;*/
+  height: 31px;
+  line-height: 31px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #ffeecc;
+  background: #fff7e6 url(../images/message/messageIcon.png) no-repeat -385px -340px;
+  right: 145px;
+  color: #666666;
+  font-size: 13px;
+  top: 8px;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(3) > form > div:nth-child(1) > button,
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(3) > form > div:nth-child(2) > button {
+  cursor: pointer;
+  width: 128px;
+  height: 46px;
+  border: 1px solid #acacac;
+  border-radius: 6px;
+  line-height: 45px;
+  text-align: center;
+  float: right;
+  outline: none;
+  background: none;
+  color: #666666;
+  font-size: 13px;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(3) > form > div:nth-child(1) > input,
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(3) > form > div:nth-child(2) > input {
+  float: left;
+  outline: none;
+  width: 300px;
+  height: 47px;
+  border: none;
+  border: 1px solid #d2d2d2;
+  padding-left: 65px;
+  padding-right: 115px;
+  font-size: 15px;border-radius: 6px;
+  background: url(../images/message/messageIcon.png) no-repeat -390px -665px;
+}
+
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(3) > form > div:nth-child(2) > input {
+  background: url(../images/message/messageIcon.png) no-repeat -390px -625px;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(3) > form > div:nth-child(3) {
+  height: 36px;
+}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(3) > form:nth-child(1) > div:nth-child(1) > input{background: url(../images/vlogin/remob.jpg) no-repeat  22px  11px;}
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(3) > form:nth-child(2) > div:nth-child(1) > input{background:#fff url(../images/vlogin/remsg.jpg) no-repeat  22px  11px;}
+
+#section > #message > .message > .message_right > .trimPhone > div:nth-child(3) > form > div:nth-child(3) > a {
+  display: block;
+  width: 104px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  background: #F87E69;
+  border-radius: 6px;
+  font-size: 15px;
+  color: white;
+}
+#section > #message > .message > .message_right > .finishBind {
+  width: 645px;
+  padding-top: 80px;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+}
+#section > #message > .message > .message_right > .finishBind.display {
+  display: none;
+}
+#section > #message > .message > .message_right > .finishBind > div {
+  width: 645px;
+}
+#section > #message > .message > .message_right > .finishBind > div:nth-child(1) {
+  height: 28px;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 35px;
+}
+#section > #message > .message > .message_right > .finishBind > div:nth-child(1) > h3 {
+  height: 15px;
+  float: left;
+  font-size: 15px;
+  line-height: 15px;
+  color: #333333;
+  text-indent: 27px;
+}
+#section > #message > .message > .message_right > .finishBind > div:nth-child(2) {
+  width: 618px;
+  padding-left: 27px;
+  height: 40px;
+  background: white;
+  margin-bottom: 32px;
+}
+#section > #message > .message > .message_right > .finishBind > div:nth-child(2) > a {
+  display: block;
+  float: left;
+  font-size: 18px;
+}
+#section > #message > .message > .message_right > .finishBind > div:nth-child(2) > a:nth-child(2) > span:nth-child(2) {
+  width: 108px;
+}
+#section > #message > .message > .message_right > .finishBind > div:nth-child(2) > a > span {
+  display: block;
+  float: left;
+}
+#section > #message > .message > .message_right > .finishBind > div:nth-child(2) > a > span:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  background: red;
+  margin-right: 9px;
+  background: #D2D2D2;
+  color: #999999;
+}
+#section > #message > .message > .message_right > .finishBind > div:nth-child(2) > a > span:nth-child(2) {
+  width: 72px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 9px;
+  text-align: center;
+  font-size: 18px;
+  color: #999999;
+}
+#section > #message > .message > .message_right > .finishBind > div:nth-child(2) > a > span:nth-child(3) {
+  width: 89px;
+  height: 19px;
+  margin-right: 9px;
+  border-bottom: 1px solid #d2d2d2;
+}
+#section > #message > .message > .message_right > .finishBind > div:nth-child(2) > a:nth-child(3) > span {
+  color: #f87e69;
+}
+#section > #message > .message > .message_right > .finishBind > div:nth-child(2) > a:nth-child(3) > span:nth-child(1) {
+  background: url(../images/message/right.png) no-repeat center;
+}
+#section > #message > .message > .message_right > .finishBind > div:nth-child(2) > a:nth-child(3) > span:nth-child(2) {
+  margin-right: 0;
+}
+#section > #message > .message > .message_right > .finishBind > div:nth-child(3) {
+  width: 618px;
+  height: 230px;
+  padding-left: 27px;
+}
+#section > #message > .message > .message_right > .finishBind > div:nth-child(3) > h3 {
+  height: 22px;
+  text-indent: 30px;
+  line-height: 22px;
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 24px;
+  background: url(../images/message/messageIcon.png) no-repeat -403px -399px;
+}
+#section > #message > .message > .message_right > .finishBind > div:nth-child(3) > p {
+  height: 15px;
+  font-size: 15px;
+  color: #666666;
+  margin-bottom: 15px;
+}
+#section > #message > .message > .message_right > .finishBind > div:nth-child(3) > p:nth-of-type(2) {
+  margin-bottom: 24px;
+}
+#section > #message > .message > .message_right > .finishBind > div:nth-child(3) > a {
+  height: 36px;
+  display: block;
+  width: 178px;
+  border-radius: 6px;
+  line-height: 36px;
+  text-align: center;
+  color: white;
+  background: #f87e69;
+}
+#section > #message > .message > .message_right > .setPhone {
+  width: 645px;
+  padding-top: 80px;
+  height: 540px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+}
+#section > #message > .message > .message_right > .setPhone.display {
+  display: none;
+}
+#section > #message > .message > .message_right > .setPhone > div {
+  width: 645px;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(1) {
+  height: 28px;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 35px;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(1) > h3 {
+  height: 15px;
+  float: left;
+  font-size: 15px;
+  line-height: 15px;
+  color: #333333;
+  text-indent: 27px;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(2) {
+  width: 508px;
+  padding-left: 30px;
+  height: 30px;
+  background: white;
+  margin-bottom: 15px;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(2) > a {
+  display: block;
+  float: left;
+  font-size: 16px;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(2) > a > span {
+  display: block;
+  float: left;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(2) > a > span:nth-child(1) {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 20px;
+  background: red;
+  margin-right: 9px;
+  background: #D2D2D2;
+  color: #999999;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(2) > a > span:nth-child(2) {
+  width: 72px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 9px;
+  text-align: center;
+  font-size: 18px;
+  color: #999999;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(2) > a > span:nth-child(3) {
+  width: 89px;
+  height: 16px;
+  margin-right: 9px;
+  border-bottom: 1px solid #d2d2d2;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(2) > a:nth-child(1) > span {
+  color: #f87e69;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(2) > a:nth-child(1) > span:nth-child(1) {
+  background: url(../images/message/right.png) no-repeat center;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(2) > a:nth-child(1) > span:nth-child(2) {
+  width: 90px;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(2) > a:nth-child(1) > span:nth-child(3) {
+  border-bottom: 1px solid #f87e69;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(3) {
+  width: 618px;
+  height: 260px;
+  padding-left: 27px;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(3) > form > div {
+  width: 580px;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(3) > form > div #sendcode{font-size: 16px;}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(3) > form > div:nth-child(1),
+#section > #message > .message > .message_right > .setPhone > div:nth-child(3) > form > div:nth-child(2) {
+  height: 47px;
+  position: relative;
+  margin-bottom: 16px;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(3) > form > div:nth-child(1) > p,
+#section > #message > .message > .message_right > .setPhone > div:nth-child(3) > form > div:nth-child(2) > p {
+  position: absolute;
+  /*width: 218px;*/
+  height: 31px;
+  line-height: 31px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #ffeecc;
+  background: #fff7e6 url(../images/message/messageIcon.png) no-repeat -385px -340px;
+  right: 155px;
+  color: #666666;
+  font-size: 13px;
+  top: 8px;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(3) > form > div:nth-child(1) > button,
+#section > #message > .message > .message_right > .setPhone > div:nth-child(3) > form > div:nth-child(2) > button {
+  cursor: pointer;
+  width: 128px;
+  height: 46px;
+  border: 1px solid #acacac;
+  border-radius: 6px;
+  line-height: 45px;
+  text-align: center;
+  float: right;
+  outline: none;
+  background: none;
+  color: #666666;
+  font-size: 13px;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(3) > form > div:nth-child(1) > input,
+#section > #message > .message > .message_right > .setPhone > div:nth-child(3) > form > div:nth-child(2) > input {
+  float: left;
+  outline: none;
+  width: 350px;
+  height: 47px;
+  border: none;
+  border: 1px solid #d2d2d2;
+  padding-left: 65px;
+  padding-right: 15px;
+  font-size: 15px;
+  background: url(../images/message/messageIcon.png) no-repeat -390px -665px;border-radius: 6px;
+  
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(3) > form:nth-child(1) > div:nth-child(1) > input {
+  background: url(../images/vlogin/remob.jpg) no-repeat  22px  11px;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(3) > form:nth-child(2) > div:nth-child(1) > input{
+  background:#fff url(../images/vlogin/remsg.jpg) no-repeat  22px  11px;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(3) > form > div:nth-child(3) {
+  height: 36px;
+}
+#section > #message > .message > .message_right > .setPhone > div:nth-child(3) > form > div:nth-child(3) > a {
+  display: block;
+  width: 104px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  background: #F87E69;
+  border-radius: 6px;
+  font-size: 15px;
+  color: white;
+}
+#section > #message > .message > .message_right > .setPhoneFinish {
+  width: 645px;
+  padding-top: 80px;
+  height: 540px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+}
+#section > #message > .message > .message_right > .setPhoneFinish.display {
+  display: none;
+}
+#section > #message > .message > .message_right > .setPhoneFinish > div {
+  width: 645px;
+}
+#section > #message > .message > .message_right > .setPhoneFinish > div:nth-child(1) {
+  height: 28px;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 35px;
+}
+#section > #message > .message > .message_right > .setPhoneFinish > div:nth-child(1) > h3 {
+  height: 15px;
+  float: left;
+  font-size: 15px;
+  line-height: 15px;
+  color: #333333;
+  text-indent: 27px;
+}
+#section > #message > .message > .message_right > .setPhoneFinish > div:nth-child(2) {
+  width: 508px;
+  padding-left: 25px;
+  height: 30px;
+  background: white;
+  margin-bottom: 10px;
+}
+#section > #message > .message > .message_right > .setPhoneFinish > div:nth-child(2) > a {
+  display: block;
+  float: left;
+  font-size: 16px;
+}
+#section > #message > .message > .message_right > .setPhoneFinish > div:nth-child(2) > a > span {
+  display: block;
+  float: left;
+}
+#section > #message > .message > .message_right > .setPhoneFinish > div:nth-child(2) > a > span:nth-child(1) {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 20px;
+  background: red;
+  margin-right: 9px;
+  background: #f87e69;
+  color: #f87e69;
+}
+#section > #message > .message > .message_right > .setPhoneFinish > div:nth-child(2) > a > span:nth-child(2) {
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 9px;
+  text-align: center;
+  font-size: 18px;
+  color: #f87e69;
+}
+#section > #message > .message > .message_right > .setPhoneFinish > div:nth-child(2) > a > span:nth-child(3) {
+  width: 89px;
+  height: 19px;
+  margin-right: 9px;
+  border-bottom: 1px solid #d2d2d2;
+}
+#section > #message > .message > .message_right > .setPhoneFinish > div:nth-child(2) > a:nth-child(2) > span {
+  color: #f87e69;
+}
+#section > #message > .message > .message_right > .setPhoneFinish > div:nth-child(2) > a:nth-child(2) > span:nth-child(1) {
+  background: url(../images/message/right.png) no-repeat center;
+}
+#section > #message > .message > .message_right > .setPhoneFinish > div:nth-child(2) > a:nth-child(2) > span:nth-child(2) {
+  width: 72px;
+}
+#section > #message > .message > .message_right > .setPhoneFinish > div:nth-child(2) > a:nth-child(2) > span:nth-child(3) {
+  border-bottom: 1px solid #f87e69;
+}
+#section > #message > .message > .message_right > .setPhoneFinish > div:nth-child(3) {
+  width: 618px;
+  height: 230px;
+  padding-left: 27px;
+}
+#section > #message > .message > .message_right > .setPhoneFinish > div:nth-child(3) > h3 {
+  height: 22px;
+  text-indent: 30px;
+  line-height: 22px;
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 15px;
+  background: url(../images/message/messageIcon.png) no-repeat -403px -399px;
+}
+#section > #message > .message > .message_right > .setPhoneFinish > div:nth-child(3) > p {
+  height: 15px;
+  font-size: 15px;
+  color: #666666;
+  margin-bottom: 15px;
+}
+#section > #message > .message > .message_right > .setPhoneFinish > div:nth-child(3) > p:nth-of-type(2) {
+  margin-bottom: 24px;
+}
+#section > #message > .message > .message_right > .setPhoneFinish > div:nth-child(3) > a {
+  height: 36px;
+  display: block;
+  width: 178px;
+  border-radius: 6px;
+  line-height: 36px;
+  text-align: center;
+  color: white;
+  background: #f87e69;
+}
+/*以下是设置邮箱*/
+#section > #message > .message > .message_right > .intEmail {
+  width: 645px;
+  padding-top: 80px;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+}
+#section > #message > .message > .message_right > .intEmail.display {
+  display: none;
+}
+#section > #message > .message > .message_right > .intEmail > div {
+  width: 645px;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(1) {
+  height: 28px;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 35px;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(1) > h3 {
+  height: 15px;
+  float: left;
+  font-size: 16px;
+  line-height: 15px;
+  color: #333333;
+  text-indent: 27px;font-weight: bold;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(2) {
+  width: 618px;
+  padding-left: 27px;
+  height: 40px;
+  background: white;
+  margin-bottom: 11px;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(2) > a {
+  display: block;
+  float: left;
+  font-size: 18px;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(2) > a:nth-child(1) {
+  color: #f87e69;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(2) > a:nth-child(1) > span:nth-child(1) {
+  background: url(../images/message/right.png) no-repeat center;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(2) > a:nth-child(2) > span:nth-child(2) {
+  width: 108px;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(2) > a:nth-child(3) > span:nth-child(2) {
+  margin-right: 0;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(2) > a > span {
+  display: block;
+  float: left;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(2) > a > span:nth-child(1) {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 20px;
+  background: red;
+  margin-right: 9px;
+  background: #D2D2D2;
+  color: #999999;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(2) > a > span:nth-child(2) {
+  width: 72px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 9px;
+  text-align: center;
+  font-size: 16px;
+  color: #999999;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(2) > a:nth-child(1) > span:nth-child(2) {
+  color: #f87e69
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(2) > a > span:nth-child(3) {
+  width: 89px;
+  height: 16px;
+  margin-right: 9px;
+  border-bottom: 1px solid #d2d2d2;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(2) > a:nth-child(1) > span:nth-child(3) {
+  border-bottom: 1px solid #f87e69;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(3) {
+  width: 618px;
+  height: 120px;
+  padding-left: 27px;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(3) > form > div {
+  width: 618px;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(3) > form > div:nth-child(1) {
+  height: 47px;
+  position: relative;
+  margin-bottom: 16px;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(3) > form > div:nth-child(1) > p {
+  position: absolute;
+  /*width: 218px;*/
+  height: 31px;
+  line-height: 31px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #ffeecc;
+  background: #fff7e6 url(../images/message/messageIcon.png) no-repeat -385px -340px;
+  right: 136px;
+  color: #666666;
+  font-size: 13px;
+  top: 8px;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(3) > form > div:nth-child(1) > input {
+  float: left;
+  outline: none;
+  width: 500px;
+  height: 47px;
+  border: none;border-radius: 6px;
+  border: 1px solid #d2d2d2;
+  padding-left: 65px;
+  font-size: 15px;
+  color: #666666;
+  background: url(../images/message/messageIcon.png) no-repeat -395px -586px;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(3) > form > div:nth-child(2) {
+  height: 36px;
+}
+#section > #message > .message > .message_right > .intEmail > div:nth-child(3) > form > div:nth-child(2) > a {
+  display: block;
+  width: 124px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  background: #F87E69;
+  border-radius: 6px;
+  font-size: 15px;
+  color: white;
+}
+/*已发送后页面样式*/
+#section > #message > .message > .message_right > .goEmailCheck {
+  width: 645px;
+  padding-top: 80px;
+  height: 540px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+}
+#section > #message > .message > .message_right > .goEmailCheck.display {
+  display: none;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div {
+  width: 645px;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(1) {
+  height: 28px;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 35px;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(1) > h3 {
+  height: 15px;
+  float: left;
+  font-size: 15px;
+  line-height: 15px;
+  color: #333333;
+  text-indent: 27px;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(2) {
+  width: 618px;
+  padding-left: 27px;
+  height: 40px;
+  background: white;
+  margin-bottom: 35px;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(2) > a {
+  display: block;
+  float: left;
+  font-size: 18px;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(2) > a:nth-child(2) > span:nth-child(2) {
+  width: 108px;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(2) > a:nth-child(3) > span:nth-child(2) {
+  margin-right: 0;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(2) > a > span {
+  display: block;
+  float: left;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(2) > a > span:nth-child(1) {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 20px;
+  background: red;
+  margin-right: 9px;
+  background: #D2D2D2;
+  color: #999999;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(2) > a:nth-child(1) > span:nth-child(1){
+  background: url(../images/message/right.png) no-repeat center;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(2) > a:nth-child(1) > span:nth-child(2){
+  color: #f87e69;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(2) > a:nth-child(1) > span:nth-child(3){
+  border-bottom:1px solid  #f87e69;
+}
+
+
+
+
+
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(2) > a > span:nth-child(2) {
+  width: 72px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 9px;
+  text-align: center;
+  font-size: 16px;
+  color: #999999;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(2) > a > span:nth-child(3) {
+  width: 89px;
+  height: 16px;
+  margin-right: 9px;
+  border-bottom: 1px solid #d2d2d2;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(2) > a:nth-child(2) > span {
+  color: #f87e69;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(2) > a:nth-child(2) > span:nth-child(1) {
+  background: url(../images/message/right.png) no-repeat center;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(2) > a:nth-child(2) > span:nth-child(3) {
+  border-bottom: 1px solid #f87e69;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(3) {
+  width: 618px;
+  height: 260px;
+  padding-left: 27px;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(3) > div {
+  width: 100%;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(3) > div:nth-child(1) {
+  height: 70px;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(3) > div:nth-child(1) > p {
+  height: 15px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #666666;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(3) > div:nth-child(2) {
+  height: 36px;
+  margin-bottom: 24px;
+}
+._setemail {
+  display: block;
+  height: 36px;
+  float: left;
+  line-height: 36px;
+  width: 180px;
+  border-radius: 6px;
+  background: #f87e69;
+  text-align: center;
+  color: white;
+  margin-right: 16px;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(3) > div:nth-child(3) {
+  height: 85px;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(3) > div:nth-child(3) > p {
+  height: 14px;
+  color: #999999;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+#section > #message > .message > .message_right > .goEmailCheck > div:nth-child(3) > div:nth-child(3) > p:nth-child(1) {
+  height: 16px;
+  font-size: 16px;
+  color: #666666;
+}
+#section > #message > .message > .message_right > .setEmailFinish {
+  width: 645px;
+  padding-top: 80px;
+  height: 540px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+}
+#section > #message > .message > .message_right > .setEmailFinish.display {
+  display: none;
+}
+/*设置邮箱 第三步 完成*/
+#section > #message > .message > .message_right > .setEmailFinish > div {
+  width: 645px;
+}
+#section > #message > .message > .message_right > .setEmailFinish > div:nth-child(1) {
+  height: 28px;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 35px;
+}
+#section > #message > .message > .message_right > .setEmailFinish > div:nth-child(1) > h3 {
+  height: 15px;
+  float: left;
+  font-size: 15px;
+  line-height: 15px;
+  color: #333333;
+  text-indent: 27px;
+}
+#section > #message > .message > .message_right > .setEmailFinish > div:nth-child(2) {
+  width: 618px;
+  padding-left: 27px;
+  height: 30px;
+  background: white;
+  margin-bottom: 20px;
+}
+#section > #message > .message > .message_right > .setEmailFinish > div:nth-child(2) > a {
+  display: block;
+  float: left;
+  font-size: 18px;
+}
+#section > #message > .message > .message_right > .setEmailFinish > div:nth-child(2) > a:nth-child(2) > span:nth-child(2) {
+  width: 108px;
+}
+#section > #message > .message > .message_right > .setEmailFinish > div:nth-child(2) > a:nth-child(3) > span:nth-child(2) {
+  margin-right: 0;
+}
+#section > #message > .message > .message_right > .setEmailFinish > div:nth-child(2) > a > span {
+  display: block;
+  float: left;
+}
+#section > #message > .message > .message_right > .setEmailFinish > div:nth-child(2) > a > span:nth-child(1) {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 20px;
+  background: red;
+  margin-right: 9px;
+  background: url(../images/message/right.png) no-repeat center;
+  color: #fff;
+}
+#section > #message > .message > .message_right > .setEmailFinish > div:nth-child(2) > a > span:nth-child(2) {
+  width: 72px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 9px;
+  text-align: center;
+  font-size: 18px;
+  color: #f87e69;
+}
+#section > #message > .message > .message_right > .setEmailFinish > div:nth-child(2) > a > span:nth-child(3) {
+  width: 89px;
+  height: 16px;
+  margin-right: 9px;
+  border-bottom: 1px solid #f87e69;
+}
+#section > #message > .message > .message_right > .setEmailFinish > div:nth-child(2) > a:nth-child(3) > span {
+  color: #f87e69;
+}
+#section > #message > .message > .message_right > .setEmailFinish > div:nth-child(2) > a:nth-child(3) > span:nth-child(1) {
+  background: url(../images/message/right.png) no-repeat center;
+}
+#section > #message > .message > .message_right > .setEmailFinish > div:nth-child(2) > a:nth-child(3) > span:nth-child(3) {
+  border-bottom: 1px solid #f87e69;
+}
+#section > #message > .message > .message_right > .setEmailFinish > div:nth-child(3) {
+  width: 618px;
+  height: 260px;
+  padding-left: 27px;
+}
+#section > #message > .message > .message_right > .setEmailFinish > div:nth-child(3) .live{
+  height: 20px;
+  display: block;
+  line-height: 20px;
+  font-size: 18px;
+  color: #333333;
+  text-indent: 33px;
+}
+#section > #message > .message > .message_right > .setEmailFinish > div:nth-child(3) > p {
+  height: 16px;
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 15px;
+}
+#section > #message > .message > .message_right > .setEmailFinish > div:nth-child(3) > p:nth-of-type(1) {
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 15px;
+  text-indent: 33px;
+  background: url(../images/message/messageIcon.png) no-repeat -405px -400px;
+}
+
+
+.setPhonebtn {
+  display: block;
+  width: 104px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  background: #F87E69;
+  border-radius: 6px;
+  font-size: 15px;
+  color: white;
+}
+
+
+.changePhone_input {
+  float: left;
+  outline: none;
+  width: 200px;
+  height: 47px;
+  border: none;
+  border: 1px solid #d2d2d2;border-radius: 6px;
+  padding-left: 65px;
+  padding-right: 215px;
+  font-size: 15px;
+  background: url(../images/message/authentication2.png) no-repeat;
+  background-position: 6.7% 50% ;
+}
+
+
+.changePhone_btn {
+  cursor: pointer;
+  width: 128px;
+  height: 46px;
+  border: 1px solid #acacac;
+  border-radius: 6px;
+  line-height: 45px;
+  text-align: center;
+  float: right;
+  outline: none;
+  background: none;
+  color: #666666;
+  font-size: 16px;
+}
+#changePhone_subbtn_p{
+  padding-top: 10px;
+  clear: both;
+}
+.changePhone_subbtn {
+  margin-top: 10px;
+  clear: both;
+  display: block;
+  width: 104px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  background: #F87E69;
+  border-radius: 6px;
+  font-size: 15px;
+  color: white;
+}
+.grf {
+  position: absolute;
+  /*width: 300px;*/padding-right: 15px;
+  height: 31px;
+  line-height: 31px;
+  text-indent:50px;
+  border-radius: 6px;
+  border: 1px solid #ffeecc;
+  background: #fff7e6 url(../images/message/messageIcon.png) no-repeat -385px -340px;
+  right: 180px;
+  color: #666666;
+  font-size: 13px;
+  top: 8px;
+}
+#upload-file-one{opacity: 0;width:100%;height:100%;position: absolute;left:0;top:0;z-index: 3;cursor: pointer;}
+#destination img.av-hover{
+  position: absolute;left:12px;top:12px;margin:0;background: rgba(0,0,0,.5);}
+#destination img.av-hover.hide{display: none;}

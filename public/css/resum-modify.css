@@ -1,0 +1,229 @@
+.resume-modify .red-text { color: #f87e69; line-height: 22px; height: 22px; position: absolute; top: 30px; left: 94px; }
+
+.resume-modify .modify-maintp { margin-top: 46px; width: 720px; }
+
+.resume-modify .modify-maintp .tabs li { width: 150px; height: 50px; padding: 0 40px 20px 0; }
+
+.resume-modify .modify-maintp .tabs li.last { padding-right: 0px; }
+
+.resume-modify .modify-maintp .tabs li a { display: block; width: 88px; padding-left: 60px; height: 48px; line-height: 48px; border: 1px solid #eee; border-radius: 6px; position: relative; }
+
+.resume-modify .modify-maintp .tabs li a:before { content: ""; position: absolute; left: 35px; top: 13px; background: url(../images/resume/resume-sm.png) no-repeat 0 0; width: 20px; height: 20px; }
+
+.resume-modify .modify-maintp .tabs li a.finish { position: relative; }
+
+.resume-modify .modify-maintp .tabs li a.finish:after { content: ""; background: url(../images/resume/resume.png) no-repeat -120px -165px; position: absolute; right: 5px; bottom: 5px; width: 14px; height: 14px; }
+
+.resume-modify .modify-maintp .tabs li a:hover, .resume-modify .modify-maintp .tabs li a.current { border-color: #f87e69; color: #f87e69; }
+
+.resume-modify .modify-maintp .tabs li a:hover:before, .resume-modify .modify-maintp .tabs li a.current:before { background-position: -20px 0; }
+
+.resume-modify .modify-maintp .tabs li:nth-child(2) a:before { background-position: 0 -20px; }
+
+.resume-modify .modify-maintp .tabs li:nth-child(2) a:hover:before, .resume-modify .modify-maintp .tabs li:nth-child(2) a.current:before { background-position: -20px -20px; }
+
+.resume-modify .modify-maintp .tabs li:nth-child(3) a:before { background-position: 0 -40px; }
+
+.resume-modify .modify-maintp .tabs li:nth-child(3) a:hover:before, .resume-modify .modify-maintp .tabs li:nth-child(3) a.current:before { background-position: -20px -40px; }
+
+.resume-modify .modify-maintp .tabs li:nth-child(4) a:before { background-position: 0 -60px; }
+
+.resume-modify .modify-maintp .tabs li:nth-child(4) a:hover:before, .resume-modify .modify-maintp .tabs li:nth-child(4) a.current:before { background-position: -20px -60px; }
+
+.resume-modify .modify-maintp .tabs li:nth-child(5) a:before { background-position: 0 -80px; }
+
+.resume-modify .modify-maintp .tabs li:nth-child(5) a:hover:before, .resume-modify .modify-maintp .tabs li:nth-child(5) a.current:before { background-position: -20px -80px; }
+
+.resume-modify .modify-maintp .tabs li:nth-child(6) a:before { background-position: 0 -100px }
+
+.resume-modify .modify-maintp .tabs li:nth-child(6) a:hover:before, .resume-modify .modify-maintp .tabs li:nth-child(6) a.current:before { background-position: -20px -100px; }
+
+.resume-modify .modify-maintp .tabs li:nth-child(7) a:before { background-position: 0 -120px; }
+
+.resume-modify .modify-maintp .tabs li:nth-child(7) a:hover:before, .resume-modify .modify-maintp .tabs li:nth-child(7) a.current:before { background-position: -20px -120px; }
+
+.resume-modify .modify-maintp .tabs li:nth-child(8) a:before { background-position: 0 -140px; }
+
+.resume-modify .modify-maintp .tabs li:nth-child(8) a:hover:before, .resume-modify .modify-maintp .tabs li:nth-child(8) a.current:before { background-position: -20px -140px; }
+
+.resume-modify .modify-mainlist .slidmsg { z-index: 99; position: absolute; left: 0px; top: 32px; background: #fff; border: 1px solid #f87e69; border-radius: 6px; width: 468px; height: 336px; overflow: hidden; }
+
+.resume-modify .modify-mainlist .slidmsg .hd { height: 36px; line-height: 36px; border-bottom: 1px solid #eee; }
+
+.resume-modify .modify-mainlist .slidmsg .hd li { text-align: center; }
+
+.resume-modify .modify-mainlist .slidmsg .hd li a { display: block; padding: 0 16px; height: 36px; line-height: 36px; color: #666666; white-space: nowrap; }
+
+.resume-modify .modify-mainlist .slidmsg .hd li a.active { border-bottom: none; color: #f87e69; }
+
+.resume-modify .modify-mainlist .slidmsg .bd { overflow-x: hidden; overflow-y: auto; background: #fff; height: 300px; padding-top: 10px; }
+
+.resume-modify .modify-mainlist .slidmsg .bd .bdinner { display: none; background: #fff; }
+
+.resume-modify .modify-mainlist .slidmsg .bd .bdinner dl { width: 100%; padding-bottom: 5px; height: auto; }
+
+.resume-modify .modify-mainlist .slidmsg .bd .bdinner dl dt { width: 80px; text-align: center; text-decoration: underline; line-height: 30px; }
+
+.resume-modify .modify-mainlist .slidmsg .bd .bdinner dl dd { padding-left: 10px; width: 355px; }
+
+.resume-modify .modify-mainlist .slidmsg .bd .bdinner dl dd a { height: 30px; line-height: 30px; font-size: 13px; color: #666; }
+
+.resume-modify .modify-mainlist .slidmsg .bd .bdinner dl dd a b { font-weight: normal; }
+
+.resume-modify .modify-mainlist .slidmsg .bd .bdinner dl dd a span { padding: 0 10px; }
+
+.resume-modify .modify-mainlist .pane { display: none; }
+
+.resume-modify .modify-mainlist .tp { height: 30px; line-height: 30px; padding: 15px 0; position: relative; margin-left: 10px; }
+
+.resume-modify .modify-mainlist .tp:after { content: ""; position: absolute; left: 0; top: 0; height: 29px; width: 100%; border-bottom: 1px dashed #eee; }
+
+.resume-modify .modify-mainlist .tp span { position: relative; z-index: 2; background: #fff; padding: 0 15px 0 37px; }
+
+.resume-modify .modify-mainlist .tp span:before { content: ""; position: absolute; left: 0;top:-4px; width: 20px; height: 20px; background: url(../images/resume/resume-sm.png) 0 0 no-repeat; }
+
+.resume-modify .modify-mainlist .btns { width: 166px; height: 32px; margin: 0 auto; margin-top: 5px; margin-top: 30px; padding-right: 60px; }
+
+.resume-modify .modify-mainlist .btns .btn { width: 66px; height: 30px; line-height: 30px; text-align: center; border: 1px solid #eee; border-radius: 6px; }
+
+.resume-modify .modify-mainlist .btns .btn-finish { background: #fa7e65; border-color: #fa7e65; color: #fff; }
+.resume-modify .modify-mainlist .btns .btn-finish:hover{background: #dc6f60;}
+.resume-modify .modify-mainlist .btns .btn-cancel { background: #fff; color: #666666; }
+.resume-modify .modify-mainlist .btns .btn-cancel:hover{border-color:#999;}
+.resume-modify .modify-mainlist .addmore { margin: 20px 0; height: 38px; line-height: 38px; text-align: center; border: 1px dotted #e1e1e1; border-radius: 6px; cursor: pointer; }
+
+.resume-modify .modify-mainlist .addmore span { padding-left: 30px; position: relative; }
+
+.resume-modify .modify-mainlist .addmore span:before { content: ""; position: absolute; left: 0; top: 0; height: 20px; width: 20px; background: url(../images/resume/resume.png) -5px -246px no-repeat; }
+
+.resume-modify .modify-mainlist .btn-del { height: 16px; line-height: 16px; margin-top: 15px; }
+
+.resume-modify .modify-mainlist .btn-del a { position: relative; padding-left: 24px; }
+
+.resume-modify .modify-mainlist .btn-del a:before { content: ""; position: absolute; left: 0; top: 0; width: 16px; height: 16px; background: url(../images/resume/resume.png) -128px -277px no-repeat; }
+
+.resume-modify .modify-mainlist .inptext { position: relative; }
+
+.resume-modify .modify-mainlist .inptext .inptext-wrap { margin-top: 10px; line-height: 24px; position: relative; }
+
+.resume-modify .modify-mainlist .inptext .inptext-wrap .red-text { top: 112px; left:0;}
+
+.resume-modify .modify-mainlist .btn-modify { position: absolute; right: 0px; top: 10px; color: #f87e6a; padding-left: 28px; z-index: 2; }
+
+.resume-modify .modify-mainlist .btn-modify:before { content: ""; position: absolute; left: 0; top: 0; width: 18px; height: 18px; background: url(../images/resume/resume.png) 0px -180px no-repeat; }
+
+.resume-modify .modify-mainlist .cnt { margin-left: 48px; position: relative; }
+
+.resume-modify .modify-mainlist .cnt dl { position: relative; }
+
+
+.resume-modify .modify-mainlist .cnt-finish { position: relative; margin-bottom: 10px; }
+.resume-modify .modify-mainlist .cnt-finish dt{padding:8px 0;}
+.resume-modify .modify-mainlist .cnt-finish li { width: 43%; padding-right: 3%; line-height: 40px; height: 40px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/*.resume-modify .modify-mainlist .cnt-mod{padding-top: 30px;}*/
+.resume-modify .modify-mainlist .cnt-mod dl { width: 48%; padding-right: 2%; height: 50px; }
+
+.resume-modify .modify-mainlist .cnt-mod dl dt { width: 80px; line-height: 30px;}
+
+.resume-modify .modify-mainlist .cnt-mod input[type="text"] { border: 1px solid #eeeeee; border-radius: 6px; height: 28px; width: 228px; text-indent: 5px; }
+
+.resume-modify .modify-mainlist .cnt-mod input[type="button"] { border: 1px solid #eeeeee; border-radius: 6px; height: 28px; width: 228px; text-indent: 5px; background: #fff; text-align: left; text-indent: 5px; }
+
+.resume-modify .modify-mainlist .cnt-mod select { border: 1px solid #eeeeee; border-radius: 6px; height: 28px; width: 228px; text-indent: 5px; }
+
+.resume-modify .modify-mainlist .cnt-mod textarea { border: 1px solid #eeeeee; border-radius: 6px; width: 640px; height: 78px; }
+
+.resume-modify .modify-mainlist .modify-personnal dl { width: 100%; }
+
+.resume-modify .modify-mainlist .modify-personnal dl:nth-child(even) { margin: 0; }
+
+.resume-modify .modify-mainlist .modify-personnal dl dt { width: 78px; margin-right: 7px; text-align: right; }
+
+.resume-modify .modify-mainlist .modify-personnal dl dd input[type="radio"] { margin: 0 8px 0 15px; }
+
+.resume-modify .modify-mainlist .modify-personnal .sec-person .person-img { margin-right: 75px; border: 1px solid #eee; border-radius: 6px; overflow: hidden; width: 212px; height: 250px; }
+
+.resume-modify .modify-mainlist .modify-personnal .sec-person .person-img img { width: 179px; height: 213px; position: absolute; left: 18px; top: 18px; border-radius: 6px; }
+
+.resume-modify .modify-mainlist .modify-personnal .sec-person .person-img img.hover { z-index: 2; }
+
+.resume-modify .modify-mainlist .modify-personnal .sec-person .person-img input { width: 179px; height: 213px; position: absolute; left: 18px; top: 18px; border-radius: 6px; z-index: 2; opacity: 0; }
+
+.resume-modify .modify-mainlist .modify-personnal .person-msg { width: 383px; }
+
+.resume-modify .modify-mainlist .modify-personnal .person-msg li { width: 100%; }
+
+.resume-modify .modify-mainlist .modify-job .tp span:before { background-position: 0 -20px; }
+
+.resume-modify .modify-mainlist .modify-job .cnt dl { position: relative; }
+
+.resume-modify .modify-mainlist .modify-job .cnt dl:nth-child(even) { margin-left: 0; }
+
+.resume-modify .modify-mainlist .modify-job .cnt dl dd { position: relative; }
+
+.resume-modify .modify-mainlist .modify-job .cnt dl dd input.active { border-color: #f87e69; }
+
+.resume-modify .modify-mainlist .modify-education .tp span:before { background-position: 0 -40px; }
+
+.resume-modify .modify-mainlist .modify-education .time { width: 230px; }
+
+.resume-modify .modify-mainlist .modify-education .time input { width: 110px; }
+
+.resume-modify .modify-mainlist .modify-education .cnt-mod input.active { border-color: #fa7e65; }
+
+.resume-modify .modify-mainlist .modify-education .cnt-mod .slidmsg { height: 179px; left: 95px; }
+
+.resume-modify .modify-mainlist .modify-education .cnt-mod .slidmsg .academy-city { height: 160px; overflow-x: hidden; overflow-y: auto; padding-left: 10px; }
+
+.resume-modify .modify-mainlist .modify-education .cnt-mod .slidmsg .academy-city a { line-height: 32px; padding: 5px; margin: 0 5px; font-size: 14px; color: #333333; }
+
+.resume-modify .modify-mainlist .modify-education .cnt-mod .slidmsg .academy-name h2 { height: 36px; line-height: 36px; border-bottom: 1px solid #eeeeee; padding-left: 38px; position: relative; overflow: hidden; cursor: pointer; }
+
+.resume-modify .modify-mainlist .modify-education .cnt-mod .slidmsg .academy-name h2:before { content: ""; position: absolute; left: 15px; top: 10px; width: 14px; height: 14px; background: url(../images/resume/resume.png) -150px -165px no-repeat; }
+
+.resume-modify .modify-mainlist .modify-education .cnt-mod .slidmsg .academy-name{position: relative;}
+.resume-modify .modify-mainlist .modify-education .cnt-mod .slidmsg .academy-name .data-city{position: absolute;right: 15px; top: 5px;height: 24px;width: 160px;}
+
+.resume-modify .modify-mainlist .modify-education .cnt-mod .slidmsg .academy-name .btm { padding-left: 10px; overflow-x: hidden; overflow-y: auto; height: 140px; }
+
+.resume-modify .modify-mainlist .modify-education .cnt-mod .slidmsg .academy-name .btm a { margin: 0 4px; padding: 0 5px; line-height: 30px; }
+
+.resume-modify .modify-mainlist .modify-experience .tp span:before { background-position: 0 -60px; }
+
+.resume-modify .modify-mainlist .modify-experience .cnt dl:nth-child(even) { margin-left: 0; }
+
+.resume-modify .modify-mainlist .modify-experience .cnt dl dd { position: relative; }
+
+.resume-modify .modify-mainlist .modify-experience .cnt dl dd input.active { border-color: #f87e69; }
+
+.resume-modify .modify-mainlist .modify-experience .time { width: 230px; }
+
+.resume-modify .modify-mainlist .modify-experience .time input { width: 110px; }
+
+.resume-modify .modify-mainlist .modify-expert .tp span:before { background-position: 0 -80px; }
+
+.resume-modify .modify-mainlist .modify-gold .tp span:before { background-position: 0 -100px; }
+
+.resume-modify .modify-mainlist .modify-work .tp span:before { background-position: 0 -120px; }
+
+.resume-modify .modify-mainlist .modify-hobby .tp span:before { background-position: 0 -140px; }
+
+.resume-modify .modify-mainlist .modify-hobby dl dt { line-height: 40px; }
+
+.resume-modify .modify-mainlist .cnt .cnt-mod{margin-top:30px;}
+.resume-modify .modify-mainlist .tp + .cnt .cnt-mod{margin-top:0px;}
+
+/*期望职位*/
+.resume-modify .modify-mainlist .cnt-mod dl.job-pos{width: 100%;}
+.resume-modify .modify-mainlist .cnt-mod dl.job-pos dd{margin-left: 13px;}
+
+.job-pos .inpbtn{min-width: 408px;max-width: 550px;padding-right: 10px;border:1px solid #eeeeee;height: 30px;line-height: 30px;border-radius: 6px;}
+.job-pos .inpbtn.active{border-color: #fa7e65;}
+.job-pos .btn-add{position: relative;margin-left: 10px;margin-top:4px;height: 20px;line-height: 20px;background:#efefef;color: #999999;font-size: 12px;border-radius: 6px;padding: 0 23px 0 6px;}
+.job-pos .btn-add:after{content: "";position: absolute;right: 4px;top: 4px;width: 13px;height: 13px;background: url("../images/resume/btn-close.png") left top no-repeat;}
+/*.resume-modify .modify-mainlist .slidmsg .bd .bdinner .job-pos  a.active{color:#f87e69}*/
+
+.resume-modify .modify-mainlist .slidmsg .bd .bdinner dl dd a.active{color: #f87e69}
+
+

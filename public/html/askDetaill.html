@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>新-问题详情</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/vcommon.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/askdetaill.css"/>
+		<link rel="stylesheet" type="text/css" href="http://123.206.61.65/css/simditor.css"/>
+		<link rel="stylesheet" type="text/css" href="http://123.206.61.65/css/simditor-mention.css"/>
+		<link rel="stylesheet" href="http://123.206.61.65/css/selectize/selectize.default.css"/>
+	</head>
+	<body>
+		<!--头部开始-->
+		<header id="header">
+					<div id="head">
+						<!--头部列表开始-->
+						<div class="nav">
+							<div class="logo"></div>
+							<div class="nav_list">
+								<a href="http://test:89">首页</a>
+								<!-- <a href="javascript:void(0)">宣讲会</a> -->
+								<a href="javascript:void(0)">我的简历</a>
+								<a href="http://test:89/questionsa">问答</a>
+								<a href="http://test:89/articles">文章</a>
+								<a href="javascript:void(0)">简历模板</a>
+								<!-- <a href="http://test:89/articles">热文</a> -->
+								<a id="release" href="javascript:void(0)"><span></span><span>发布</span><span></span>
+								</a>
+								<ul id="releaseUl" class="dispaly">
+									<li><a href="http://test:89/questions/ask">发布问题</a></li>
+									<li><a href="http://test:89/articles/compose">发布文章</a></li>
+								</ul>
+							</div>
+							<input type="hidden"  value= id='checklogin'/>
+							<div class="login">
+									<a id="clickLogin" href="http://test:89/login">登录</a>
+									<a id="clickRegister" href="http://test:89/registermobile">注册</a>
+								</div>
+							</div>
+						<!--头部列表结束-->
+					</div>
+				</header>
+		<!--头部结束-->
+
+		<!--内容开始-->
+		<section id="section">
+			<div class="ask clearfix" >
+				<div class="main fl">
+					<!-- search 开始-->
+					<div class="search clearfix">
+						<div class="fl search-main">
+							<input type="text" placeholder="提问前请先搜索，看看你的问题其他用户是否已经问过…" class="fl inp">
+							<a href="javascript:;" class="fr search-btn"></a>
+						</div>
+						<div class="fl search-side">共&nbsp;<span>2222</span>&nbsp;问题&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>3333</span>&nbsp;人参与</div>
+					</div>
+					<!--search 结束-->
+
+					<!-- 工作网问答 开始-->
+					<div class="asks">
+						<div class="asks-hd clearfix">
+							<a href="" class="fl">工作网问答</a>
+							<b class="fl">></b>
+							<span class="fl">产品经理如何入门，没人带的情理如何入门，没人带理如何入门，没人带理如何入门，没人带况下如何学习？</span>
+						</div>
+						<div class="asks-main">
+							<h2>产品经理如何入门，没人带的情况下如何学习没人带的情况下如何学习没人带</h2>
+							<div class="ask-you">从事互联网相关行业的人都在感叹，互联网的变化实在太快，快到你放个长假归来的时候就濒临落伍。互联网加速了信息的流通，身处其中的你</div>
+							<div class="tag-modify clearfix">
+								<div class="tags fl">
+									<a href="javascript:;" class="fl">编辑编辑编辑</a>
+									<a href="javascript:;" class="fl">编辑编辑编辑</a>
+									<a href="javascript:;" class="fl">编辑编辑编辑</a>
+									<a href="javascript:;" class="fl">编辑编辑编辑</a>
+									<a href="javascript:;" class="fl">编辑编辑编辑</a>
+								</div>
+								<div class="fr btns">
+									<a href="javascript:;" class="fl btn-mod">编辑</a>
+									<span class="fl"></span>
+									<a href="javascript:;" class="fl btn-del">删除</a>
+								</div>
+							</div>
+							<div class="message clearfix">
+								<div class="fl author">
+									<a href="" class="fl"><img class="fl" src="../image/zhiluren2.png" alt=""><span class="fl">我叫小名审</span></a>
+									<span class="fl time">2016-09-26 11:29:09</span>
+								</div>
+								<div class="fr author-about">
+									<div class="yaoqing fl">
+										<a href="javascript:;" class="fl yaoqing-btn"> 邀请回答</a>
+										<!--<div class="yaoqing-msg">-->
+											<!--邀请回答-->
+											<div id="invite" class="hide">
+												<form action="">
+													<div class="invite-hd clearfix">
+														<div class="fl invite-search">
+															<input class="fl ui-autocomplete-input" type="search" name="" id="search-users" value="" placeholder="搜索你要邀请的用户" autocomplete="off">
+															<a href="javascript:;" class="btn fr"></a>
+														</div>
+														<div class="fl invite-person">
+															<dl class="fl">
+																<dt class="fl"><span class="fl">已邀请：</span></dt>
+																<dt class="fl"><img src="../image/zhiluren1.png" alt=""></dt>
+																<dt class="fl"><img src="../image/zhiluren1.png" alt=""></dt>
+																<dt class="fl"><img src="../image/zhiluren1.png" alt=""></dt>
+																<dt class="fl"><img src="../image/zhiluren1.png" alt=""></dt>
+															</dl>
+														</div>
+													</div>
+													<ul id="userinvitations">
+														<li class="clearfix">
+															<div class="li-left fl"><a href="/profile/13"><img src="http://127.0.0.1/avatars/60/201610111855316689.png"> </a> </div>
+															<div class="li-mid fl">
+																<div class="user-name">
+																	<a href="/profile/13">名字长了才能被你们看到</a>
+																	<span>意想不到的公司</span>
+																	<span>我很欣赏的职位</span>
+																</div>
+																<div class="usr-about">
+																	<span>1 点赞</span>
+																	<span>9 回答</span>
+																	<span>10 提问</span>
+																</div>
+															</div>
+															<div class="li-right fr">
+																<a href="javascript:void(0)" onclick="invitationsadd()" id="invitations13">邀请回答</a>
+															</div>
+														</li>
+													</ul>
+													<div class="invite-more">
+														<a href="javascript:void(0)" onclick="userjiazai()">邀请更多回答</a>
+													</div>
+												</form>
+												<span class="triggle"></span>
+											</div>
+										<!--</div>-->
+									</div>
+									<span class="fl dot">·</span>
+									<span class="fl">4747阅读</span>
+									<span class="fl dot">·</span>
+									<span class="fl">2人关注</span>
+									<div class="btns fl">
+										<a href="javascript:;" class="fl">关注</a>
+										<a href="javascript:;" class="fl active">回答</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="asks-answer">
+							<div class="hd">168个回答</div>
+							<ul class="answer-list">
+								<li class="clearfix">
+									<div class="fl list-l">
+										<a href=""><img src="../image/zhiluren2.png" alt=""></a>
+										<a href="javascript:;" class="zan">998</a>
+									</div>
+									<div class="fl list-r">
+										<a href="" class="author-name">张丹枫</a>
+										<div class="tips"><span>我赢职场</span><span>产品经理</span></div>
+										<div class="ask-you">翻开任何一本关于产品经理的书，关于怎样提高“产品能力”的论述俯拾皆是。高效沟通、逻辑严谨、善于学习，各种组合词汇一遍遍的出现，翻开任何一本关于产品经理的书，关于怎样提高“产品能力”的论述俯拾皆是。高效沟通、逻辑严谨、善于学习，各种组合词汇一遍遍的出现，产品经理们的第一反应千篇一律：“这说的很有道理，我需要在这些领域进行提高。”
+
+											可如果叫你判断一名产品经理是否优秀，
+											<img src="../image/dingbu.png" alt="">
+											<br>
+											你第一个想到的判断标准是什么？对大多数人来说，最显而易见的标准莫过于他是否曾经在知名的互联网产品团队中间从事产品方面的工作。在互联网领域中有过BAT经历的工程师往往光环加身，产品岗也同样如此。这是存在于整个行业的现象，人们执着于你以往经历赋予的标签，以减少他们判断一个人的成本。
+
+											起初，我愤愤不平。大学毕业后通过自学转行，我永远错过了通过校招进巧、辅助工具使用、时间管理等等具体技能因为不同的工作环境中不一而同，在以后的文章中我详细介绍。同样，当你阅读文章的时候，不要把我的话当成金科玉律，我表达思考，你们应该在生活中测试这些观点，看看哪些是真的，哪些对你有用。
+
+											我通过自学成为了一名产品经理，一直以来我都不断探寻如何令变得更加专业和优秀。在这个过程中我学到的最重要的事情就是：从不同的角度思考问题。
+										</div>
+										<div class="asks-answer-btm">
+											<a href="javascript:;" class="fl ping"> 评论&nbsp;(26)</a>
+											<span class="fl dot">|</span>
+											<a href="javascript:;" class="fl mod">编辑</a>
+											<span class="fl dot">|</span>
+											<a href="javascript:;" class="fl del">删除</a>
+											<span class="fl dot">|</span>
+											<span class="time">发布于2016-04-09 12:32</span>
+										</div>
+										<!--评论-->
+										<div class="pingadd">
+
+											<div class="btm">
+												<div class="clearfix">
+													<div class="fl pinghead"><img src="../images/resume-default.png" alt=""></div>
+													<input class="fl" type="text" placeholder="评论一下...">
+												</div>
+												<div class="btns clearfix">
+													<a href="javascript:;" class="fr">评论</a>
+													<a href="javascript:;" class="fr">取消</a>
+												</div>
+											</div>
+											<div class="tp hide">暂无评论</div>
+											<ul class="">
+												<li class="clearfix">
+													<div class="pingadd-hd">
+														<a href="javascript:;"><img src="../image/zhiluren2.png" alt=""></a>
+													</div>
+													<div class="pingadd-tp clearfix">
+														<a href="javascript:;" class="fl">我是一个粉刷匠</a>
+														<span class="fl">刚刚</span>
+														<a href="javascript:;" class="fr">删除</a>
+													</div>
+													<p>我是一个粉刷匠,粉刷本领强。我是一个粉刷匠,粉刷本领强。我是一个粉刷匠,粉刷本领强我是一个粉刷匠,粉刷本领强。 我是一个粉刷</p>
+												</li>
+												<li class="clearfix">
+													<div class="pingadd-hd">
+														<a href="javascript:;"><img src="../image/zhiluren2.png" alt=""></a>
+													</div>
+													<div class="pingadd-tp clearfix">
+														<a href="javascript:;" class="fl">我是一个粉刷匠</a>
+														<span class="fl">刚刚</span>
+														<a href="javascript:;" class="fr">删除</a>
+													</div>
+													<p>我是一个粉刷匠,粉刷本领强。我是一个粉刷匠,粉刷本领</p>
+
+												</li>
+
+											</ul>
+
+										</div>
+
+									</div>
+
+								</li>
+								<!--你自己回答-->
+								<li class="clearfix pingjia-you">
+									<div class="fl list-l">
+										<a href=""><img src="../image/zhiluren2.png" alt=""></a>
+									</div>
+									<div class="fl list-r">
+										<a href="" class="author-name">张丹枫</a>
+										<div class="ask-you" >
+											<textarea id="editor" placeholder="Balabala" autofocus></textarea>
+										</div>
+										<div class="btns clearfix">
+											<a href="javascript:;" class="fr">提交回答</a>
+										</div>
+									</div>
+
+								</li>
+
+							</ul>
+						</div>
+						<div class="asks-btm">
+							<div class="btmTips">一个问题只能回答一次，但是你可以编辑自己回答的内容。</div>
+						</div>
+
+					</div>
+					<!--工作网问答 结束-->
+				</div>
+				<div class="side fr">
+					<a href="" class="btn-ask">我要提问</a>
+					<div class="adv-img">
+						<a href=""><img src="../images/answers/answers_1.gif" alt=""></a>
+					</div>
+					<div class="ask-around">
+						<h3>相关问题</h3>
+						<dl class="clearfix">
+							<dt class="fl"><a href="">如何如何做色设计</a></dt>
+							<dd class="fl">6 个回答</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt class="fl"><a href="">如何如何做一份好的角色设计做一份好的角如何做一份好的角色设计色设计</a></dt>
+							<dd class="fl">6 个回答</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt class="fl"><a href="">如何如何做一份好的角色设计做一份好的角如何做一份好的角色设计色设计</a></dt>
+							<dd class="fl">6 个回答</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+
+
+		</section>
+		<div class="shadow0"></div>
+		<div id="callingCard"><div class="alertPersonMsg "> <div class="inner"><dl class="clearfix"><dt class="fl"><img src="http://127.0.0.1/avatars/60/201610200947396806.png" alt=""></dt><dd class="fl"><h3><a href="/profile/19">映山红</a></h3><p>沃赢科技股份有限公司</p><p>测试</p></dd></dl><ul class="clearfix alertPersonMsgHideBtm"><li class="fl"><a id="myCenter_sendLetter" onclick="isLogin(&quot;sendLetter(19)&quot;,2)" href="javascript:void(0)">私信</a></li><li class="fl"><a id="myCenter_quiz" href="javascript:void(0)" onclick="isLogin(&quot;quiz(19)&quot;,2)">向Ta提问</a></li><li class="fr "><a href="javascript:void(0)" onclick="isLogin(&quot;addAttention(19)&quot;,2)" id="cardgz19" data-text="映山红" class="active">关注</a></li></ul></div></div></div>
+		<!--内容结束-->
+
+		<!--脚步开始-->
+		<footer id="footer">
+			<div id="foot">
+				<div class="foot_top">
+					<a href="javascript:void(0)">关于工作网</a>
+					<span>|</span>
+					<a href="javascript:void(0)">免责声明</a>
+					<span>|</span>
+					<a href="javascript:void(0)">知识产权</a>
+					<span>|</span>
+					<a href="javascript:void(0)">合作机会</a>
+					<span>|</span>
+					<a href="javascript:void(0)">人才招聘</a>
+					<span>|</span>
+					<a href="javascript:void(0)">联系我们</a>
+				</div>
+				<p class="foot_btm">Copyright &copy; 2016 工作网 All rights reserved</p>
+			</div>
+		</footer>
+		<!--脚部结束-->
+		<script src="../js/jquery-2.1.0.js"></script>
+
+		<script src="http://123.206.61.65/js/module.js"></script>
+		<script src="http://123.206.61.65/js/hotkeys.js"></script>
+		<script src="http://123.206.61.65/js/uploader.js"></script>
+		<script src="http://123.206.61.65/js/simditor.js"></script>
+		<script src="http://123.206.61.65/js/simditor-mention.js"></script>
+		<script>
+
+			var editor = new Simditor({
+				textarea: $('#editor'),
+				placeholder: '请输入...',
+				defaultImage: '',
+				tabIndent: false,
+				toolbar: [
+					'title',
+					'bold',
+					'italic',
+					'underline',
+					'image',
+				],
+				toolbarFloat: true,
+				toolbarFloatOffset: 0,
+				toolbarHidden: false,
+				pasteImage: true,
+			});
+
+			var yqkey = false;
+			$('.yaoqing-btn').on('click',function (ev) {
+				if(yqkey){
+					$(this).removeClass('active');
+					$('#invite').fadeOut();
+					$('.shadow0').hide();
+					yqkey=false;
+
+				}else{
+					$(this).addClass('active');
+					$('#invite').fadeIn();
+					$('.shadow0').show();
+					yqkey=true;
+				}
+			});
+			$('.shadow0').on('click',function(){
+				$('#invite').fadeOut();
+				$(this).hide();
+				yqkey=false;
+
+			});
+
+
+			$('.asks .asks-answer .list-l .zan').on('click',function (ev) {
+				$(this).addClass('active');
+
+			})
+
+
+			$('.ping').on('click',function (ev) {
+				$('.pingadd').fadeToggle();
+			})
+		</script>
+	</body>
+</html>
+
+

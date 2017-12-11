@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>简历管理</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/resume.css"/>
+	</head>
+	<body>
+		<!--头部开始-->
+				<header id="header">
+					<div id="head">
+						<!--头部列表开始-->
+						<div class="nav">
+							<div class="logo"></div>
+							<div class="nav_list">
+								<a href="http://test:89">首页</a>
+								<!-- <a href="javascript:void(0)">宣讲会</a> -->
+								<a href="javascript:void(0)">我的简历</a>
+								<a href="http://test:89/questionsa">问答</a>
+								<a href="http://test:89/articles">文章</a>
+								<a href="javascript:void(0)">简历模板</a>
+								<!-- <a href="http://test:89/articles">热文</a> -->
+								<a id="release" href="javascript:void(0)"><span></span><span>发布</span><span></span>
+								</a>
+								<ul id="releaseUl" class="dispaly">
+									<li><a href="http://test:89/questions/ask">发布问题</a></li>
+									<li><a href="http://test:89/articles/compose">发布文章</a></li>
+								</ul>
+							</div>
+							<input type="hidden"  value= id='checklogin'/>
+							<div class="login">
+									<a id="clickLogin" href="http://test:89/login">登录</a>
+									<a id="clickRegister" href="http://test:89/registermobile">注册</a>
+								</div>
+							</div>
+						<!--头部列表结束-->
+					</div>
+				</header>
+		<!--头部结束-->
+		<!--内容开始-->
+		<section class="resume resume-management">
+			<!-- 头部 -->
+			<div class="head">
+				<a href="" target="_blank">+ 新建简历</a>
+				<p>我的简历</p>
+			</div>
+			<div class="bd">
+				<ul>
+					<li class="resume-new">
+						<dl class="clearfix">
+							<dt class="fl">
+								<a href="">
+									定制简历
+								</a>
+							</dt>
+							<dd class="fl">
+								<p class="clearfix">
+									<span class="fl">1、不知道如何写简历？</span>
+									<span class="fl">2、需要找实习、找工作？</span>
+								</p>
+								<a href="" target="_blank">十分钟快速做出牛B的简历，快来试试吧~</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl class="clearfix">
+							<dt class="fl">
+							<a href="">
+							<img src="../images/riji3.png"  alt="" rel="http://pic2.ooopic.com/12/08/22/62bOOOPICf6_1024.jpg" class="jqzoom" /></a>
+							</a>
+							</dt>
+							<dd class="fl">
+								<h3><a href="">应聘XX岗位_姓名_学校_手机号</a></h3>
+								<div class="btn-modify clearfix">
+									<a href="javascript:;" class="fl btn-del">删除</a>
+									<a href="javascript:;" class="fl btn-modtitle">修改标题</a>
+									<a href="javascript:;" class="fl btn-down">下载简历</a>
+								</div>
+								<p>最后更新时间：2016-08-24 18：37：15</p>
+							</dd>
+						</dl>
+
+					</li>
+					<li>
+						<dl class="clearfix">
+							<dt class="fl">
+							<a href="">
+							<img src="../images/riji3.png"  alt="" rel="http://pic2.ooopic.com/12/08/22/62bOOOPICf6_1024.jpg" class="jqzoom" /></a>
+							</a>
+							</dt>
+							<dd class="fl">
+								<h3><a href="">应聘XX岗位_姓名_学校_手机号</a></h3>
+								<div class="btn-modify clearfix">
+									<a href="javascript:;" class="fl btn-del">删除</a>
+									<a href="javascript:;" class="fl btn-modtitle">修改标题</a>
+									<a href="javascript:;" class="fl btn-down">下载简历</a>
+								</div>
+								<p>最后更新时间：2016-08-24 18：37：15</p>
+							</dd>
+						</dl>
+
+					</li>
+					<li>
+						<dl class="clearfix">
+							<dt class="fl">
+							<a href="">
+							<img src="../images/riji3.png"  alt="" rel="http://pic2.ooopic.com/12/08/22/62bOOOPICf6_1024.jpg" class="jqzoom" /></a>
+							</a>
+							</dt>
+							<dd class="fl">
+								<h3><a href="">应聘XX岗位_姓名_学校_手机号</a></h3>
+								<div class="btn-modify clearfix">
+									<a href="javascript:;" class="fl btn-del">删除</a>
+									<a href="javascript:;" class="fl btn-modtitle">修改标题</a>
+									<a href="javascript:;" class="fl btn-down">下载简历</a>
+								</div>
+								<p>最后更新时间：2016-08-24 18：37：15</p>
+							</dd>
+						</dl>
+
+					</li>
+				</ul>
+				<!-- 修改 开始 -->
+				<div class="resume-alert resume-alert-mod hide">
+					<div class="inner">
+						<h3>修改标题：应聘XX岗位-姓名-学校-手机号</h3>
+						<div class="cnt">
+							<dl class="clearfix">
+								<dt class="fl">*简历标题：</dt>
+								<dd class="fl">
+									<input class="inptit" type="text" placeholder="请更新您的简历标题">
+									<p class="inptxt hide">请填写简历标题</p>
+								</dd>
+							</dl>
+						</div>
+						<div class="btns cleafix">
+							<div class="btn btn-yellow fr btnOk">完成</div>
+							<div class="btn fl btnCancel">取消</div>
+						</div>
+					</div>
+				</div>
+				<!-- 修改 结束 -->
+				<!-- 删除 开始 -->
+				<div class="resume-alert resume-alert-del hide">
+					<div class="inner">
+						<h3>删除简历：应聘XX岗位-姓名-学校-手机号</h3>
+						<div class="cnt">
+							<p class="tips">简历删除后无法恢复！确定要删除这份简历吗？</p>
+						</div>
+						<div class="btns cleafix">
+							<div class="btn btn-yellow fr btnOk">完成</div>
+							<div class="btn fl btnCancel">取消</div>
+						</div>
+					</div>
+				</div>
+				<!-- 删除 结束 -->
+			</div>
+
+			<!-- 分页 开始-->
+			<div class="page">
+				<div class="pagination clearfix">
+					<a class="fl prev" href="javascript:;" ><</a>
+					<a href="javascript:;" class="fl">155</a>
+					<a href="javascript:;" class="fl active">2</a>
+					<a href="javascript:;" class="fl">355</a>
+					<a href="javascript:;" class="fl">455</a>
+					<span class="fl">...</span>
+					<a href="javascript:;" class="fl">505</a>
+					<a class="fl next" href="javascript:;" >></a>
+				</div>
+			</div>
+			<!--分页 结束-->
+		</section>
+		<!--内容结束-->
+
+		<!--脚步开始-->
+		<footer id="footer">
+			<div id="foot">
+				<div class="foot_top">
+					<a href="javascript:void(0)">关于工作网</a>
+					<span>|</span>
+					<a href="javascript:void(0)">免责声明</a>
+					<span>|</span>
+					<a href="javascript:void(0)">知识产权</a>
+					<span>|</span>
+					<a href="javascript:void(0)">合作机会</a>
+					<span>|</span>
+					<a href="javascript:void(0)">人才招聘</a>
+					<span>|</span>
+					<a href="javascript:void(0)">联系我们</a>
+				</div>
+				<p class="foot_btm">Copyright &copy; 2016 工作网 All rights reserved</p>
+			</div>
+		</footer>
+		
+
+		<!--脚部结束-->
+		<script src="../js/jquery-2.1.0.js""></script>
+		<script src="../js/jquery.imagezoom.min.js""></script>
+		<script src="../js/resume.management.js""></script>
+	</body>
+
+</html>
+
+
